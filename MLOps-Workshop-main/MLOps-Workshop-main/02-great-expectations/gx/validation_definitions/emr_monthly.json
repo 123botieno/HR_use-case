@@ -1,0 +1,22 @@
+{
+  "data": {
+    "asset": {
+      "id": "af1c3761-36ba-47dc-892b-02c95b4c33a9",
+      "name": "visits"
+    },
+    "batch_definition": {
+      "id": "b6566399-a5d8-4d42-972e-b7a1128c3561",
+      "name": "monthly_extract"
+    },
+    "datasource": {
+      "id": "60a0f7df-d5d4-421e-9750-224a9375ab2c",
+      "name": "emr"
+    }
+  },
+  "id": "22deafe4-8f2c-4f1c-a113-ca3564a81087",
+  "name": "emr_monthly",
+  "suite": {
+    "id": "1565c4b4-ae65-403d-bb34-c6cfd8c867fc",
+    "name": "emr_monthly_extract"
+  }
+}

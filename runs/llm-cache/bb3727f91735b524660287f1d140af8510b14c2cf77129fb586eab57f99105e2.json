@@ -1,0 +1,279 @@
+{
+  "id": "resp_022ad4c7355bd7f3016ad0a7f8467887d29f9a7621cf7033b0",
+  "object": "response",
+  "created_at": 1792059384,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792059385,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": null,
+  "max_tool_calls": null,
+  "model": "gpt-5.4-mini-2026-03-17",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_022ad4c7355bd7f3016ad0a7f8b6b887d2a3777e160e3f0bb6",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"evidence\":[{\"requirement_id\":\"R1\",\"status\":\"unknown\",\"quote\":\"\",\"location\":\"\"},{\"requirement_id\":\"R2\",\"status\":\"supported\",\"quote\":\"Master’s degree in Accounting and Finance or Management — Adama Science and Technology University\",\"location\":\"paragraph:35\"},{\"requirement_id\":\"R3\",\"status\":\"supported\",\"quote\":\"Contributed to a finance workstream using Financial reporting, reporting and stakeholder follow-up.\",\"location\":\"paragraph:39\"}]}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "current_turn",
+    "effort": "none",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "candidate_evidence",
+      "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "evidence"
+        ],
+        "properties": {
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "requirement_id",
+                "status",
+                "quote",
+                "location"
+              ],
+              "properties": {
+                "requirement_id": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "supported",
+                    "explicitly_not_met",
+                    "unknown",
+                    "not_applicable"
+                  ]
+                },
+                "quote": {
+                  "type": "string"
+                },
+                "location": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 3025,
+    "output_tokens": 210,
+    "total_tokens": 3235,
+    "input_tokens_details": {
+      "cached_tokens": 1280
+    }
+  },
+  "user": null,
+  "metadata": {},
+  "repair_history": [
+    {
+      "id": "resp_0dfc6e354aec6365016ad0a7f60a7c87d299ae1225514ea2c6",
+      "object": "response",
+      "created_at": 1792059382,
+      "status": "completed",
+      "access_programs": null,
+      "background": false,
+      "billing": {
+        "payer": "developer"
+      },
+      "completed_at": 1792059382,
+      "error": null,
+      "frequency_penalty": 0.0,
+      "incomplete_details": null,
+      "instructions": null,
+      "max_output_tokens": null,
+      "max_tool_calls": null,
+      "model": "gpt-5.4-mini-2026-03-17",
+      "moderation": null,
+      "output": [
+        {
+          "id": "msg_0dfc6e354aec6365016ad0a7f6679087d29eab459f2b4b02c7",
+          "type": "message",
+          "status": "completed",
+          "content": [
+            {
+              "type": "output_text",
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"evidence\":[{\"requirement_id\":\"R1\",\"status\":\"not_applicable\",\"quote\":\"\",\"location\":\"\"},{\"requirement_id\":\"R2\",\"status\":\"supported\",\"quote\":\"Master’s degree in Accounting and Finance or Management — Adama Science and Technology University\",\"location\":\"paragraph:35\"},{\"requirement_id\":\"R3\",\"status\":\"supported\",\"quote\":\"Contributed to a finance workstream using Financial reporting, reporting and stakeholder follow-up.\",\"location\":\"paragraph:39\"}]}"
+            }
+          ],
+          "phase": "final_answer",
+          "role": "assistant"
+        }
+      ],
+      "parallel_tool_calls": true,
+      "presence_penalty": 0.0,
+      "previous_response_id": null,
+      "prompt_cache_key": null,
+      "prompt_cache_retention": "24h",
+      "reasoning": {
+        "context": "current_turn",
+        "effort": "none",
+        "mode": "standard",
+        "summary": null
+      },
+      "safety_identifier": null,
+      "service_tier": "default",
+      "store": false,
+      "temperature": 1.0,
+      "text": {
+        "format": {
+          "type": "json_schema",
+          "description": null,
+          "name": "candidate_evidence",
+          "schema": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "evidence"
+            ],
+            "properties": {
+              "evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "requirement_id",
+                    "status",
+                    "quote",
+                    "location"
+                  ],
+                  "properties": {
+                    "requirement_id": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "supported",
+                        "explicitly_not_met",
+                        "unknown",
+                        "not_applicable"
+                      ]
+                    },
+                    "quote": {
+                      "type": "string"
+                    },
+                    "location": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "strict": true
+        },
+        "verbosity": "medium"
+      },
+      "tool_choice": "auto",
+      "tool_usage": {
+        "image_gen": {
+          "input_tokens": 0,
+          "input_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "output_tokens": 0,
+          "output_tokens_details": {
+            "image_tokens": 0,
+            "text_tokens": 0
+          },
+          "total_tokens": 0
+        },
+        "web_search": {
+          "num_requests": 0
+        }
+      },
+      "tools": [],
+      "top_logprobs": 0,
+      "top_p": 0.98,
+      "truncation": "disabled",
+      "usage": {
+        "input_tokens": 1438,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 106,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1544
+      },
+      "user": null,
+      "metadata": {}
+    }
+  ],
+  "repair_count": 1
+}

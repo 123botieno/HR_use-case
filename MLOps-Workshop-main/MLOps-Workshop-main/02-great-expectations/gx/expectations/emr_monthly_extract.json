@@ -1,0 +1,505 @@
+{
+  "expectations": [
+    {
+      "id": "ebf52323-53a6-4b61-ba0f-1b41d3075594",
+      "kwargs": {
+        "column_set": [
+          "visit_id",
+          "child_id",
+          "visit_date",
+          "facility_id",
+          "region",
+          "residence",
+          "sex",
+          "age_months",
+          "weight_kg",
+          "height_cm",
+          "whz",
+          "muac_cm",
+          "recent_diarrhea",
+          "recent_fever",
+          "vaccinated_for_age",
+          "currently_breastfed",
+          "birth_size",
+          "prior_sam_admission",
+          "mother_age",
+          "mother_education",
+          "water_source_minutes",
+          "household_size",
+          "gam_within_90d"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_table_columns_to_match_set"
+    },
+    {
+      "id": "e54f6ea2-6a02-466b-b51b-50f2d342652f",
+      "kwargs": {
+        "max_value": 5000,
+        "min_value": 500
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_table_row_count_to_be_between"
+    },
+    {
+      "id": "8a1a9614-eb4f-4d63-8e44-eb353ed6aab5",
+      "kwargs": {
+        "column": "visit_id"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_unique"
+    },
+    {
+      "id": "81310bcd-d3d3-494f-bec8-a6ed915f26c9",
+      "kwargs": {
+        "column": "visit_id"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "73de4f51-072f-4251-8b4b-c3a0c2d8ebcd",
+      "kwargs": {
+        "column": "visit_date",
+        "strftime_format": "%Y-%m-%d"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_match_strftime_format"
+    },
+    {
+      "id": "7501273f-b140-489e-b58f-397dc8a241fd",
+      "kwargs": {
+        "column": "facility_id",
+        "regex": "^(AA|AM|OR|SN|SI|TI|AF|SO)-HC\\d+$"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_match_regex"
+    },
+    {
+      "id": "e5abb1c7-2126-4984-aa0b-2fc888053fd1",
+      "kwargs": {
+        "column": "region",
+        "value_set": [
+          "Addis Ababa",
+          "Amhara",
+          "Oromia",
+          "SNNP",
+          "Sidama",
+          "Tigray",
+          "Afar",
+          "Somali"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "0be5f87d-e555-4a35-8538-d419092b98e5",
+      "kwargs": {
+        "column": "sex",
+        "value_set": [
+          "F",
+          "M"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "fb8a512d-bee7-4411-9da2-ffd3721349a2",
+      "kwargs": {
+        "column": "residence",
+        "value_set": [
+          "urban",
+          "rural"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "8865af33-2e6f-4df3-9b3e-5dec7e9e1751",
+      "kwargs": {
+        "column": "birth_size",
+        "value_set": [
+          "small",
+          "average",
+          "large"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "6babdac1-4149-4e2e-ab43-b6626540eea2",
+      "kwargs": {
+        "column": "mother_education",
+        "value_set": [
+          "none",
+          "primary",
+          "secondary+"
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "e53dd4da-9b7d-4d2e-a8b6-0692d4c61b28",
+      "kwargs": {
+        "column": "recent_diarrhea",
+        "value_set": [
+          0,
+          1
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "ddf5e994-229c-442b-920a-5b6a9edd342c",
+      "kwargs": {
+        "column": "recent_diarrhea"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "0ab49348-67f9-4369-b9cb-d7d330432d70",
+      "kwargs": {
+        "column": "recent_fever",
+        "value_set": [
+          0,
+          1
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "b126ab50-d4f2-4cca-96ec-306e020a4eb4",
+      "kwargs": {
+        "column": "recent_fever"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "be65664d-4c49-4f1a-875d-20b73770b601",
+      "kwargs": {
+        "column": "vaccinated_for_age",
+        "value_set": [
+          0,
+          1
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "9be55e84-8eb2-4ba6-a4c9-152c5f013383",
+      "kwargs": {
+        "column": "vaccinated_for_age"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "1cdb1a7e-403a-4028-9f77-1d5dd50cf61d",
+      "kwargs": {
+        "column": "currently_breastfed",
+        "value_set": [
+          0,
+          1
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "babae840-dd80-48a7-a703-954d028df4f6",
+      "kwargs": {
+        "column": "currently_breastfed"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "0a76a90f-d162-4bf7-afb1-98e27434005f",
+      "kwargs": {
+        "column": "prior_sam_admission",
+        "value_set": [
+          0,
+          1
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "389ec3bc-0db8-415d-a48e-d2e06f593886",
+      "kwargs": {
+        "column": "prior_sam_admission"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "f3e925aa-5caf-42d5-b102-31306563408c",
+      "kwargs": {
+        "column": "gam_within_90d",
+        "value_set": [
+          0,
+          1
+        ]
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_in_set"
+    },
+    {
+      "id": "bdc0bc83-b3e7-451f-9065-4c3b4d5fb23e",
+      "kwargs": {
+        "column": "gam_within_90d"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "44e567b7-912c-417f-9d30-87a907a4fe02",
+      "kwargs": {
+        "column": "age_months"
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "029cddd2-e55c-45f8-aa60-948abaced007",
+      "kwargs": {
+        "column": "age_months",
+        "max_value": 59.0,
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "99d541d4-234c-4815-a2d4-bdd3fb876ecd",
+      "kwargs": {
+        "column": "muac_cm",
+        "max_value": 25.0,
+        "min_value": 8.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "1daeccb8-cd79-4b71-ad3d-78e9433de00c",
+      "kwargs": {
+        "column": "weight_kg",
+        "max_value": 35.0,
+        "min_value": 1.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "3d4d5414-9e24-4851-9aa2-311900ebf95c",
+      "kwargs": {
+        "column": "height_cm",
+        "max_value": 130.0,
+        "min_value": 38.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "c30bb139-a8dd-492e-9d85-020c4878e1dd",
+      "kwargs": {
+        "column": "whz",
+        "max_value": 5.0,
+        "min_value": -5.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "df5d7ab4-bd91-42c2-befb-adb8689357f1",
+      "kwargs": {
+        "column": "mother_age",
+        "max_value": 55.0,
+        "min_value": 12.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "7fffb8b4-e312-406c-9156-17fa66e8080b",
+      "kwargs": {
+        "column": "water_source_minutes",
+        "max_value": 720.0,
+        "min_value": 0.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "b7ef8844-3535-4962-ab4c-d9af43697f63",
+      "kwargs": {
+        "column": "household_size",
+        "max_value": 30.0,
+        "min_value": 1.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_be_between"
+    },
+    {
+      "id": "50c29f58-e0f1-4799-9e44-9f02c352fedc",
+      "kwargs": {
+        "column": "weight_kg",
+        "mostly": 0.95
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "d827789b-bb48-456d-8a4e-e5cf1f4c3782",
+      "kwargs": {
+        "column": "height_cm",
+        "mostly": 0.95
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "10d6a61d-bd06-414a-b45d-4540074d8d71",
+      "kwargs": {
+        "column": "whz",
+        "mostly": 0.95
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "f40cf867-2ea7-4fe1-bce3-74b4027f66ff",
+      "kwargs": {
+        "column": "muac_cm",
+        "condition_parser": "pandas",
+        "mostly": 0.95,
+        "row_condition": {
+          "pass_through_filter": "age_months >= 6",
+          "type": "pass_through"
+        }
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_values_to_not_be_null"
+    },
+    {
+      "id": "52b21993-3a13-4fd2-ad0d-ae8ce519f34f",
+      "kwargs": {
+        "column": "whz",
+        "min_value": -2.0
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_min_to_be_between"
+    },
+    {
+      "id": "45ec8740-c97c-4df1-9e5e-2df3010f8073",
+      "kwargs": {
+        "column": "muac_cm",
+        "min_value": 12.5
+      },
+      "meta": {},
+      "severity": "critical",
+      "type": "expect_column_min_to_be_between"
+    },
+    {
+      "id": "a5e88c5d-2d2a-4d6d-85a8-c08cf0885889",
+      "kwargs": {
+        "column": "muac_cm",
+        "condition_parser": "pandas",
+        "mostly": 0.95,
+        "row_condition": {
+          "pass_through_filter": "age_months < 6",
+          "type": "pass_through"
+        }
+      },
+      "meta": {},
+      "severity": "warning",
+      "type": "expect_column_values_to_be_null"
+    },
+    {
+      "id": "d1fea986-9c9a-4685-8444-567111c706c6",
+      "kwargs": {
+        "column": "gam_within_90d",
+        "max_value": 0.3,
+        "min_value": 0.02
+      },
+      "meta": {},
+      "severity": "warning",
+      "type": "expect_column_mean_to_be_between"
+    },
+    {
+      "id": "7f494bfe-0ad8-4dc5-ae98-f889af9a8832",
+      "kwargs": {
+        "column": "age_months",
+        "max_value": 36.0,
+        "min_value": 6.0
+      },
+      "meta": {},
+      "severity": "warning",
+      "type": "expect_column_median_to_be_between"
+    },
+    {
+      "id": "34a6da26-d060-4f55-bbbe-4b563968bfbf",
+      "kwargs": {
+        "column": "facility_id",
+        "min_value": 20
+      },
+      "meta": {},
+      "severity": "warning",
+      "type": "expect_column_unique_value_count_to_be_between"
+    }
+  ],
+  "id": "1565c4b4-ae65-403d-bb34-c6cfd8c867fc",
+  "meta": {
+    "great_expectations_version": "1.24.0"
+  },
+  "name": "emr_monthly_extract",
+  "notes": null
+}

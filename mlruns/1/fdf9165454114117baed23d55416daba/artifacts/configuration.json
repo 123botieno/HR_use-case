@@ -1,0 +1,9 @@
+{
+  "model": "gpt-5.4-mini-2026-03-17",
+  "endpoint": "https://api.openai.com/v1/responses",
+  "rubric_hash": "01254c590ad9434b4aab48797cdfb4230e4c0ce44002b03e8275aac9e5614ac1",
+  "prompt_version": "openai-evidence-v2",
+  "provider": "openai",
+  "store": false,
+  "rubric_confirmed": false
+}

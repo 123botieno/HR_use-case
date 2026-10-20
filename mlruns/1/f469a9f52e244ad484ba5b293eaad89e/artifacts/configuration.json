@@ -1,0 +1,22 @@
+{
+  "token_pattern": "(?u)\\b\\w\\w+\\b",
+  "ngram_range": [
+    1,
+    1
+  ],
+  "stop_words": null,
+  "norm": "l2",
+  "query_zero_vector": false,
+  "vocabulary": {
+    "python": 2,
+    "forecasting": 1,
+    "tax": 3,
+    "accounting": 0
+  },
+  "idf": [
+    1.1541506798272583,
+    2.252762968495368,
+    2.252762968495368,
+    1.1541506798272583
+  ]
+}

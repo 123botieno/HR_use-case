@@ -1,0 +1,499 @@
+{
+  "per_jd": [
+    {
+      "jd_id": "JD-01",
+      "algorithm": "bm25",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.016622399998595938
+    },
+    {
+      "jd_id": "JD-01",
+      "algorithm": "tfidf",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.014598599998862483
+    },
+    {
+      "jd_id": "JD-02",
+      "algorithm": "bm25",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.023598300002049655
+    },
+    {
+      "jd_id": "JD-02",
+      "algorithm": "tfidf",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.018454999997629784
+    },
+    {
+      "jd_id": "JD-03",
+      "algorithm": "bm25",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.014861799994832836
+    },
+    {
+      "jd_id": "JD-03",
+      "algorithm": "tfidf",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.01325219999125693
+    },
+    {
+      "jd_id": "JD-04",
+      "algorithm": "bm25",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.009887799998978153
+    },
+    {
+      "jd_id": "JD-04",
+      "algorithm": "tfidf",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.01621309999609366
+    },
+    {
+      "jd_id": "JD-05",
+      "algorithm": "bm25",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.01122239998949226
+    },
+    {
+      "jd_id": "JD-05",
+      "algorithm": "tfidf",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.014869000006001443
+    },
+    {
+      "jd_id": "JD-06",
+      "algorithm": "bm25",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.01838599999609869
+    },
+    {
+      "jd_id": "JD-06",
+      "algorithm": "tfidf",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.014148699992801994
+    },
+    {
+      "jd_id": "JD-07",
+      "algorithm": "bm25",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.014940799999749288
+    },
+    {
+      "jd_id": "JD-07",
+      "algorithm": "tfidf",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.017421099997591227
+    },
+    {
+      "jd_id": "JD-08",
+      "algorithm": "bm25",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.018269199994392693
+    },
+    {
+      "jd_id": "JD-08",
+      "algorithm": "tfidf",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.010144999992917292
+    },
+    {
+      "jd_id": "JD-09",
+      "algorithm": "bm25",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.008730899993679486
+    },
+    {
+      "jd_id": "JD-09",
+      "algorithm": "tfidf",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.009139700006926432
+    },
+    {
+      "jd_id": "JD-10",
+      "algorithm": "bm25",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.01484560000244528
+    },
+    {
+      "jd_id": "JD-10",
+      "algorithm": "tfidf",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.016831699991598725
+    },
+    {
+      "jd_id": "JD-11",
+      "algorithm": "bm25",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.006345300003886223
+    },
+    {
+      "jd_id": "JD-11",
+      "algorithm": "tfidf",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.009585499996319413
+    },
+    {
+      "jd_id": "JD-12",
+      "algorithm": "bm25",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.013273499993374571
+    },
+    {
+      "jd_id": "JD-12",
+      "algorithm": "tfidf",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.026240799998049624
+    },
+    {
+      "jd_id": "JD-14",
+      "algorithm": "bm25",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.007327000013901852
+    },
+    {
+      "jd_id": "JD-14",
+      "algorithm": "tfidf",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 50,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.01088539999909699
+    },
+    {
+      "jd_id": "JD-15",
+      "algorithm": "bm25",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 49,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.016040499991504475
+    },
+    {
+      "jd_id": "JD-15",
+      "algorithm": "tfidf",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 49,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.017850499993073754
+    }
+  ],
+  "overlap": [
+    {
+      "jd_id": "JD-01",
+      "left": "bm25",
+      "right": "tfidf",
+      "shared_count": 0,
+      "jaccard": 0.0
+    },
+    {
+      "jd_id": "JD-02",
+      "left": "bm25",
+      "right": "tfidf",
+      "shared_count": 2,
+      "jaccard": 0.25
+    },
+    {
+      "jd_id": "JD-03",
+      "left": "bm25",
+      "right": "tfidf",
+      "shared_count": 2,
+      "jaccard": 0.25
+    },
+    {
+      "jd_id": "JD-04",
+      "left": "bm25",
+      "right": "tfidf",
+      "shared_count": 4,
+      "jaccard": 0.6666666666666666
+    },
+    {
+      "jd_id": "JD-05",
+      "left": "bm25",
+      "right": "tfidf",
+      "shared_count": 3,
+      "jaccard": 0.42857142857142855
+    },
+    {
+      "jd_id": "JD-06",
+      "left": "bm25",
+      "right": "tfidf",
+      "shared_count": 3,
+      "jaccard": 0.42857142857142855
+    },
+    {
+      "jd_id": "JD-07",
+      "left": "bm25",
+      "right": "tfidf",
+      "shared_count": 2,
+      "jaccard": 0.25
+    },
+    {
+      "jd_id": "JD-08",
+      "left": "bm25",
+      "right": "tfidf",
+      "shared_count": 0,
+      "jaccard": 0.0
+    },
+    {
+      "jd_id": "JD-09",
+      "left": "bm25",
+      "right": "tfidf",
+      "shared_count": 5,
+      "jaccard": 1.0
+    },
+    {
+      "jd_id": "JD-10",
+      "left": "bm25",
+      "right": "tfidf",
+      "shared_count": 1,
+      "jaccard": 0.1111111111111111
+    },
+    {
+      "jd_id": "JD-11",
+      "left": "bm25",
+      "right": "tfidf",
+      "shared_count": 5,
+      "jaccard": 1.0
+    },
+    {
+      "jd_id": "JD-12",
+      "left": "bm25",
+      "right": "tfidf",
+      "shared_count": 1,
+      "jaccard": 0.1111111111111111
+    },
+    {
+      "jd_id": "JD-14",
+      "left": "bm25",
+      "right": "tfidf",
+      "shared_count": 3,
+      "jaccard": 0.42857142857142855
+    },
+    {
+      "jd_id": "JD-15",
+      "left": "bm25",
+      "right": "tfidf",
+      "shared_count": 4,
+      "jaccard": 0.6666666666666666
+    }
+  ],
+  "macro_average": {
+    "bm25": {
+      "precision_at_5": {
+        "mean": null,
+        "evaluated_jds": 0
+      },
+      "recall_at_5": {
+        "mean": null,
+        "evaluated_jds": 0
+      },
+      "ndcg_at_5": {
+        "mean": null,
+        "evaluated_jds": 0
+      }
+    },
+    "tfidf": {
+      "precision_at_5": {
+        "mean": null,
+        "evaluated_jds": 0
+      },
+      "recall_at_5": {
+        "mean": null,
+        "evaluated_jds": 0
+      },
+      "ndcg_at_5": {
+        "mean": null,
+        "evaluated_jds": 0
+      }
+    }
+  },
+  "note": "Missing judgments yield unavailable metrics; overlap is not correctness."
+}

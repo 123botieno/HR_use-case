@@ -1,0 +1,428 @@
+> EXPERIMENTAL: uses unconfirmed draft JD rubrics; recruiter review is pending.
+
+# Job matching run
+
+Run: 20261015T101453Z-402c9b11
+Status: complete
+
+Scores are method-specific relevance/evidence scores, not hiring probabilities.
+
+## JD-01 — bm25
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-01-029 | 28.1282 |  |
+| 2 | CV-01-012 | 27.3123 |  |
+| 3 | CV-01-044 | 27.0145 |  |
+| 4 | CV-01-034 | 25.6289 |  |
+| 5 | CV-01-018 | 25.5427 |  |
+
+## JD-01 — tfidf
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-01-001 | 0.8119 |  |
+| 2 | CV-01-020 | 0.8101 |  |
+| 3 | CV-01-037 | 0.8091 |  |
+| 4 | CV-01-007 | 0.8058 |  |
+| 5 | CV-01-014 | 0.8036 |  |
+
+## JD-01 — llm
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-01-003 | 90.9091 | cutoff tie, unknown requirements |
+| 2 | CV-01-005 | 90.9091 | cutoff tie, unknown requirements |
+| 3 | CV-01-007 | 90.9091 | cutoff tie, unknown requirements |
+| 4 | CV-01-009 | 90.9091 | cutoff tie, unknown requirements |
+| 5 | CV-01-017 | 90.9091 | cutoff tie, unknown requirements |
+
+## JD-02 — bm25
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-02-044 | 25.9280 |  |
+| 2 | CV-02-023 | 24.7310 |  |
+| 3 | CV-02-030 | 22.2602 |  |
+| 4 | CV-02-017 | 22.1688 |  |
+| 5 | CV-02-005 | 21.6212 |  |
+
+## JD-02 — tfidf
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-02-039 | 0.7367 |  |
+| 2 | CV-02-030 | 0.7347 |  |
+| 3 | CV-02-044 | 0.7246 |  |
+| 4 | CV-02-040 | 0.7205 |  |
+| 5 | CV-02-050 | 0.7192 |  |
+
+## JD-02 — llm
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-02-017 | 100.0000 | cutoff tie |
+| 2 | CV-02-019 | 100.0000 | cutoff tie |
+| 3 | CV-02-027 | 100.0000 | cutoff tie |
+| 4 | CV-02-030 | 100.0000 | cutoff tie |
+| 5 | CV-02-039 | 100.0000 | cutoff tie |
+
+## JD-03 — bm25
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-03-021 | 11.3375 |  |
+| 2 | CV-03-027 | 10.2227 |  |
+| 3 | CV-03-016 | 9.5157 |  |
+| 4 | CV-03-015 | 9.5029 |  |
+| 5 | CV-03-032 | 9.4287 |  |
+
+## JD-03 — tfidf
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-03-016 | 0.8151 |  |
+| 2 | CV-03-032 | 0.8111 |  |
+| 3 | CV-03-040 | 0.8075 |  |
+| 4 | CV-03-047 | 0.8062 |  |
+| 5 | CV-03-004 | 0.8020 |  |
+
+## JD-03 — llm
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-03-002 | 100.0000 | cutoff tie |
+| 2 | CV-03-005 | 100.0000 | cutoff tie |
+| 3 | CV-03-006 | 100.0000 | cutoff tie |
+| 4 | CV-03-010 | 100.0000 | cutoff tie |
+| 5 | CV-03-011 | 100.0000 | cutoff tie |
+
+## JD-04 — bm25
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-04-025 | 3.6547 |  |
+| 2 | CV-04-007 | 3.6425 |  |
+| 3 | CV-04-044 | 3.6183 |  |
+| 4 | CV-04-035 | 3.6063 |  |
+| 5 | CV-04-050 | 3.5977 |  |
+
+## JD-04 — tfidf
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-04-025 | 0.5121 |  |
+| 2 | CV-04-044 | 0.5110 |  |
+| 3 | CV-04-007 | 0.5086 |  |
+| 4 | CV-04-021 | 0.5053 |  |
+| 5 | CV-04-035 | 0.5040 |  |
+
+## JD-04 — llm
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-04-031 | 100.0000 |  |
+| 2 | CV-04-003 | 66.6667 | cutoff tie, unknown requirements |
+| 3 | CV-04-011 | 66.6667 | cutoff tie, unknown requirements |
+| 4 | CV-04-012 | 66.6667 | cutoff tie, unknown requirements |
+| 5 | CV-04-022 | 66.6667 | cutoff tie, unknown requirements |
+
+## JD-05 — bm25
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-05-003 | 10.3758 |  |
+| 2 | CV-05-018 | 5.1082 |  |
+| 3 | CV-05-023 | 4.9513 |  |
+| 4 | CV-05-033 | 4.9224 |  |
+| 5 | CV-05-045 | 4.9171 |  |
+
+## JD-05 — tfidf
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-05-023 | 0.4643 |  |
+| 2 | CV-05-033 | 0.4629 |  |
+| 3 | CV-05-045 | 0.4623 |  |
+| 4 | CV-05-001 | 0.4622 |  |
+| 5 | CV-05-022 | 0.4522 |  |
+
+## JD-05 — llm
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-05-002 | 100.0000 | cutoff tie |
+| 2 | CV-05-003 | 100.0000 | cutoff tie |
+| 3 | CV-05-009 | 100.0000 | cutoff tie |
+| 4 | CV-05-014 | 100.0000 | cutoff tie |
+| 5 | CV-05-015 | 100.0000 | cutoff tie |
+
+## JD-06 — bm25
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-06-027 | 6.5971 |  |
+| 2 | CV-06-006 | 6.4465 |  |
+| 3 | CV-06-048 | 6.4302 |  |
+| 4 | CV-06-005 | 6.3236 |  |
+| 5 | CV-06-049 | 6.2897 |  |
+
+## JD-06 — tfidf
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-06-027 | 0.7478 |  |
+| 2 | CV-06-023 | 0.7426 |  |
+| 3 | CV-06-006 | 0.7393 |  |
+| 4 | CV-06-011 | 0.7369 |  |
+| 5 | CV-06-048 | 0.7343 |  |
+
+## JD-06 — llm
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-06-001 | 100.0000 | cutoff tie |
+| 2 | CV-06-003 | 100.0000 | cutoff tie |
+| 3 | CV-06-004 | 100.0000 | cutoff tie |
+| 4 | CV-06-005 | 100.0000 | cutoff tie |
+| 5 | CV-06-006 | 100.0000 | cutoff tie |
+
+## JD-07 — bm25
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-07-050 | 7.4801 |  |
+| 2 | CV-07-006 | 7.4469 |  |
+| 3 | CV-07-024 | 6.6441 |  |
+| 4 | CV-07-036 | 6.2097 |  |
+| 5 | CV-07-005 | 5.6083 |  |
+
+## JD-07 — tfidf
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-07-050 | 0.6439 |  |
+| 2 | CV-07-045 | 0.6365 |  |
+| 3 | CV-07-041 | 0.6342 |  |
+| 4 | CV-07-002 | 0.6314 |  |
+| 5 | CV-07-024 | 0.6304 |  |
+
+## JD-07 — llm
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-07-001 | 100.0000 | cutoff tie |
+| 2 | CV-07-002 | 100.0000 | cutoff tie |
+| 3 | CV-07-003 | 100.0000 | cutoff tie |
+| 4 | CV-07-004 | 100.0000 | cutoff tie |
+| 5 | CV-07-005 | 100.0000 | cutoff tie |
+
+## JD-08 — bm25
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-08-030 | 5.6173 |  |
+| 2 | CV-08-047 | 5.4794 |  |
+| 3 | CV-08-013 | 5.4669 |  |
+| 4 | CV-08-036 | 5.4360 |  |
+| 5 | CV-08-046 | 5.3390 |  |
+
+## JD-08 — tfidf
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-08-028 | 0.6988 |  |
+| 2 | CV-08-043 | 0.6950 |  |
+| 3 | CV-08-023 | 0.6939 |  |
+| 4 | CV-08-027 | 0.6919 |  |
+| 5 | CV-08-021 | 0.6918 |  |
+
+## JD-08 — llm
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-08-001 | 100.0000 | cutoff tie |
+| 2 | CV-08-002 | 100.0000 | cutoff tie |
+| 3 | CV-08-003 | 100.0000 | cutoff tie |
+| 4 | CV-08-004 | 100.0000 | cutoff tie |
+| 5 | CV-08-005 | 100.0000 | cutoff tie |
+
+## JD-09 — bm25
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-09-016 | 4.1563 |  |
+| 2 | CV-09-020 | 4.1425 |  |
+| 3 | CV-09-025 | 4.1425 |  |
+| 4 | CV-09-048 | 4.1425 |  |
+| 5 | CV-09-001 | 4.1289 |  |
+
+## JD-09 — tfidf
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-09-048 | 0.4987 |  |
+| 2 | CV-09-016 | 0.4979 |  |
+| 3 | CV-09-025 | 0.4978 |  |
+| 4 | CV-09-020 | 0.4931 |  |
+| 5 | CV-09-001 | 0.4926 |  |
+
+## JD-09 — llm
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-09-010 | 66.6667 | cutoff tie, unknown requirements |
+| 2 | CV-09-026 | 66.6667 | cutoff tie, unknown requirements |
+| 3 | CV-09-029 | 66.6667 | cutoff tie, unknown requirements |
+| 4 | CV-09-031 | 66.6667 | cutoff tie, unknown requirements |
+| 5 | CV-09-037 | 66.6667 | cutoff tie, unknown requirements |
+
+## JD-10 — bm25
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-10-033 | 4.3749 |  |
+| 2 | CV-10-026 | 4.0724 |  |
+| 3 | CV-10-031 | 4.0724 |  |
+| 4 | CV-10-037 | 4.0654 |  |
+| 5 | CV-10-010 | 3.9105 |  |
+
+## JD-10 — tfidf
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-10-033 | 0.4723 |  |
+| 2 | CV-10-022 | 0.4247 |  |
+| 3 | CV-10-027 | 0.4193 |  |
+| 4 | CV-10-016 | 0.4172 |  |
+| 5 | CV-10-011 | 0.4136 |  |
+
+## JD-10 — llm
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-10-006 | 66.6667 | unknown requirements |
+| 2 | CV-10-023 | 66.6667 | unknown requirements |
+| 3 | CV-10-001 | 33.3333 | cutoff tie, unknown requirements |
+| 4 | CV-10-002 | 33.3333 | cutoff tie, unknown requirements |
+| 5 | CV-10-008 | 33.3333 | cutoff tie, unknown requirements |
+
+## JD-11 — bm25
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-11-023 | 5.6480 |  |
+| 2 | CV-11-050 | 5.6290 |  |
+| 3 | CV-11-025 | 5.6086 |  |
+| 4 | CV-11-016 | 0.2795 |  |
+| 5 | CV-11-049 | 0.2785 |  |
+
+## JD-11 — tfidf
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-11-023 | 0.4693 |  |
+| 2 | CV-11-050 | 0.4636 |  |
+| 3 | CV-11-025 | 0.4579 |  |
+| 4 | CV-11-016 | 0.2873 |  |
+| 5 | CV-11-049 | 0.2840 |  |
+
+## JD-11 — llm
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-11-002 | 66.6667 | cutoff tie, unknown requirements |
+| 2 | CV-11-008 | 66.6667 | cutoff tie, unknown requirements |
+| 3 | CV-11-017 | 66.6667 | cutoff tie, unknown requirements |
+| 4 | CV-11-018 | 66.6667 | cutoff tie, unknown requirements |
+| 5 | CV-11-029 | 66.6667 | cutoff tie, unknown requirements |
+
+## JD-12 — bm25
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-12-044 | 8.7591 |  |
+| 2 | CV-12-011 | 8.2034 |  |
+| 3 | CV-12-035 | 6.6342 |  |
+| 4 | CV-12-023 | 6.0185 |  |
+| 5 | CV-12-033 | 5.8711 |  |
+
+## JD-12 — tfidf
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-12-035 | 0.4486 |  |
+| 2 | CV-12-017 | 0.4243 |  |
+| 3 | CV-12-025 | 0.4223 |  |
+| 4 | CV-12-014 | 0.4136 |  |
+| 5 | CV-12-030 | 0.4122 |  |
+
+## JD-12 — llm
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-12-023 | 100.0000 |  |
+| 2 | CV-12-044 | 100.0000 |  |
+| 3 | CV-12-001 | 66.6667 | cutoff tie, unknown requirements |
+| 4 | CV-12-002 | 66.6667 | cutoff tie, unknown requirements |
+| 5 | CV-12-003 | 66.6667 | cutoff tie, unknown requirements |
+
+## JD-14 — bm25
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-14-001 | 0.2649 |  |
+| 2 | CV-14-043 | 0.2649 |  |
+| 3 | CV-14-003 | 0.2646 |  |
+| 4 | CV-14-014 | 0.2646 |  |
+| 5 | CV-14-006 | 0.2639 | cutoff tie |
+
+## JD-14 — tfidf
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-14-043 | 0.4609 |  |
+| 2 | CV-14-014 | 0.4602 |  |
+| 3 | CV-14-006 | 0.4596 |  |
+| 4 | CV-14-045 | 0.4588 |  |
+| 5 | CV-14-005 | 0.4585 |  |
+
+## JD-14 — llm
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-14-011 | 100.0000 | cutoff tie |
+| 2 | CV-14-022 | 100.0000 | cutoff tie |
+| 3 | CV-14-028 | 100.0000 | cutoff tie |
+| 4 | CV-14-035 | 100.0000 | cutoff tie |
+| 5 | CV-14-048 | 100.0000 | cutoff tie |
+
+## JD-15 — bm25
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-15-009 | 6.2891 |  |
+| 2 | CV-15-025 | 6.2855 |  |
+| 3 | CV-15-031 | 6.2425 |  |
+| 4 | CV-15-044 | 4.3202 |  |
+| 5 | CV-15-007 | 4.3185 |  |
+
+## JD-15 — tfidf
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-15-031 | 0.7137 |  |
+| 2 | CV-15-007 | 0.7135 |  |
+| 3 | CV-15-046 | 0.7122 |  |
+| 4 | CV-15-025 | 0.7080 |  |
+| 5 | CV-15-009 | 0.7072 |  |
+
+## JD-15 — llm
+
+| Rank | Candidate | Score | Review |
+|---|---|---|---|
+| 1 | CV-15-001 | 100.0000 | cutoff tie |
+| 2 | CV-15-003 | 100.0000 | cutoff tie |
+| 3 | CV-15-004 | 100.0000 | cutoff tie |
+| 4 | CV-15-005 | 100.0000 | cutoff tie |
+| 5 | CV-15-007 | 100.0000 | cutoff tie |

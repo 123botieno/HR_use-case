@@ -1,0 +1,70 @@
+{
+  "per_jd": [
+    {
+      "jd_id": "J",
+      "algorithm": "bm25",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 6,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.00032809999538585544
+    },
+    {
+      "jd_id": "J",
+      "algorithm": "tfidf",
+      "precision_at_5": null,
+      "recall_at_5": null,
+      "ndcg_at_5": null,
+      "returned_count": 5,
+      "pool_size": 6,
+      "judged_count": 0,
+      "complete_judgments": false,
+      "suitable_count": null,
+      "runtime_seconds": 0.003369800004293211
+    }
+  ],
+  "overlap": [
+    {
+      "jd_id": "J",
+      "left": "bm25",
+      "right": "tfidf",
+      "shared_count": 5,
+      "jaccard": 1.0
+    }
+  ],
+  "macro_average": {
+    "bm25": {
+      "precision_at_5": {
+        "mean": null,
+        "evaluated_jds": 0
+      },
+      "recall_at_5": {
+        "mean": null,
+        "evaluated_jds": 0
+      },
+      "ndcg_at_5": {
+        "mean": null,
+        "evaluated_jds": 0
+      }
+    },
+    "tfidf": {
+      "precision_at_5": {
+        "mean": null,
+        "evaluated_jds": 0
+      },
+      "recall_at_5": {
+        "mean": null,
+        "evaluated_jds": 0
+      },
+      "ndcg_at_5": {
+        "mean": null,
+        "evaluated_jds": 0
+      }
+    }
+  },
+  "note": "Missing judgments yield unavailable metrics; overlap is not correctness."
+}

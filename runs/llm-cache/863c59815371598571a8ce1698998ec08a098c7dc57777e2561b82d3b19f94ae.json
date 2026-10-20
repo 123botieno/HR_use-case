@@ -1,0 +1,140 @@
+{
+  "id": "resp_0143d664ae5b4f53016ad0a7b8d03c87d2bf72f4c730bc1bca",
+  "object": "response",
+  "created_at": 1792059320,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792059322,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": null,
+  "max_tool_calls": null,
+  "model": "gpt-5.4-mini-2026-03-17",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0143d664ae5b4f53016ad0a7b978f487d28e654c5901e15649",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"evidence\":[{\"requirement_id\":\"R1\",\"status\":\"supported\",\"quote\":\"Collaborate with public-health teams to convert policy questions into modelling objectives, prediction horizons and validation plans.\",\"location\":\"paragraph:27\"},{\"requirement_id\":\"R2\",\"status\":\"supported\",\"quote\":\"Harmonize health, surveillance, climate, survey and geospatial datasets, including boundaries and missing values.\",\"location\":\"paragraph:12\"},{\"requirement_id\":\"R3\",\"status\":\"supported\",\"quote\":\"Build Python-based reproducible feature engineering and data preparation workflows.\",\"location\":\"paragraph:11\"},{\"requirement_id\":\"R4\",\"status\":\"supported\",\"quote\":\"Develop spatial risk mapping, hotspot and small-area prediction models using leakage-aware spatial validation.\",\"location\":\"paragraph:19\"},{\"requirement_id\":\"R5\",\"status\":\"supported\",\"quote\":\"Evaluate CNN, GNN and representation learning where appropriate to available data.\",\"location\":\"paragraph:14\"},{\"requirement_id\":\"R6\",\"status\":\"unknown\",\"quote\":\"\",\"location\":\"\"},{\"requirement_id\":\"R7\",\"status\":\"supported\",\"quote\":\"Assess calibration, uncertainty, subgroup and geographic robustness, temporal and spatial leakage, and bias.\",\"location\":\"paragraph:22\"},{\"requirement_id\":\"R8\",\"status\":\"supported\",\"quote\":\"Deliver documented workflows, dashboards, maps, APIs, policy briefs and manuscripts.\",\"location\":\"paragraph:13\"},{\"requirement_id\":\"R9\",\"status\":\"supported\",\"quote\":\"Mentor analysts and work with epidemiologists, policymakers and technical teams while meeting privacy and security requirements.\",\"location\":\"paragraph:21\"},{\"requirement_id\":\"R10\",\"status\":\"unknown\",\"quote\":\"\",\"location\":\"\"},{\"requirement_id\":\"R11\",\"status\":\"supported\",\"quote\":\"R | Scientific writing | Geospatial analytics | Data quality | Git | Machine learning\",\"location\":\"paragraph:7\"}]}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "current_turn",
+    "effort": "none",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "candidate_evidence",
+      "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "evidence"
+        ],
+        "properties": {
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "requirement_id",
+                "status",
+                "quote",
+                "location"
+              ],
+              "properties": {
+                "requirement_id": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "supported",
+                    "explicitly_not_met",
+                    "unknown",
+                    "not_applicable"
+                  ]
+                },
+                "quote": {
+                  "type": "string"
+                },
+                "location": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 2228,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 374,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2602
+  },
+  "user": null,
+  "metadata": {}
+}

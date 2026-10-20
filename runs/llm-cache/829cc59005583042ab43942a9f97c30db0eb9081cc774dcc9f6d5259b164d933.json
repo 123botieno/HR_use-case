@@ -1,0 +1,140 @@
+{
+  "id": "resp_0e0aae160d0e4d20016ad0a423d9e487d29937898461b00514",
+  "object": "response",
+  "created_at": 1792058403,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792058405,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": null,
+  "max_tool_calls": null,
+  "model": "gpt-5.4-mini-2026-03-17",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0e0aae160d0e4d20016ad0a4245acc87d2b2fd42014fe12bde",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"evidence\":[{\"requirement_id\":\"R1\",\"status\":\"supported\",\"quote\":\"Execute procurement of goods, services and works under ATI, government and donor rules.\",\"location\":\"paragraph:19\"},{\"requirement_id\":\"R2\",\"status\":\"supported\",\"quote\":\"Maintain procurement supporting records in ERP and electronic government procurement systems.\",\"location\":\"paragraph:11\"},{\"requirement_id\":\"R3\",\"status\":\"supported\",\"quote\":\"Track assigned purchase requisitions and update procurement status daily.\",\"location\":\"paragraph:12\"},{\"requirement_id\":\"R4\",\"status\":\"supported\",\"quote\":\"Maintain and periodically update the approved vendor list.\",\"location\":\"paragraph:14\"},{\"requirement_id\":\"R5\",\"status\":\"supported\",\"quote\":\"Follow contract execution and assist the Procurement Endorsing Committee with evaluation reports.\",\"location\":\"paragraph:20\"},{\"requirement_id\":\"R6\",\"status\":\"supported\",\"quote\":\"Support regional operations leadership with timely and compliant sourcing.\",\"location\":\"paragraph:13\"},{\"requirement_id\":\"R7\",\"status\":\"supported\",\"quote\":\"Bachelor of Science / Arts in Supply Chain Management — Hawassa University\",\"location\":\"paragraph:31\"},{\"requirement_id\":\"R8\",\"status\":\"supported\",\"quote\":\"Contract management | Excel | ERP | Tendering | Supplier evaluation | e-GP\",\"location\":\"paragraph:7\"}]}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "current_turn",
+    "effort": "none",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "candidate_evidence",
+      "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "evidence"
+        ],
+        "properties": {
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "requirement_id",
+                "status",
+                "quote",
+                "location"
+              ],
+              "properties": {
+                "requirement_id": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "supported",
+                    "explicitly_not_met",
+                    "unknown",
+                    "not_applicable"
+                  ]
+                },
+                "quote": {
+                  "type": "string"
+                },
+                "location": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 1526,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 271,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1797
+  },
+  "user": null,
+  "metadata": {}
+}

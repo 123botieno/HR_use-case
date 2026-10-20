@@ -1,0 +1,140 @@
+{
+  "id": "resp_0d0062edf9b64d3e016ad0a3fedb0487d2ad69ca8078883022",
+  "object": "response",
+  "created_at": 1792058366,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792058368,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": null,
+  "max_tool_calls": null,
+  "model": "gpt-5.4-mini-2026-03-17",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0d0062edf9b64d3e016ad0a3ff301c87d284e6790664a9ae80",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"evidence\":[{\"requirement_id\":\"R1\",\"status\":\"supported\",\"quote\":\"Frame policy questions by indicator, geography, time period, estimand and decision threshold.\",\"location\":\"paragraph:27\"},{\"requirement_id\":\"R2\",\"status\":\"supported\",\"quote\":\"Combine survey, census, routine health, surveillance and geospatial covariates with traceable metadata.\",\"location\":\"paragraph:18\"},{\"requirement_id\":\"R3\",\"status\":\"supported\",\"quote\":\"Handle boundary changes, spatial misalignment, displaced survey clusters, missingness and measurement error.\",\"location\":\"paragraph:12\"},{\"requirement_id\":\"R4\",\"status\":\"supported\",\"quote\":\"Produce design-based direct estimates and standard errors before model-based estimation.\",\"location\":\"paragraph:13\"},{\"requirement_id\":\"R5\",\"status\":\"unknown\",\"quote\":\"\",\"location\":\"\"},{\"requirement_id\":\"R6\",\"status\":\"supported\",\"quote\":\"Use INLA, MCMC, HMC or NUTS and compare model diagnostics, assumptions and sensitivity.\",\"location\":\"paragraph:14\"},{\"requirement_id\":\"R7\",\"status\":\"supported\",\"quote\":\"Quantify uncertainty and communicate subnational estimates through maps, reports and policy products.\",\"location\":\"paragraph:20\"},{\"requirement_id\":\"R8\",\"status\":\"supported\",\"quote\":\"Train and mentor analysts and support reproducible statistical workflows.\",\"location\":\"paragraph:11\"},{\"requirement_id\":\"R9\",\"status\":\"unknown\",\"quote\":\"\",\"location\":\"\"},{\"requirement_id\":\"R10\",\"status\":\"supported\",\"quote\":\"Stan | Scientific writing | Uncertainty analysis | INLA | R | Spatial modelling\",\"location\":\"paragraph:7\"}]}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "current_turn",
+    "effort": "none",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "candidate_evidence",
+      "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "evidence"
+        ],
+        "properties": {
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "requirement_id",
+                "status",
+                "quote",
+                "location"
+              ],
+              "properties": {
+                "requirement_id": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "supported",
+                    "explicitly_not_met",
+                    "unknown",
+                    "not_applicable"
+                  ]
+                },
+                "quote": {
+                  "type": "string"
+                },
+                "location": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 1861,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 335,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 2196
+  },
+  "user": null,
+  "metadata": {}
+}

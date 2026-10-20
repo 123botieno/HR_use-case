@@ -1,0 +1,11 @@
+{
+  "status": "verified",
+  "jd_count": 14,
+  "llm_candidate_assessments": 699,
+  "shortlist_count": 42,
+  "shortlist_rows": 210,
+  "verified_source_citations": 2756,
+  "rubric_status": "draft_experiment",
+  "llm_shortlist_rows": 70,
+  "note": "Experimental draft rubrics; timings include cache reuse and are not cold-run benchmarks."
+}

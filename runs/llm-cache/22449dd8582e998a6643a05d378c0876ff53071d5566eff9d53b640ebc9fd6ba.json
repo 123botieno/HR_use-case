@@ -1,0 +1,140 @@
+{
+  "id": "resp_0bb7ff149fbc8ff9016ad0a8314a3087d2a415df3f474df3e0",
+  "object": "response",
+  "created_at": 1792059441,
+  "status": "completed",
+  "access_programs": null,
+  "background": false,
+  "billing": {
+    "payer": "developer"
+  },
+  "completed_at": 1792059442,
+  "error": null,
+  "frequency_penalty": 0.0,
+  "incomplete_details": null,
+  "instructions": null,
+  "max_output_tokens": null,
+  "max_tool_calls": null,
+  "model": "gpt-5.4-mini-2026-03-17",
+  "moderation": null,
+  "output": [
+    {
+      "id": "msg_0bb7ff149fbc8ff9016ad0a831a9a487d28d0b8e3ba032a23a",
+      "type": "message",
+      "status": "completed",
+      "content": [
+        {
+          "type": "output_text",
+          "annotations": [],
+          "logprobs": [],
+          "text": "{\"evidence\":[{\"requirement_id\":\"R1\",\"status\":\"supported\",\"quote\":\"Coordinate institutional strategy implementation and cross-cutting planning initiatives.\",\"location\":\"paragraph:13\"},{\"requirement_id\":\"R2\",\"status\":\"supported\",\"quote\":\"Design and support monitoring and evaluation systems for organizational priorities.\",\"location\":\"paragraph:25\"},{\"requirement_id\":\"R3\",\"status\":\"supported\",\"quote\":\"Support business process reengineering and improvement of regulatory workflows.\",\"location\":\"paragraph:11\"},{\"requirement_id\":\"R4\",\"status\":\"supported\",\"quote\":\"Coordinate digital transformation and supervisory technology initiatives.\",\"location\":\"paragraph:12\"},{\"requirement_id\":\"R5\",\"status\":\"supported\",\"quote\":\"Translate institutional mandates and strategic plans into operational roadmaps.\",\"location\":\"paragraph:14\"},{\"requirement_id\":\"R6\",\"status\":\"supported\",\"quote\":\"Bachelor of Science / Arts in Business Administration — Addis Ababa University\",\"location\":\"paragraph:31\"},{\"requirement_id\":\"R7\",\"status\":\"supported\",\"quote\":\"Strategic planning | M&E | Stakeholder engagement | Reporting | Change management\",\"location\":\"paragraph:7\"}]}"
+        }
+      ],
+      "phase": "final_answer",
+      "role": "assistant"
+    }
+  ],
+  "parallel_tool_calls": true,
+  "presence_penalty": 0.0,
+  "previous_response_id": null,
+  "prompt_cache_key": null,
+  "prompt_cache_retention": "24h",
+  "reasoning": {
+    "context": "current_turn",
+    "effort": "none",
+    "mode": "standard",
+    "summary": null
+  },
+  "safety_identifier": null,
+  "service_tier": "default",
+  "store": false,
+  "temperature": 1.0,
+  "text": {
+    "format": {
+      "type": "json_schema",
+      "description": null,
+      "name": "candidate_evidence",
+      "schema": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "evidence"
+        ],
+        "properties": {
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "requirement_id",
+                "status",
+                "quote",
+                "location"
+              ],
+              "properties": {
+                "requirement_id": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "supported",
+                    "explicitly_not_met",
+                    "unknown",
+                    "not_applicable"
+                  ]
+                },
+                "quote": {
+                  "type": "string"
+                },
+                "location": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "strict": true
+    },
+    "verbosity": "medium"
+  },
+  "tool_choice": "auto",
+  "tool_usage": {
+    "image_gen": {
+      "input_tokens": 0,
+      "input_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "image_tokens": 0,
+        "text_tokens": 0
+      },
+      "total_tokens": 0
+    },
+    "web_search": {
+      "num_requests": 0
+    }
+  },
+  "tools": [],
+  "top_logprobs": 0,
+  "top_p": 0.98,
+  "truncation": "disabled",
+  "usage": {
+    "input_tokens": 1519,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 230,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "total_tokens": 1749
+  },
+  "user": null,
+  "metadata": {}
+}
