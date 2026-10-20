@@ -1,0 +1,22 @@
+{
+  "synthetic": true,
+  "seed": 20261020,
+  "vacancy_count": 8,
+  "applicants_per_vacancy": 120,
+  "application_count": 960,
+  "dimensions": [
+    "gender",
+    "ethnicity",
+    "economic_class",
+    "geography"
+  ],
+  "bias_recipe": {
+    "gender": "Woman and Nonbinary groups receive -5 score points",
+    "ethnicity": "Ethnicity B/C/D receive -2/-5/-8 score points",
+    "economic_class": "Low/Middle receive -7/-2 score points",
+    "geography": "Other urban/Rural/Pastoral-remote receive -1/-4/-7 score points",
+    "proxies": "Elite-access and advanced-English indicators add score points and are more common in advantaged strata"
+  },
+  "suitability_definition": "Synthetic job-related rule: skill_match >= 62, relevant_years >= 3, and required_certificate == 1; independent of group fields",
+  "interpretation": "All records, identities, labels, scores, and historical decisions are fabricated. Do not treat them as real HR evidence or as a legal fairness determination."
+}

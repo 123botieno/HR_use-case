@@ -1,0 +1,374 @@
+{
+  "synthetic": true,
+  "per_jd": [
+    {
+      "jd_id": "SYN-JD-01",
+      "algorithm": "synthetic_historical_shortlisting",
+      "groups": [
+        {
+          "group": "Capital city",
+          "count": 29,
+          "baseline_selection_rate": 0.06896551724137931,
+          "biased_selection_rate": 0.10344827586206896,
+          "selection_rate_change": 0.034482758620689655,
+          "baseline_recall": 0.2857142857142857,
+          "biased_recall": 0.2857142857142857,
+          "recall_change": 0.0
+        },
+        {
+          "group": "Other urban",
+          "count": 36,
+          "baseline_selection_rate": 0.027777777777777776,
+          "biased_selection_rate": 0.05555555555555555,
+          "selection_rate_change": 0.027777777777777776,
+          "baseline_recall": 0.1,
+          "biased_recall": 0.1,
+          "recall_change": 0.0
+        },
+        {
+          "group": "Pastoral/remote",
+          "count": 18,
+          "baseline_selection_rate": 0.05555555555555555,
+          "biased_selection_rate": 0.0,
+          "selection_rate_change": -0.05555555555555555,
+          "baseline_recall": 0.16666666666666666,
+          "biased_recall": 0.0,
+          "recall_change": -0.16666666666666666
+        },
+        {
+          "group": "Rural",
+          "count": 37,
+          "baseline_selection_rate": 0.02702702702702703,
+          "biased_selection_rate": 0.0,
+          "selection_rate_change": -0.02702702702702703,
+          "baseline_recall": 0.125,
+          "biased_recall": 0.0,
+          "recall_change": -0.125
+        }
+      ]
+    },
+    {
+      "jd_id": "SYN-JD-02",
+      "algorithm": "synthetic_historical_shortlisting",
+      "groups": [
+        {
+          "group": "Capital city",
+          "count": 21,
+          "baseline_selection_rate": 0.047619047619047616,
+          "biased_selection_rate": 0.047619047619047616,
+          "selection_rate_change": 0.0,
+          "baseline_recall": 0.5,
+          "biased_recall": 0.5,
+          "recall_change": 0.0
+        },
+        {
+          "group": "Other urban",
+          "count": 38,
+          "baseline_selection_rate": 0.02631578947368421,
+          "biased_selection_rate": 0.05263157894736842,
+          "selection_rate_change": 0.02631578947368421,
+          "baseline_recall": 0.08333333333333333,
+          "biased_recall": 0.16666666666666666,
+          "recall_change": 0.08333333333333333
+        },
+        {
+          "group": "Pastoral/remote",
+          "count": 23,
+          "baseline_selection_rate": 0.043478260869565216,
+          "biased_selection_rate": 0.0,
+          "selection_rate_change": -0.043478260869565216,
+          "baseline_recall": 0.1,
+          "biased_recall": 0.0,
+          "recall_change": -0.1
+        },
+        {
+          "group": "Rural",
+          "count": 38,
+          "baseline_selection_rate": 0.05263157894736842,
+          "biased_selection_rate": 0.05263157894736842,
+          "selection_rate_change": 0.0,
+          "baseline_recall": 0.2,
+          "biased_recall": 0.2,
+          "recall_change": 0.0
+        }
+      ]
+    },
+    {
+      "jd_id": "SYN-JD-03",
+      "algorithm": "synthetic_historical_shortlisting",
+      "groups": [
+        {
+          "group": "Capital city",
+          "count": 23,
+          "baseline_selection_rate": 0.0,
+          "biased_selection_rate": 0.0,
+          "selection_rate_change": 0.0,
+          "baseline_recall": 0.0,
+          "biased_recall": 0.0,
+          "recall_change": 0.0
+        },
+        {
+          "group": "Other urban",
+          "count": 36,
+          "baseline_selection_rate": 0.08333333333333333,
+          "biased_selection_rate": 0.1111111111111111,
+          "selection_rate_change": 0.027777777777777776,
+          "baseline_recall": 0.3,
+          "biased_recall": 0.4,
+          "recall_change": 0.10000000000000003
+        },
+        {
+          "group": "Pastoral/remote",
+          "count": 17,
+          "baseline_selection_rate": 0.11764705882352941,
+          "biased_selection_rate": 0.058823529411764705,
+          "selection_rate_change": -0.058823529411764705,
+          "baseline_recall": 0.3333333333333333,
+          "biased_recall": 0.16666666666666666,
+          "recall_change": -0.16666666666666666
+        },
+        {
+          "group": "Rural",
+          "count": 44,
+          "baseline_selection_rate": 0.0,
+          "biased_selection_rate": 0.0,
+          "selection_rate_change": 0.0,
+          "baseline_recall": 0.0,
+          "biased_recall": 0.0,
+          "recall_change": 0.0
+        }
+      ]
+    },
+    {
+      "jd_id": "SYN-JD-04",
+      "algorithm": "synthetic_historical_shortlisting",
+      "groups": [
+        {
+          "group": "Capital city",
+          "count": 21,
+          "baseline_selection_rate": 0.09523809523809523,
+          "biased_selection_rate": 0.14285714285714285,
+          "selection_rate_change": 0.047619047619047616,
+          "baseline_recall": 0.5,
+          "biased_recall": 0.75,
+          "recall_change": 0.25
+        },
+        {
+          "group": "Other urban",
+          "count": 45,
+          "baseline_selection_rate": 0.044444444444444446,
+          "biased_selection_rate": 0.044444444444444446,
+          "selection_rate_change": 0.0,
+          "baseline_recall": 0.2857142857142857,
+          "biased_recall": 0.2857142857142857,
+          "recall_change": 0.0
+        },
+        {
+          "group": "Pastoral/remote",
+          "count": 20,
+          "baseline_selection_rate": 0.05,
+          "biased_selection_rate": 0.0,
+          "selection_rate_change": -0.05,
+          "baseline_recall": 0.16666666666666666,
+          "biased_recall": 0.0,
+          "recall_change": -0.16666666666666666
+        },
+        {
+          "group": "Rural",
+          "count": 34,
+          "baseline_selection_rate": 0.0,
+          "biased_selection_rate": 0.0,
+          "selection_rate_change": 0.0,
+          "baseline_recall": 0.0,
+          "biased_recall": 0.0,
+          "recall_change": 0.0
+        }
+      ]
+    },
+    {
+      "jd_id": "SYN-JD-05",
+      "algorithm": "synthetic_historical_shortlisting",
+      "groups": [
+        {
+          "group": "Capital city",
+          "count": 19,
+          "baseline_selection_rate": 0.05263157894736842,
+          "biased_selection_rate": 0.10526315789473684,
+          "selection_rate_change": 0.05263157894736842,
+          "baseline_recall": 0.2,
+          "biased_recall": 0.4,
+          "recall_change": 0.2
+        },
+        {
+          "group": "Other urban",
+          "count": 49,
+          "baseline_selection_rate": 0.04081632653061224,
+          "biased_selection_rate": 0.061224489795918366,
+          "selection_rate_change": 0.020408163265306124,
+          "baseline_recall": 0.18181818181818182,
+          "biased_recall": 0.18181818181818182,
+          "recall_change": 0.0
+        },
+        {
+          "group": "Pastoral/remote",
+          "count": 15,
+          "baseline_selection_rate": 0.0,
+          "biased_selection_rate": 0.0,
+          "selection_rate_change": 0.0,
+          "baseline_recall": 0.0,
+          "biased_recall": 0.0,
+          "recall_change": 0.0
+        },
+        {
+          "group": "Rural",
+          "count": 37,
+          "baseline_selection_rate": 0.05405405405405406,
+          "biased_selection_rate": 0.0,
+          "selection_rate_change": -0.05405405405405406,
+          "baseline_recall": 0.18181818181818182,
+          "biased_recall": 0.0,
+          "recall_change": -0.18181818181818182
+        }
+      ]
+    },
+    {
+      "jd_id": "SYN-JD-06",
+      "algorithm": "synthetic_historical_shortlisting",
+      "groups": [
+        {
+          "group": "Capital city",
+          "count": 24,
+          "baseline_selection_rate": 0.041666666666666664,
+          "biased_selection_rate": 0.041666666666666664,
+          "selection_rate_change": 0.0,
+          "baseline_recall": 0.16666666666666666,
+          "biased_recall": 0.16666666666666666,
+          "recall_change": 0.0
+        },
+        {
+          "group": "Other urban",
+          "count": 41,
+          "baseline_selection_rate": 0.04878048780487805,
+          "biased_selection_rate": 0.04878048780487805,
+          "selection_rate_change": 0.0,
+          "baseline_recall": 0.25,
+          "biased_recall": 0.25,
+          "recall_change": 0.0
+        },
+        {
+          "group": "Pastoral/remote",
+          "count": 21,
+          "baseline_selection_rate": 0.09523809523809523,
+          "biased_selection_rate": 0.0,
+          "selection_rate_change": -0.09523809523809523,
+          "baseline_recall": 0.2,
+          "biased_recall": 0.0,
+          "recall_change": -0.2
+        },
+        {
+          "group": "Rural",
+          "count": 34,
+          "baseline_selection_rate": 0.0,
+          "biased_selection_rate": 0.058823529411764705,
+          "selection_rate_change": 0.058823529411764705,
+          "baseline_recall": 0.0,
+          "biased_recall": 0.4,
+          "recall_change": 0.4
+        }
+      ]
+    },
+    {
+      "jd_id": "SYN-JD-07",
+      "algorithm": "synthetic_historical_shortlisting",
+      "groups": [
+        {
+          "group": "Capital city",
+          "count": 17,
+          "baseline_selection_rate": 0.0,
+          "biased_selection_rate": 0.058823529411764705,
+          "selection_rate_change": 0.058823529411764705,
+          "baseline_recall": 0.0,
+          "biased_recall": 0.2,
+          "recall_change": 0.2
+        },
+        {
+          "group": "Other urban",
+          "count": 35,
+          "baseline_selection_rate": 0.08571428571428572,
+          "biased_selection_rate": 0.08571428571428572,
+          "selection_rate_change": 0.0,
+          "baseline_recall": 0.2727272727272727,
+          "biased_recall": 0.2727272727272727,
+          "recall_change": 0.0
+        },
+        {
+          "group": "Pastoral/remote",
+          "count": 20,
+          "baseline_selection_rate": 0.05,
+          "biased_selection_rate": 0.0,
+          "selection_rate_change": -0.05,
+          "baseline_recall": 0.2,
+          "biased_recall": 0.0,
+          "recall_change": -0.2
+        },
+        {
+          "group": "Rural",
+          "count": 48,
+          "baseline_selection_rate": 0.020833333333333332,
+          "biased_selection_rate": 0.020833333333333332,
+          "selection_rate_change": 0.0,
+          "baseline_recall": 0.1,
+          "biased_recall": 0.1,
+          "recall_change": 0.0
+        }
+      ]
+    },
+    {
+      "jd_id": "SYN-JD-08",
+      "algorithm": "synthetic_historical_shortlisting",
+      "groups": [
+        {
+          "group": "Capital city",
+          "count": 26,
+          "baseline_selection_rate": 0.038461538461538464,
+          "biased_selection_rate": 0.038461538461538464,
+          "selection_rate_change": 0.0,
+          "baseline_recall": 0.07142857142857142,
+          "biased_recall": 0.07142857142857142,
+          "recall_change": 0.0
+        },
+        {
+          "group": "Other urban",
+          "count": 34,
+          "baseline_selection_rate": 0.058823529411764705,
+          "biased_selection_rate": 0.058823529411764705,
+          "selection_rate_change": 0.0,
+          "baseline_recall": 0.1111111111111111,
+          "biased_recall": 0.2222222222222222,
+          "recall_change": 0.1111111111111111
+        },
+        {
+          "group": "Pastoral/remote",
+          "count": 24,
+          "baseline_selection_rate": 0.041666666666666664,
+          "biased_selection_rate": 0.041666666666666664,
+          "selection_rate_change": 0.0,
+          "baseline_recall": 0.14285714285714285,
+          "biased_recall": 0.14285714285714285,
+          "recall_change": 0.0
+        },
+        {
+          "group": "Rural",
+          "count": 36,
+          "baseline_selection_rate": 0.027777777777777776,
+          "biased_selection_rate": 0.027777777777777776,
+          "selection_rate_change": 0.0,
+          "baseline_recall": 0.2,
+          "biased_recall": 0.2,
+          "recall_change": 0.0
+        }
+      ]
+    }
+  ],
+  "note": "Invented groups and suitability labels; demonstrates capture of an injected score penalty, not real-world fairness."
+}

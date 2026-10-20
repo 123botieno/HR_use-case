@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68", "wheel>=0.43"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ethiopia-jobmatch"
+version = "0.1.0"
+description = "Reproducible top-five JD/CV matching comparison"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3", "pandas>=2.2,<3", "scikit-learn>=1.6,<2", "python-dotenv>=1,<2"]
+
+[project.optional-dependencies]
+pdf = ["pypdf>=5,<7"]
+mlops = ["dvc>=3.50,<4", "great-expectations>=1.8,<2", "mlflow>=3,<4", "fairlearn>=0.13,<1", "evidently>=0.7,<0.8", "prefect>=3,<4"]
+test = ["pytest>=8,<9"]
+
+[project.scripts]
+jobmatch = "jobmatch.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["jobmatch*", "common*", "0*"]
+namespaces = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

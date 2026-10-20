@@ -1,0 +1,9 @@
+-r requirements.txt
+dvc>=3.50,<4
+great-expectations>=1.8,<2
+mlflow>=3,<4
+fairlearn>=0.13,<1
+evidently>=0.7,<0.8
+prefect>=3,<4
+pypdf>=5,<7
+
