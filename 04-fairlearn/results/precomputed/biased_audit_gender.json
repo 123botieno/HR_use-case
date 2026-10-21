@@ -1,0 +1,224 @@
+{
+  "results": [
+    {
+      "jd_id": "SYN-JD-01",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "Man",
+          "count": 58,
+          "sufficient_sample": true,
+          "selection_rate": 0.05172413793103448,
+          "recall": 0.07692307692307693
+        },
+        {
+          "group": "Nonbinary",
+          "count": 2,
+          "sufficient_sample": false,
+          "selection_rate": 0.0,
+          "recall": null
+        },
+        {
+          "group": "Woman",
+          "count": 60,
+          "sufficient_sample": true,
+          "selection_rate": 0.03333333333333333,
+          "recall": 0.1111111111111111
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    },
+    {
+      "jd_id": "SYN-JD-02",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "Man",
+          "count": 64,
+          "sufficient_sample": true,
+          "selection_rate": 0.046875,
+          "recall": 0.2
+        },
+        {
+          "group": "Nonbinary",
+          "count": 3,
+          "sufficient_sample": false,
+          "selection_rate": 0.0,
+          "recall": 0.0
+        },
+        {
+          "group": "Woman",
+          "count": 53,
+          "sufficient_sample": true,
+          "selection_rate": 0.03773584905660377,
+          "recall": 0.1111111111111111
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    },
+    {
+      "jd_id": "SYN-JD-03",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "Man",
+          "count": 58,
+          "sufficient_sample": true,
+          "selection_rate": 0.08620689655172414,
+          "recall": 0.38461538461538464
+        },
+        {
+          "group": "Nonbinary",
+          "count": 1,
+          "sufficient_sample": false,
+          "selection_rate": 0.0,
+          "recall": null
+        },
+        {
+          "group": "Woman",
+          "count": 61,
+          "sufficient_sample": true,
+          "selection_rate": 0.0,
+          "recall": 0.0
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    },
+    {
+      "jd_id": "SYN-JD-04",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "Man",
+          "count": 60,
+          "sufficient_sample": true,
+          "selection_rate": 0.03333333333333333,
+          "recall": 0.18181818181818182
+        },
+        {
+          "group": "Woman",
+          "count": 60,
+          "sufficient_sample": true,
+          "selection_rate": 0.05,
+          "recall": 0.1875
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    },
+    {
+      "jd_id": "SYN-JD-05",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "Man",
+          "count": 53,
+          "sufficient_sample": true,
+          "selection_rate": 0.05660377358490566,
+          "recall": 0.2
+        },
+        {
+          "group": "Nonbinary",
+          "count": 2,
+          "sufficient_sample": false,
+          "selection_rate": 0.0,
+          "recall": null
+        },
+        {
+          "group": "Woman",
+          "count": 65,
+          "sufficient_sample": true,
+          "selection_rate": 0.03076923076923077,
+          "recall": 0.10526315789473684
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    },
+    {
+      "jd_id": "SYN-JD-06",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "Man",
+          "count": 60,
+          "sufficient_sample": true,
+          "selection_rate": 0.05,
+          "recall": 0.2727272727272727
+        },
+        {
+          "group": "Nonbinary",
+          "count": 3,
+          "sufficient_sample": false,
+          "selection_rate": 0.0,
+          "recall": null
+        },
+        {
+          "group": "Woman",
+          "count": 57,
+          "sufficient_sample": true,
+          "selection_rate": 0.03508771929824561,
+          "recall": 0.15384615384615385
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    },
+    {
+      "jd_id": "SYN-JD-07",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "Man",
+          "count": 57,
+          "sufficient_sample": true,
+          "selection_rate": 0.07017543859649122,
+          "recall": 0.25
+        },
+        {
+          "group": "Nonbinary",
+          "count": 4,
+          "sufficient_sample": false,
+          "selection_rate": 0.0,
+          "recall": null
+        },
+        {
+          "group": "Woman",
+          "count": 59,
+          "sufficient_sample": true,
+          "selection_rate": 0.01694915254237288,
+          "recall": 0.06666666666666667
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    },
+    {
+      "jd_id": "SYN-JD-08",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "Man",
+          "count": 54,
+          "sufficient_sample": true,
+          "selection_rate": 0.07407407407407407,
+          "recall": 0.21052631578947367
+        },
+        {
+          "group": "Woman",
+          "count": 66,
+          "sufficient_sample": true,
+          "selection_rate": 0.015151515151515152,
+          "recall": 0.0625
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    }
+  ],
+  "minimum_group_size": 5,
+  "note": "Descriptive audit only; small samples and missing groups limit conclusions. No attributes inferred."
+}

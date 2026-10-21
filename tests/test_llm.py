@@ -75,14 +75,8 @@ def test_llm_http_contract_and_cache(tmp_path, monkeypatch):
         def read(self):
             return json.dumps(
                 {
-                    "status": "completed",
-                    "output": [
-                        {
-                            "type": "message",
-                            "content": [
-                                {"type": "output_text", "text": json.dumps(payload())}
-                            ],
-                        }
+                    "choices": [
+                        {"message": {"content": json.dumps(payload())}}
                     ],
                     "usage": {"total_tokens": 100},
                 }
@@ -101,8 +95,8 @@ def test_llm_http_contract_and_cache(tmp_path, monkeypatch):
     score, second = scorer.score({}, candidate, REQUIREMENTS)
     assert len(calls) == 1
     assert first["cache_hit"] is False and second["cache_hit"] is True
-    assert calls[0]["store"] is False
-    assert calls[0]["text"]["format"]["strict"] is True
+    assert calls[0]["messages"][0]["role"] == "system"
+    assert calls[0]["response_format"]["json_schema"]["strict"] is True
 
 
 def test_llm_does_not_truncate(tmp_path):
@@ -149,19 +143,14 @@ def test_bad_evidence_is_repaired_and_usage_is_accumulated(tmp_path, monkeypatch
             def read(self):
                 return json.dumps(
                     {
-                        "status": "completed",
-                        "output": [
-                            {
-                                "content": [
-                                    {"type": "output_text", "text": json.dumps(answer)}
-                                ]
-                            }
+                        "choices": [
+                            {"message": {"content": json.dumps(answer)}}
                         ],
                         "usage": {
-                            "input_tokens": 10,
-                            "output_tokens": 5,
+                            "prompt_tokens": 10,
+                            "completion_tokens": 5,
                             "total_tokens": 15,
-                            "input_tokens_details": {"cached_tokens": 2},
+                            "prompt_tokens_details": {"cached_tokens": 2},
                         },
                     }
                 ).encode()
@@ -169,10 +158,10 @@ def test_bad_evidence_is_repaired_and_usage_is_accumulated(tmp_path, monkeypatch
         return Response()
 
     monkeypatch.setattr(stage("llm").request, "urlopen", mocked)
-    scorer = LLMScorer("test", "http://localhost:8000/v1/responses", tmp_path)
+    scorer = LLMScorer("test", "http://localhost:8000/v1/chat/completions", tmp_path)
     score, evidence = scorer.score({}, {"sections": SECTIONS}, REQUIREMENTS)
     assert len(calls) == 2
     assert evidence["repair_count"] == 1
     assert evidence["usage"]["total_tokens"] == 30
-    assert evidence["usage"]["input_tokens_details"]["cached_tokens"] == 4
+    assert evidence["usage"]["prompt_tokens_details"]["cached_tokens"] == 4
     assert score == pytest.approx(200 / 3)

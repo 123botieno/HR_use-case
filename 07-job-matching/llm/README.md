@@ -7,7 +7,7 @@ The LLM scorer evaluates CV passages against job-related requirements and return
 ## Flow
 
 1. Review a rubric generated from the source JD; confirm requirements and weights before normal scoring.
-2. Send one candidate's sections and the requirements to the OpenAI Responses API using the configured model and strict JSON schema.
+2. Send one candidate's sections and the requirements to the OpenRouter chat-completions API using the shared workshop OpenRouter key and a strict JSON schema. The compatible endpoint can be changed with `LLM_BASE_URL` for a self-hosted service.
 3. Validate every requirement status and resolve each cited quote to literal source text.
 4. Retry transient request errors with bounded exponential backoff; allow up to two corrective response attempts after the initial response for invalid evidence.
 5. Cache successful responses by request/configuration hash; calculate weighted evidence coverage deterministically in application code.
@@ -19,7 +19,7 @@ The prompt treats CVs as untrusted content and instructs the model not to use id
 
 | Setting | Current behavior | Interpretation |
 |---|---|---|
-| Model | `gpt-5.4-mini-2026-03-17` default, override via `OPENAI_MODEL` | Record exact response model; model updates can change behavior. |
+| Model | `meta-llama/llama-3.3-70b-instruct` default, override via `OPENROUTER_MODEL` | Record exact response model; model updates can change behavior. |
 | Rubric | Per-JD requirements and fixed weights | A content/decision setting. Confirm it before evaluation; changing weights changes the target being measured. |
 | Prompt/schema | Versioned prompt and strict JSON schema | Changes should be versioned and evaluated as separate configurations. |
 | Temperature | Omitted from API payload | Do not assume deterministic responses; repeated uncached runs may differ. |
@@ -34,7 +34,7 @@ The runner is not a hyperparameter optimizer. Evaluate model, prompt, or rubric 
 1. The `score.py` entry point dispatches to the shared runner with `--methods llm`.
 2. `execute()` loads and validates the dataset, selects vacancies and pools, loads the rubric, and calls `validate_rubric()`. Unconfirmed rubrics fail unless the explicitly experimental override is used.
 3. `LLMScorer.score()` combines one candidate's source sections with the JD requirements and rejects serialized input above the configured character limit.
-4. It builds a Responses API request with the model, system instructions, `store=false`, and a strict JSON evidence schema. It hashes the request and prompt version to check the local response cache.
+4. It builds a chat-completions API request with the model, system instructions, `store=false`, and a strict JSON evidence schema. It hashes the request and prompt version to check the local response cache.
 5. If not cached, `_request()` sends HTTPS requests, retries transient network/HTTP errors with bounded backoff, and `_text()` extracts completed output while detecting refusals.
 6. `validate_evidence()` checks requirement IDs and statuses, resolves quotes to literal source text, and calculates weighted supported-evidence coverage. Invalid uncached output can trigger corrective requests; repeated failure is saved under the cache's `validation_failures` directory and raised.
 7. Successful responses are cached. The scorer attaches model, prompt/schema version, token usage, repair count, cache status, and optional estimated cost to the evidence record.
@@ -47,11 +47,11 @@ API or evidence-validation failures are caught by the runner per JD-method pair 
 ```powershell
 python -m jobmatch rubric-template --output data/rubric.json
 # Review requirements and weights, then set confirmed=true for each JD.
-$env:OPENAI_API_KEY = "..."
+# Copy .env.example to .env and add the workshop-provided shared key.
 python 07-job-matching/llm/score.py --rubric data/rubric.json --jd JD-01
 ```
 
-API credentials are not stored in the repository. The Responses API request sets `store=false`. The generated template is a draft, not a validated hiring rubric.
+API credentials are not stored in the repository. CV text is sent to the configured provider, so use only data approved for that service under the workshop's data-use policy. The generated template is a draft, not a validated hiring rubric.
 
 ## What discrepancy can it surface?
 

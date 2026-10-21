@@ -1,0 +1,238 @@
+{
+  "results": [
+    {
+      "jd_id": "SYN-JD-01",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "High",
+          "count": 14,
+          "sufficient_sample": true,
+          "selection_rate": 0.0,
+          "recall": 0.0
+        },
+        {
+          "group": "Low",
+          "count": 63,
+          "sufficient_sample": true,
+          "selection_rate": 0.047619047619047616,
+          "recall": 0.23076923076923078
+        },
+        {
+          "group": "Middle",
+          "count": 43,
+          "sufficient_sample": true,
+          "selection_rate": 0.046511627906976744,
+          "recall": 0.18181818181818182
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    },
+    {
+      "jd_id": "SYN-JD-02",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "High",
+          "count": 15,
+          "sufficient_sample": true,
+          "selection_rate": 0.06666666666666667,
+          "recall": 0.2
+        },
+        {
+          "group": "Low",
+          "count": 66,
+          "sufficient_sample": true,
+          "selection_rate": 0.0,
+          "recall": 0.0
+        },
+        {
+          "group": "Middle",
+          "count": 39,
+          "sufficient_sample": true,
+          "selection_rate": 0.10256410256410256,
+          "recall": 0.3333333333333333
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    },
+    {
+      "jd_id": "SYN-JD-03",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "High",
+          "count": 16,
+          "sufficient_sample": true,
+          "selection_rate": 0.0,
+          "recall": 0.0
+        },
+        {
+          "group": "Low",
+          "count": 58,
+          "sufficient_sample": true,
+          "selection_rate": 0.034482758620689655,
+          "recall": 0.18181818181818182
+        },
+        {
+          "group": "Middle",
+          "count": 46,
+          "sufficient_sample": true,
+          "selection_rate": 0.06521739130434782,
+          "recall": 0.25
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    },
+    {
+      "jd_id": "SYN-JD-04",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "High",
+          "count": 13,
+          "sufficient_sample": true,
+          "selection_rate": 0.0,
+          "recall": 0.0
+        },
+        {
+          "group": "Low",
+          "count": 60,
+          "sufficient_sample": true,
+          "selection_rate": 0.03333333333333333,
+          "recall": 0.15384615384615385
+        },
+        {
+          "group": "Middle",
+          "count": 47,
+          "sufficient_sample": true,
+          "selection_rate": 0.06382978723404255,
+          "recall": 0.25
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    },
+    {
+      "jd_id": "SYN-JD-05",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "High",
+          "count": 22,
+          "sufficient_sample": true,
+          "selection_rate": 0.045454545454545456,
+          "recall": 0.3333333333333333
+        },
+        {
+          "group": "Low",
+          "count": 52,
+          "sufficient_sample": true,
+          "selection_rate": 0.057692307692307696,
+          "recall": 0.21428571428571427
+        },
+        {
+          "group": "Middle",
+          "count": 46,
+          "sufficient_sample": true,
+          "selection_rate": 0.021739130434782608,
+          "recall": 0.08333333333333333
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    },
+    {
+      "jd_id": "SYN-JD-06",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "High",
+          "count": 21,
+          "sufficient_sample": true,
+          "selection_rate": 0.0,
+          "recall": 0.0
+        },
+        {
+          "group": "Low",
+          "count": 62,
+          "sufficient_sample": true,
+          "selection_rate": 0.08064516129032258,
+          "recall": 0.3076923076923077
+        },
+        {
+          "group": "Middle",
+          "count": 37,
+          "sufficient_sample": true,
+          "selection_rate": 0.0,
+          "recall": 0.0
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    },
+    {
+      "jd_id": "SYN-JD-07",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "High",
+          "count": 17,
+          "sufficient_sample": true,
+          "selection_rate": 0.058823529411764705,
+          "recall": 0.16666666666666666
+        },
+        {
+          "group": "Low",
+          "count": 56,
+          "sufficient_sample": true,
+          "selection_rate": 0.017857142857142856,
+          "recall": 0.06666666666666667
+        },
+        {
+          "group": "Middle",
+          "count": 47,
+          "sufficient_sample": true,
+          "selection_rate": 0.06382978723404255,
+          "recall": 0.3
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    },
+    {
+      "jd_id": "SYN-JD-08",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "High",
+          "count": 20,
+          "sufficient_sample": true,
+          "selection_rate": 0.05,
+          "recall": 0.14285714285714285
+        },
+        {
+          "group": "Low",
+          "count": 53,
+          "sufficient_sample": true,
+          "selection_rate": 0.018867924528301886,
+          "recall": 0.0
+        },
+        {
+          "group": "Middle",
+          "count": 47,
+          "sufficient_sample": true,
+          "selection_rate": 0.06382978723404255,
+          "recall": 0.1875
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    }
+  ],
+  "minimum_group_size": 5,
+  "note": "Descriptive audit only; small samples and missing groups limit conclusions. No attributes inferred."
+}

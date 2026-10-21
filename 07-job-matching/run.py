@@ -117,8 +117,8 @@ def execute(
         try:
             validate_rubric(rubric, jobs, allow_draft=allow_draft_rubric)
             scorer = LLMScorer(
-                os.getenv("OPENAI_MODEL", DEFAULT_MODEL),
-                DEFAULT_ENDPOINT,
+                os.getenv("OPENROUTER_MODEL", DEFAULT_MODEL),
+                os.getenv("LLM_BASE_URL", DEFAULT_ENDPOINT),
                 Path(output_root) / "llm-cache",
             )
         except (ValueError, KeyError, TypeError) as exc:
@@ -153,8 +153,7 @@ def execute(
                         "endpoint": scorer.endpoint,
                         "rubric_hash": digest(rubric[job["id"]]),
                         "prompt_version": PROMPT_VERSION,
-                        "provider": "openai",
-                        "store": False,
+                        "provider": "openrouter" if scorer.endpoint.startswith("https://openrouter.ai/") else "openai-compatible",
                         "rubric_confirmed": rubric[job["id"]].get("confirmed") is True,
                     }
                 else:

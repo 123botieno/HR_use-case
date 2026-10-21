@@ -1,20 +1,20 @@
 # Ethiopia Job Matching and Shortlisting
 
-Compare LLM, BM25, and TF-IDF on the same candidate pool for each job description (JD). Each method returns its own ranked shortlist of five candidates. Recruiters review suitability and evidence; a ranking score is not a probability of hiring or job success.
+Compare an open-weight LLM, BM25, and TF-IDF on the same candidate pool for each job description (JD). Each method returns its own ranked shortlist of five candidates. Recruiters review suitability and evidence; a ranking score is not a probability of hiring or job success.
 
 ## Project status
 
-Python implementations now cover document preparation, BM25, TF-IDF, OpenAI LLM evidence scoring, top-five selection, judgment-based evaluation, and optional DVC, Great Expectations, MLflow, Fairlearn, Evidently, and Prefect integrations. Each stage folder contains its implementation and runnable command. Only file I/O, tokenization, and numbered-folder loading live in `common/`; `jobmatch/` contains the shared CLI dispatcher.
+Python implementations now cover document preparation, BM25, TF-IDF, OpenRouter-compatible LLM evidence scoring, top-five selection, judgment-based evaluation, and optional DVC, Great Expectations, MLflow, Fairlearn, Evidently, and Prefect integrations. Each stage folder contains its implementation and runnable command. Only file I/O, tokenization, and numbered-folder loading live in `common/`; `jobmatch/` contains the shared CLI dispatcher.
 
-See [the running guide](docs/RUNNING.md) for setup and commands. BM25 and TF-IDF have been run against the copied source documents. OpenAI scoring reads `OPENAI_API_KEY` from the environment or the project-root `.env`. Reviewed rubrics are required by default; explicitly experimental runs can use draft rubrics without marking them confirmed.
+See [the running guide](docs/RUNNING.md) for setup and commands. BM25 and TF-IDF have been run against the copied source documents. LLM scoring uses the workshop's shared `OPENROUTER_API_KEY` and OpenAI-compatible chat-completions API; `LLM_BASE_URL` can point to a compatible self-hosted endpoint. Reviewed rubrics are required by default; explicitly experimental runs can use draft rubrics without marking them confirmed.
 
-The copied source is incomplete: JD-13 and its 50 CVs are missing, and CV-15-035 is not a valid DOCX archive. Preparation records 52 issues and produces 14 JDs and 699 assessable CVs. Synthetic fit tiers are excluded from scoring and are not used as recruiter judgments.
+The source archive has missing and unreadable files. After restoring the collection, preparation writes an inventory report under `data/prepared/`; inspect it before running any comparison. Source-provided synthetic fit tiers are excluded from scoring and are not recruiter judgments.
 
 ## Project organization
 
 See [implementation and verification status](docs/IMPLEMENTATION_STATUS.md) for tested features, the baseline output, and remaining configuration.
 
-The [live OpenAI experiment](docs/LIVE_LLM_RUN.md) has completed for all 14 available JDs and 699 CVs, with five-candidate shortlists from all three methods. It uses unconfirmed draft rubrics and is explicitly labeled experimental.
+The [historical LLM experiment](docs/LIVE_LLM_RUN.md) is explicitly labeled experimental; its generated reports and CV cache remain local and are not committed.
 
 | Stage | Folder | Purpose |
 |---|---|---|
@@ -27,7 +27,7 @@ The [live OpenAI experiment](docs/LIVE_LLM_RUN.md) has completed for all 14 avai
 | 6 | [06-prefect](06-prefect/README.md) | Orchestrate the workflow |
 | 7 | [07-job-matching](07-job-matching/README.md) | Run and compare the three matching methods |
 
-The organization follows the locally copied [MLOps Workshop](MLOps-Workshop-main/MLOps-Workshop-main/README.md), adapted to recruitment.
+The numbered stage layout adapts the MLOps workshop flow to recruitment.
 
 ## Workflow
 
@@ -62,12 +62,13 @@ Sensitive audit attributes must be collected appropriately, stored separately, a
 
 ## Existing source material
 
-The existing source folders remain in place:
+The raw source folders are excluded from Git and remain in the local workspace. Restore them from a trusted USB bundle when needed:
 
-- `Ethiopia_15_Government_JDs_750_CVs/`
-- `Ethiopia_250_Detailed_WORD_CVs/`
+```text
+python scripts/download.py --from "D:/workshop-data"
+```
 
-Inventory these collections before combining them: their candidate identities, duplication, and vacancy associations have not yet been verified. The copied workshop remains a reference, not part of the job-matching runtime.
+Inventory these collections before combining them: their candidate identities, duplication, and vacancy associations have not yet been verified. The copied workshop repository is not part of the job-matching runtime and is not tracked here.
 
 ## Original project brief
 

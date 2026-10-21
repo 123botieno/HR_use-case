@@ -1,5 +1,4 @@
-# Verified direct dependency versions; this is not a transitive lock file.
-# Use: python -m pip install -c requirements-tested.txt -r requirements-mlops.txt
+﻿# Verified direct package versions; requirements.lock pins the complete dependency graph.
 numpy==2.0.2
 pandas==2.2.3
 scikit-learn==1.6.1
@@ -10,4 +9,3 @@ fairlearn==0.15.0
 evidently==0.7.23
 prefect==3.8.8
 pypdf==6.20.1
-

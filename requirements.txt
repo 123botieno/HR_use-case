@@ -1,5 +1,12 @@
-numpy>=1.26,<3
-pandas>=2.2,<3
-scikit-learn>=1.6,<2
+numpy==2.0.2
+pandas==2.2.3
+scikit-learn==1.6.1
 python-dotenv>=1,<2
-
+pypdf==6.20.1
+dvc==3.67.1
+great-expectations==1.24.0
+mlflow==3.17.1
+fairlearn==0.15.0
+evidently==0.7.23
+prefect==3.8.8
+pytest>=8,<9

@@ -1,0 +1,294 @@
+{
+  "results": [
+    {
+      "jd_id": "SYN-JD-01",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "Capital city",
+          "count": 29,
+          "sufficient_sample": true,
+          "selection_rate": 0.10344827586206896,
+          "recall": 0.2857142857142857
+        },
+        {
+          "group": "Other urban",
+          "count": 36,
+          "sufficient_sample": true,
+          "selection_rate": 0.05555555555555555,
+          "recall": 0.1
+        },
+        {
+          "group": "Pastoral/remote",
+          "count": 18,
+          "sufficient_sample": true,
+          "selection_rate": 0.0,
+          "recall": 0.0
+        },
+        {
+          "group": "Rural",
+          "count": 37,
+          "sufficient_sample": true,
+          "selection_rate": 0.0,
+          "recall": 0.0
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    },
+    {
+      "jd_id": "SYN-JD-02",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "Capital city",
+          "count": 21,
+          "sufficient_sample": true,
+          "selection_rate": 0.047619047619047616,
+          "recall": 0.5
+        },
+        {
+          "group": "Other urban",
+          "count": 38,
+          "sufficient_sample": true,
+          "selection_rate": 0.05263157894736842,
+          "recall": 0.16666666666666666
+        },
+        {
+          "group": "Pastoral/remote",
+          "count": 23,
+          "sufficient_sample": true,
+          "selection_rate": 0.0,
+          "recall": 0.0
+        },
+        {
+          "group": "Rural",
+          "count": 38,
+          "sufficient_sample": true,
+          "selection_rate": 0.05263157894736842,
+          "recall": 0.2
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    },
+    {
+      "jd_id": "SYN-JD-03",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "Capital city",
+          "count": 23,
+          "sufficient_sample": true,
+          "selection_rate": 0.0,
+          "recall": 0.0
+        },
+        {
+          "group": "Other urban",
+          "count": 36,
+          "sufficient_sample": true,
+          "selection_rate": 0.1111111111111111,
+          "recall": 0.4
+        },
+        {
+          "group": "Pastoral/remote",
+          "count": 17,
+          "sufficient_sample": true,
+          "selection_rate": 0.058823529411764705,
+          "recall": 0.16666666666666666
+        },
+        {
+          "group": "Rural",
+          "count": 44,
+          "sufficient_sample": true,
+          "selection_rate": 0.0,
+          "recall": 0.0
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    },
+    {
+      "jd_id": "SYN-JD-04",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "Capital city",
+          "count": 21,
+          "sufficient_sample": true,
+          "selection_rate": 0.14285714285714285,
+          "recall": 0.75
+        },
+        {
+          "group": "Other urban",
+          "count": 45,
+          "sufficient_sample": true,
+          "selection_rate": 0.044444444444444446,
+          "recall": 0.2857142857142857
+        },
+        {
+          "group": "Pastoral/remote",
+          "count": 20,
+          "sufficient_sample": true,
+          "selection_rate": 0.0,
+          "recall": 0.0
+        },
+        {
+          "group": "Rural",
+          "count": 34,
+          "sufficient_sample": true,
+          "selection_rate": 0.0,
+          "recall": 0.0
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    },
+    {
+      "jd_id": "SYN-JD-05",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "Capital city",
+          "count": 19,
+          "sufficient_sample": true,
+          "selection_rate": 0.10526315789473684,
+          "recall": 0.4
+        },
+        {
+          "group": "Other urban",
+          "count": 49,
+          "sufficient_sample": true,
+          "selection_rate": 0.061224489795918366,
+          "recall": 0.18181818181818182
+        },
+        {
+          "group": "Pastoral/remote",
+          "count": 15,
+          "sufficient_sample": true,
+          "selection_rate": 0.0,
+          "recall": 0.0
+        },
+        {
+          "group": "Rural",
+          "count": 37,
+          "sufficient_sample": true,
+          "selection_rate": 0.0,
+          "recall": 0.0
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    },
+    {
+      "jd_id": "SYN-JD-06",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "Capital city",
+          "count": 24,
+          "sufficient_sample": true,
+          "selection_rate": 0.041666666666666664,
+          "recall": 0.16666666666666666
+        },
+        {
+          "group": "Other urban",
+          "count": 41,
+          "sufficient_sample": true,
+          "selection_rate": 0.04878048780487805,
+          "recall": 0.25
+        },
+        {
+          "group": "Pastoral/remote",
+          "count": 21,
+          "sufficient_sample": true,
+          "selection_rate": 0.0,
+          "recall": 0.0
+        },
+        {
+          "group": "Rural",
+          "count": 34,
+          "sufficient_sample": true,
+          "selection_rate": 0.058823529411764705,
+          "recall": 0.4
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    },
+    {
+      "jd_id": "SYN-JD-07",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "Capital city",
+          "count": 17,
+          "sufficient_sample": true,
+          "selection_rate": 0.058823529411764705,
+          "recall": 0.2
+        },
+        {
+          "group": "Other urban",
+          "count": 35,
+          "sufficient_sample": true,
+          "selection_rate": 0.08571428571428572,
+          "recall": 0.2727272727272727
+        },
+        {
+          "group": "Pastoral/remote",
+          "count": 20,
+          "sufficient_sample": true,
+          "selection_rate": 0.0,
+          "recall": 0.0
+        },
+        {
+          "group": "Rural",
+          "count": 48,
+          "sufficient_sample": true,
+          "selection_rate": 0.020833333333333332,
+          "recall": 0.1
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    },
+    {
+      "jd_id": "SYN-JD-08",
+      "algorithm": "synthetic_historical_shortlisting",
+      "audit_coverage": 1.0,
+      "group_metrics": [
+        {
+          "group": "Capital city",
+          "count": 26,
+          "sufficient_sample": true,
+          "selection_rate": 0.038461538461538464,
+          "recall": 0.07142857142857142
+        },
+        {
+          "group": "Other urban",
+          "count": 34,
+          "sufficient_sample": true,
+          "selection_rate": 0.058823529411764705,
+          "recall": 0.2222222222222222
+        },
+        {
+          "group": "Pastoral/remote",
+          "count": 24,
+          "sufficient_sample": true,
+          "selection_rate": 0.041666666666666664,
+          "recall": 0.14285714285714285
+        },
+        {
+          "group": "Rural",
+          "count": 36,
+          "sufficient_sample": true,
+          "selection_rate": 0.027777777777777776,
+          "recall": 0.2
+        }
+      ],
+      "recall_labels_complete_for_audited_subset": true
+    }
+  ],
+  "minimum_group_size": 5,
+  "note": "Descriptive audit only; small samples and missing groups limit conclusions. No attributes inferred."
+}

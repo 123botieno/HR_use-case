@@ -35,20 +35,13 @@ The suitability rule is separate from those historical decisions: skill match at
 From the project root, regenerate the same cohort:
 
 ```powershell
-python 04-fairlearn/synthetic_hr.py --output 04-fairlearn/synthetic_hr_demo --seed 20261020 --vacancies 8 --applicants-per-vacancy 120
+uv run --no-sync --python 3.12 python 04-fairlearn/synthetic_hr.py --output 04-fairlearn/synthetic_hr_demo --seed 20261020 --vacancies 8 --applicants-per-vacancy 120
 ```
 
-To run or refresh each dimension's Fairlearn comparison:
+To run or refresh one dimension's Fairlearn comparison (repeat with `ethnicity`, `economic_class`, and `geography` to rebuild the other reports):
 
-```powershell
-foreach ($dimension in @("gender", "ethnicity", "economic_class", "geography")) {
-    python 04-fairlearn/evaluate.py compare-synthetic `
-      --baseline 04-fairlearn/synthetic_hr_demo/qualification_baseline_run.json `
-      --biased 04-fairlearn/synthetic_hr_demo/biased_historical_run.json `
-      --groups "04-fairlearn/synthetic_hr_demo/audit_groups_$dimension.csv" `
-      --judgments 04-fairlearn/synthetic_hr_demo/synthetic_suitability_judgments.csv `
-      --output "04-fairlearn/synthetic_hr_demo/audit_$dimension/comparison.json"
-}
+```text
+uv run --no-sync --python 3.12 python 04-fairlearn/evaluate.py compare-synthetic --baseline 04-fairlearn/synthetic_hr_demo/qualification_baseline_run.json --biased 04-fairlearn/synthetic_hr_demo/biased_historical_run.json --groups 04-fairlearn/synthetic_hr_demo/audit_groups_gender.csv --judgments 04-fairlearn/synthetic_hr_demo/synthetic_suitability_judgments.csv --output 04-fairlearn/synthetic_hr_demo/audit_gender/comparison.json
 ```
 
 The comparison writes `baseline_audit.json`, `biased_audit.json`, and `comparison.json` under each dimension's output folder. Fairlearn reports selection rate and recall per vacancy and group. Check counts and `sufficient_sample`; the rare synthetic Nonbinary category is intentionally too small for strong conclusions in many vacancies.

@@ -1,7 +1,0 @@
-{
-  "k1": 1.5,
-  "b": 0.75,
-  "token_pattern": "(?u)\\b\\w\\w+\\b",
-  "query_terms": "unique",
-  "stop_words": null
-}

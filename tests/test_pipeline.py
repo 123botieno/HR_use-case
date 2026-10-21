@@ -127,46 +127,35 @@ def test_three_method_pipeline_with_mock_openai(tmp_path, monkeypatch):
             }
         },
     )
-    monkeypatch.setenv("OPENAI_API_KEY", "fixture-key")
+    monkeypatch.setenv("OPENROUTER_API_KEY", "fixture-key")
     calls = []
 
     def mocked(req, timeout):
         body = json.loads(req.data)
-        user = json.loads(body["input"][1]["content"])
+        user = json.loads(body["messages"][1]["content"])
         section = user["sections"][0]
         supported = "python" in section["text"]
         response = {
-            "status": "completed",
             "model": body["model"],
-            "output": [
+            "choices": [
                 {
-                    "type": "message",
-                    "content": [
-                        {
-                            "type": "output_text",
-                            "text": json.dumps(
-                                {
-                                    "evidence": [
-                                        {
-                                            "requirement_id": "R1",
-                                            "status": "supported"
-                                            if supported
-                                            else "unknown",
-                                            "quote": section["text"]
-                                            if supported
-                                            else "",
-                                            "location": section["location"]
-                                            if supported
-                                            else "",
-                                        }
-                                    ]
-                                }
-                            ),
-                        }
-                    ],
+                    "message": {
+                        "content": json.dumps(
+                            {
+                                "evidence": [
+                                    {
+                                        "requirement_id": "R1",
+                                        "status": "supported" if supported else "unknown",
+                                        "quote": section["text"] if supported else "",
+                                        "location": section["location"] if supported else "",
+                                    }
+                                ]
+                            }
+                        )
+                    }
                 }
             ],
-            "usage": {"input_tokens": 20, "output_tokens": 10},
+            "usage": {"prompt_tokens": 20, "completion_tokens": 10},
         }
         calls.append(body)
 

@@ -1,4 +1,4 @@
-"""OpenAI Responses API evidence scoring; never substitutes lexical scores."""
+"""OpenAI-compatible chat-completions evidence scoring; never substitutes lexical scores."""
 
 # ruff: noqa: E402
 import sys
@@ -14,9 +14,9 @@ import re
 from urllib import request, error
 from common.io import digest, load, save
 
-PROMPT_VERSION = "openai-evidence-v2"
-DEFAULT_MODEL = "gpt-5.4-mini-2026-03-17"
-DEFAULT_ENDPOINT = "https://api.openai.com/v1/responses"
+PROMPT_VERSION = "openrouter-chat-evidence-v3"
+DEFAULT_MODEL = "meta-llama/llama-3.3-70b-instruct"
+DEFAULT_ENDPOINT = "https://openrouter.ai/api/v1/chat/completions"
 EVIDENCE_SCHEMA = {
     "type": "object",
     "additionalProperties": False,
@@ -152,20 +152,29 @@ def validate_evidence(payload, requirements, sections):
 class LLMScorer:
     def __init__(self, model, endpoint, cache, max_chars=60000, retries=3):
         if not model or not endpoint:
-            raise ValueError("OpenAI model and Responses API endpoint are required")
+            raise ValueError("LLM model and chat-completions endpoint are required")
         if not endpoint.startswith("https://") and not endpoint.startswith(
             ("http://localhost:", "http://127.0.0.1:")
         ):
             raise ValueError("Use HTTPS for remote LLM endpoints")
         self.model, self.endpoint, self.cache = model, endpoint, Path(cache)
         self.max_chars, self.retries = max_chars, retries
-        if endpoint == DEFAULT_ENDPOINT and not os.getenv("OPENAI_API_KEY"):
-            raise ValueError("OPENAI_API_KEY is not configured")
+        if not os.getenv("OPENROUTER_API_KEY") and endpoint.startswith(
+            "https://openrouter.ai/"
+        ):
+            raise ValueError("OPENROUTER_API_KEY is not configured for a remote LLM endpoint")
 
     def _request(self, body):
         headers = {"Content-Type": "application/json"}
-        if os.environ.get("OPENAI_API_KEY"):
-            headers["Authorization"] = "Bearer " + os.environ["OPENAI_API_KEY"]
+        if os.environ.get("OPENROUTER_API_KEY"):
+            headers["Authorization"] = "Bearer " + os.environ["OPENROUTER_API_KEY"]
+        if self.endpoint.startswith("https://openrouter.ai/"):
+            headers["HTTP-Referer"] = os.getenv(
+                "OPENROUTER_SITE_URL", "https://localhost"
+            )
+            headers["X-OpenRouter-Title"] = os.getenv(
+                "OPENROUTER_APP_NAME", "HR Job Matching Workshop"
+            )
         for attempt in range(self.retries):
             try:
                 req = request.Request(
@@ -188,18 +197,15 @@ class LLMScorer:
 
     @staticmethod
     def _text(response):
-        if response.get("status") != "completed":
-            raise ValueError("LLM response incomplete")
-        parts = [
-            part
-            for item in response.get("output", [])
-            for part in item.get("content", [])
-        ]
-        if any(part.get("type") == "refusal" for part in parts):
-            raise ValueError("OpenAI declined evidence extraction")
-        return "".join(
-            part["text"] for part in parts if part.get("type") == "output_text"
-        )
+        choices = response.get("choices", [])
+        if not choices or not isinstance(
+            choices[0].get("message", {}).get("content"), str
+        ):
+            raise ValueError("LLM chat-completions response has no text content")
+        message = choices[0]["message"]
+        if message.get("refusal"):
+            raise ValueError("LLM declined evidence extraction")
+        return message["content"]
 
     def score(self, job, candidate, requirements):
         content = {"requirements": requirements, "sections": candidate["sections"]}
@@ -209,19 +215,18 @@ class LLMScorer:
             )
         body = {
             "model": self.model,
-            "store": False,
-            "text": {
-                "format": {
-                    "type": "json_schema",
-                    "name": "candidate_evidence",
-                    "strict": True,
-                    "schema": EVIDENCE_SCHEMA,
-                }
-            },
-            "input": [
+            "messages": [
                 {"role": "system", "content": SYSTEM},
                 {"role": "user", "content": json.dumps(content, ensure_ascii=False)},
             ],
+            "response_format": {
+                "type": "json_schema",
+                "json_schema": {
+                    "name": "candidate_evidence",
+                    "strict": True,
+                    "schema": EVIDENCE_SCHEMA,
+                },
+            },
         }
         key = digest(
             {"endpoint": self.endpoint, "body": body, "prompt": PROMPT_VERSION}
@@ -247,7 +252,7 @@ class LLMScorer:
                 if cached_result or repair == 2:
                     save(self.cache / "validation_failures" / f"{key}.json", attempts)
                     raise
-                body["input"].extend(
+                body["messages"].extend(
                     [
                         {"role": "assistant", "content": output_text},
                         {
@@ -262,12 +267,12 @@ class LLMScorer:
             response["repair_count"] = len(attempts) - 1
             combined_usage = {
                 name: sum(item.get("usage", {}).get(name, 0) for item in attempts)
-                for name in ("input_tokens", "output_tokens", "total_tokens")
+                for name in ("prompt_tokens", "completion_tokens", "total_tokens")
             }
-            combined_usage["input_tokens_details"] = {
+            combined_usage["prompt_tokens_details"] = {
                 "cached_tokens": sum(
                     item.get("usage", {})
-                    .get("input_tokens_details", {})
+                    .get("prompt_tokens_details", {})
                     .get("cached_tokens", 0)
                     for item in attempts
                 )
@@ -279,23 +284,23 @@ class LLMScorer:
         estimated_cost = None
         if (
             not cached_result
-            and os.getenv("OPENAI_INPUT_USD_PER_MILLION")
-            and os.getenv("OPENAI_OUTPUT_USD_PER_MILLION")
+            and os.getenv("OPENROUTER_INPUT_USD_PER_MILLION")
+            and os.getenv("OPENROUTER_OUTPUT_USD_PER_MILLION")
         ):
-            cached_tokens = usage.get("input_tokens_details", {}).get(
+            cached_tokens = usage.get("prompt_tokens_details", {}).get(
                 "cached_tokens", 0
             )
-            input_rate = float(os.environ["OPENAI_INPUT_USD_PER_MILLION"])
-            output_rate = float(os.environ["OPENAI_OUTPUT_USD_PER_MILLION"])
+            input_rate = float(os.environ["OPENROUTER_INPUT_USD_PER_MILLION"])
+            output_rate = float(os.environ["OPENROUTER_OUTPUT_USD_PER_MILLION"])
             cached_rate = float(
-                os.getenv("OPENAI_CACHED_INPUT_USD_PER_MILLION", str(input_rate))
+                os.getenv("OPENROUTER_CACHED_INPUT_USD_PER_MILLION", str(input_rate))
             )
             if min(input_rate, output_rate, cached_rate) < 0:
                 raise ValueError("Token prices must be nonnegative")
             estimated_cost = (
-                (usage.get("input_tokens", 0) - cached_tokens) * input_rate
+                (usage.get("prompt_tokens", 0) - cached_tokens) * input_rate
                 + cached_tokens * cached_rate
-                + usage.get("output_tokens", 0) * output_rate
+                + usage.get("completion_tokens", 0) * output_rate
             ) / 1_000_000
         evidence.update(
             cache_hit=cached_result,

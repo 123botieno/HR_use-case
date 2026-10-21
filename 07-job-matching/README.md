@@ -24,7 +24,7 @@ Run from the project root after preparing data:
 python 07-job-matching/run.py --methods bm25 tfidf
 ```
 
-For all three methods, configure OpenAI and a confirmed rubric, then run `python 07-job-matching/run.py --rubric data/rubric.json`. The workflow lives in [run.py](run.py), with algorithm implementations in [BM25](bm25/score.py), [TF-IDF](tfidf/score.py), and [LLM](llm/score.py). Top-five ranking logic is in [shortlist.py](shortlist.py); comparison metrics are in [comparison/evaluate.py](comparison/evaluate.py).
+For all three methods, configure the workshop's shared OpenRouter key and a confirmed rubric, then run `python 07-job-matching/run.py --rubric data/rubric.json`. The workflow lives in [run.py](run.py), with algorithm implementations in [BM25](bm25/score.py), [TF-IDF](tfidf/score.py), and [LLM](llm/score.py). Top-five ranking logic is in [shortlist.py](shortlist.py); comparison metrics are in [comparison/evaluate.py](comparison/evaluate.py).
 
 The default candidate pool follows source vacancy associations; `--pool-scope all` scores every prepared CV against each selected JD. Use `--jd JD-01` to select a vacancy. See [the running guide](../docs/RUNNING.md) for output details.
 
@@ -40,13 +40,13 @@ BM25, TF-IDF, and LLM each rank the same candidate pool independently for each J
 
 ### How tied scores enter the top five
 
-The ranker sorts by descending score and breaks equal-score ties by ascending candidate ID. It then selects ranks 1–5. If ranks five and six tie, the boundary tie is flagged in `rankings.csv` and `run.json`, but the output remains exactly five. Candidate ID makes the result reproducible; it does not establish merit. In the saved live run, the LLM has a cutoff tie in all 14 vacancies, so the fifth position is not distinguished by its score. Review those boundary ties rather than interpreting the fifth candidate as clearly stronger. This is a limitation of a fixed-size shortlist policy, not a sorting implementation bug.
+The ranker sorts by descending score and breaks equal-score ties by ascending candidate ID. It selects ranks one through five. When the last selected and first excluded scores tie, the boundary tie is flagged in `rankings.csv` and `run.json`, while the output still contains five candidates. Candidate ID makes the result reproducible; it does not establish merit. Prior local experiments recorded LLM cutoff ties; those reports are not committed. Recreate a run and review its boundary ties rather than interpreting the last candidate as clearly stronger.
 
 ## Outputs and evidence gaps
 
 Every run writes `run.json`, `rankings.csv`, `shortlists.csv`, `comparison_shortlists.csv`, `report.md`, `comparison.json`, and `judgments_template.csv`. The [running guide](../docs/RUNNING.md) describes each artifact; the [comparison guide](comparison/README.md) explains which metrics need independent judgments.
 
-The live comparison covers 14 available JDs and 699 assessable CVs. JD-13 and its 50 CVs are missing, and CV-15-035 is unreadable. Independent recruiter judgments have not been supplied, and the source-derived LLM rubrics in that run remain unconfirmed. Therefore its top-five lists are experimental relevance/evidence rankings, not verified suitable-candidate recommendations; the run cannot establish which method performs best. Synthetic fit tiers, mock group labels, and mock suitability labels are not substitutes for recruiter judgments.
+The source archive has documented missing and unreadable files; inspect `data/prepared/inventory_issues.json` after restoring and preparing it. Independent recruiter judgments have not been supplied, so top-five lists are experimental relevance/evidence rankings, not verified suitable-candidate recommendations; the run cannot establish which method performs best. Synthetic fit tiers, mock group labels, and mock suitability labels are not substitutes for recruiter judgments. Earlier run artifacts are local and excluded from Git.
 
 ## Code walkthrough: one matching run
 
