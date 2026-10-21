@@ -11,7 +11,6 @@ runs/
 *.db
 *.sqlite
 *.sqlite3
-MLOps-Workshop-main/
 Ethiopia_15_Government_JDs_750_CVs/
 Ethiopia_250_Detailed_WORD_CVs/
 data/prepared/

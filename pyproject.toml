@@ -5,13 +5,12 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "ethiopia-jobmatch"
 version = "0.1.0"
-description = "Reproducible top-five JD/CV matching comparison"
+description = "HR shortlisting fairness teaching case"
 requires-python = ">=3.12,<3.13"
-dependencies = ["numpy==2.0.2", "pandas==2.2.3", "scikit-learn==1.6.1", "python-dotenv>=1,<2"]
+dependencies = ["numpy==2.5.4", "pandas==3.0.6", "scikit-learn==1.9.1", "fairlearn==0.15.0"]
 
 [project.optional-dependencies]
 pdf = ["pypdf>=5,<7"]
-mlops = ["dvc==3.67.1", "great-expectations==1.24.0", "mlflow==3.17.1", "fairlearn==0.15.0", "evidently==0.7.23", "prefect==3.8.8"]
 test = ["pytest>=8,<9"]
 
 [project.scripts]

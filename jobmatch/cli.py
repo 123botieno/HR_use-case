@@ -1,111 +1,71 @@
-"""Command-line entry points shared by stage scripts."""
-
-from common.stages import stage
+"""Command-line entry points for HR document preparation and matching."""
 
 import argparse
-
 import json
-
 from pathlib import Path
 
 from dotenv import load_dotenv
 
 from common.io import load, save
+from common.stages import stage
+from common.validation import validate_dataset
 
 prepare = stage("data").prepare
-
 execute = stage("matching").execute
-
 compare = stage("comparison").compare
-
 judgments_from_csv = stage("comparison").judgments_from_csv
-
-validate_dataset = stage("validation").validate_dataset
-
-great_expectations_validate = stage("validation").great_expectations_validate
 
 
 def main(argv=None):
     load_dotenv(Path(__file__).resolve().parents[1] / ".env", override=False)
-    parser = argparse.ArgumentParser(
-        description="Compare top-five JD/CV matching methods"
-    )
+    parser = argparse.ArgumentParser(description="HR shortlist matching and evaluation")
     commands = parser.add_subparsers(dest="command", required=True)
+
     prepare_p = commands.add_parser("prepare")
     prepare_p.add_argument("--source", required=True)
     prepare_p.add_argument("--output", default="data/prepared")
-    for name in ("run", "flow"):
-        p = commands.add_parser(name)
-        p.add_argument("--dataset", default="data/prepared/dataset.json")
-        p.add_argument("--output", default="runs")
-        p.add_argument(
-            "--methods",
-            nargs="+",
-            choices=["bm25", "tfidf", "llm"],
-            default=["bm25", "tfidf", "llm"],
-        )
-        p.add_argument("--rubric")
-        p.add_argument("--jd", nargs="+")
-        p.add_argument("--gx", action="store_true")
-        p.add_argument("--pool-scope", choices=["vacancy", "all"], default="vacancy")
-        if name == "run":
-            p.add_argument(
-                "--allow-draft-rubric",
-                action="store_true",
-                help="Experimental scoring only; preserve unconfirmed rubric status",
-            )
-            p.add_argument("--llm-workers", type=int, default=1)
-        if name == "flow":
-            p.add_argument("--track-uri")
-            p.add_argument("--reference")
-            p.add_argument("--groups")
-            p.add_argument("--judgments")
-            p.add_argument("--version-repository")
-    p = commands.add_parser("validate")
-    p.add_argument("--dataset", default="data/prepared/dataset.json")
-    p.add_argument("--gx", action="store_true")
-    p = commands.add_parser("compare")
-    p.add_argument("--run", required=True)
-    p.add_argument("--judgments")
-    p.add_argument("--output")
-    p = commands.add_parser("version")
-    p.add_argument("--path", default="data/prepared")
-    p.add_argument("--repository", default=".")
-    p = commands.add_parser("track")
-    p.add_argument("--run", required=True)
-    p.add_argument("--uri", default="sqlite:///mlflow.db")
-    p = commands.add_parser("audit")
-    p.add_argument("--run", required=True)
-    p.add_argument("--groups", required=True)
-    p.add_argument("--judgments")
-    p.add_argument("--output", default="runs/audit.json")
-    p = commands.add_parser("monitor")
-    p.add_argument("--reference", required=True)
-    p.add_argument("--current", required=True)
-    p.add_argument("--output", default="runs/monitoring")
-    p = commands.add_parser("rubric-template")
-    p.add_argument("--dataset", default="data/prepared/dataset.json")
-    p.add_argument("--output", default="data/rubric.json")
+
+    run_p = commands.add_parser("run")
+    run_p.add_argument("--dataset", default="data/prepared/dataset.json")
+    run_p.add_argument("--output", default="runs")
+    run_p.add_argument(
+        "--methods", nargs="+", choices=["bm25", "tfidf", "llm"],
+        default=["bm25", "tfidf", "llm"],
+    )
+    run_p.add_argument("--rubric")
+    run_p.add_argument("--jd", nargs="+")
+    run_p.add_argument("--pool-scope", choices=["vacancy", "all"], default="vacancy")
+    run_p.add_argument("--allow-draft-rubric", action="store_true")
+    run_p.add_argument("--llm-workers", type=int, default=1)
+
+    validate_p = commands.add_parser("validate")
+    validate_p.add_argument("--dataset", default="data/prepared/dataset.json")
+
+    compare_p = commands.add_parser("compare")
+    compare_p.add_argument("--run", required=True)
+    compare_p.add_argument("--judgments")
+    compare_p.add_argument("--output")
+
+    audit_p = commands.add_parser("audit")
+    audit_p.add_argument("--run", required=True)
+    audit_p.add_argument("--groups", required=True)
+    audit_p.add_argument("--judgments")
+    audit_p.add_argument("--output", default="runs/audit.json")
+
+    rubric_p = commands.add_parser("rubric-template")
+    rubric_p.add_argument("--dataset", default="data/prepared/dataset.json")
+    rubric_p.add_argument("--output", default="data/rubric.json")
+
     args = parser.parse_args(argv)
     try:
         if args.command == "prepare":
             result = prepare(args.source, args.output)
         elif args.command == "validate":
-            data = load(args.dataset)
-            result = validate_dataset(data)
-            if args.gx:
-                result["great_expectations"] = great_expectations_validate(data)
+            result = validate_dataset(load(args.dataset))
         elif args.command == "run":
             directory, run = execute(
-                args.dataset,
-                args.output,
-                args.methods,
-                args.rubric,
-                args.jd,
-                args.gx,
-                args.pool_scope,
-                args.allow_draft_rubric,
-                args.llm_workers,
+                args.dataset, args.output, args.methods, args.rubric, args.jd,
+                args.pool_scope, args.allow_draft_rubric, args.llm_workers,
             )
             result = {
                 "directory": str(directory),
@@ -121,45 +81,17 @@ def main(argv=None):
                 judgments_from_csv(args.judgments) if args.judgments else None,
             )
             save(args.output or Path(args.run).parent / "comparison.json", result)
-        elif args.command == "rubric-template":
+        elif args.command == "audit":
+            result = stage("fairlearn").audit(
+                args.run, args.groups, args.output,
+                judgments_from_csv(args.judgments) if args.judgments else None,
+            )
+        else:
             data = load(args.dataset)
             result = stage("data").build_rubric(data)
             save(args.output, result)
-            result = {
-                "path": args.output,
-                "note": "Edit and confirm each rubric before LLM scoring",
-            }
-        else:
-            if args.command == "version":
-                result = stage("dvc").version_data(args.path, args.repository)
-            elif args.command == "track":
-                result = stage("mlflow").track(args.run, args.uri)
-            elif args.command == "audit":
-                result = stage("fairlearn").audit(
-                    args.run,
-                    args.groups,
-                    args.output,
-                    judgments_from_csv(args.judgments) if args.judgments else None,
-                )
-            elif args.command == "monitor":
-                result = stage("evidently").monitor(
-                    args.reference, args.current, args.output
-                )
-            else:
-                result = stage("prefect").prefect_run(
-                    args.dataset,
-                    args.output,
-                    args.methods,
-                    args.rubric,
-                    args.jd,
-                    args.gx,
-                    args.pool_scope,
-                    args.track_uri,
-                    args.reference,
-                    args.groups,
-                    args.judgments,
-                    args.version_repository,
-                )
+            result = {"path": args.output, "note": "Review and confirm each rubric item before LLM scoring"}
+
         print(json.dumps(result, indent=2))
         return 0
     except (ValueError, KeyError, OSError, ImportError) as exc:

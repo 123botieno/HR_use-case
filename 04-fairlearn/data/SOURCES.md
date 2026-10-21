@@ -5,7 +5,7 @@
 - **Origin:** generated locally by [`synthetic_hr.py`](../synthetic_hr.py); no external dataset or model is used to create the cohort or score candidates.
 - **License:** generated in this repository; no third-party dataset license applies. The repository has no top-level license file, so reuse terms for the generator and its outputs have not been formally granted.
 - **Fixed seed:** `20261020`; default size is 8 fictional vacancies × 120 applications = 960.
-- **Changes:** all names/IDs, groups, qualification fields, group penalties, proxy values, suitability labels, rankings, and simulated hires are generated. Group categories are fictional placeholders. The suitability rule is `skill_match >= 62`, `relevant_years >= 3`, and certificate present. The historical score injects group penalties and proxy bonuses deliberately.
+- **Changes:** all IDs, groups, qualification fields, group penalties, proxy values, suitability labels, rankings, and observed hire outcomes are generated. Group categories are fictional placeholders. The suitability rule is `skill_match >= 62`, `relevant_years >= 3`, and certificate present. The historical score injects group penalties and proxy bonuses deliberately. Hire outcomes are generated only for the 40 shortlisted applicants; the other 920 values are missing, not negative labels.
 - **Model:** none. The output is a deterministic rule-based teaching scenario, not a trained or deployed hiring model.
 - **Downloads:** none; no raw applicant records are required. `downloads.json` is empty by design.
 

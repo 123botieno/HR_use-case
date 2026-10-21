@@ -1,27 +1,27 @@
 # Intro slides: HR shortlist fairness (10–15 min)
 
-**Template note:** This is six-slide source content in Markdown. No shared slide template was present in the workspace; transfer the content to the workshop's presentation template when available.
+Six-slide content for transfer to the workshop's shared template. The template was not included in this checkout.
 
 ## 1. Setting
 
-One vacancy receives a ranked list of candidates and a five-person recommended shortlist. A recruiter owns the final decision; the model score is evidence of fit to stated criteria, not hiring probability.
+A fictional hiring team uses a ranked shortlist to decide who receives further review. A model trained on old decisions can repeat past patterns, while the team can observe later hiring outcomes only for people who reached the shortlist.
 
 ## 2. The decision and the cost of mistakes
 
-Who reaches the shortlist, and who is left out? A false exclusion can remove a suitable candidate from review; an unsupported inclusion can displace another candidate. The system must show evidence and missing information so a person can review it.
+Who receives shortlist review? Excluding a suitable candidate can deny them consideration; including a weak match can displace another applicant. A ranking score does not establish qualification or predict job success.
 
-## 3. The teaching data
+## 3. The data
 
-The fixed-seed demonstration has 8 fictional vacancies and 960 fictional applications. It assigns mock gender, ethnicity, economic-class, and geography groups; it injects explicit score penalties and access-proxy bonuses. Every identity, score, label, and decision is simulated.
+The fixed-seed demonstration contains 8 fictional vacancies and 960 applications. It uses mock gender, ethnicity, economic-class, and geography fields; visible score penalties; access-proxy bonuses; and an explicitly incomplete `historical_hired` outcome.
 
-## 4. What Fairlearn measures
+## 4. The missing outcomes
 
-`MetricFrame` reports per-group selection rate for each vacancy. With complete synthetic suitability labels, it also reports recall. The audit shows counts and small-sample flags; it does not calculate confidence intervals or decide what disparity is acceptable.
+Only the 40 historically shortlisted applicants have observed hire outcomes. The other 920 outcomes are missing, not “not hired.” A separate synthetic suitability label exists only to demonstrate recall calculations and is not an observed hiring result.
 
 ## 5. Objectives
 
-Participants will trace where a synthetic penalty enters, compare baseline and biased shortlists, interpret selection rate and recall, and identify limits from small groups, labels, and separate group dimensions.
+Participants will trace bias in historical decisions, identify selective outcome observation, read group selection rates and label-dependent recall, and name evidence gaps that prevent conclusions about real applicants.
 
 ## 6. What participants will do
 
-Six lab episodes: choose a denominator; inspect a changed cutoff; compare suitable-candidate recall; assess small-group evidence; identify missing intersections; and state what a real audit would need. All episodes have saved outputs, so discussion can proceed without running the code.
+Four episodes: inspect historical score effects; diagnose missing outcomes; compare group access at the top-five cutoff; and decide what independent evidence is needed to assess missed suitable candidates. Saved reports support discussion without rerunning code.

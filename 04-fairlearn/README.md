@@ -1,44 +1,36 @@
 # Fairness in the HR shortlist
 
-Eight fictional vacancies and 960 fictional applications let us compare a qualification-only shortlist with a simulated historical score that penalizes gender, ethnicity, economic class, and geography. Fairlearn measures group selection rates and recall on each five-person shortlist; the exercise demonstrates a known synthetic shock, not discrimination in real hiring.
+This session shows how a model trained on historical hiring decisions can carry their bias forward. It also shows that hire outcomes observed only for shortlisted people cannot tell us which excluded applicants would have succeeded.
 
-## Episodes and saved results
+## Episodes and verified outputs
 
-| Episode | Verified result from the fixed-seed run | Saved report |
+| Episode | Run evidence | Saved output |
 |---|---|---|
-| 1. A penalty hidden in a blended score | The fabricated score adds group penalties from −1 to −8 points and proxy bonuses from 0 to +5; the component columns expose each contribution. | [synthetic data](synthetic_hr_demo/synthetic_historical_hr.csv) |
-| 2. The top-five cutoff changes group exposure | For gender, average selection-rate change across 8 vacancies is −1.86 percentage points for 481 women and +1.97 points for 464 men. | [gender comparison](results/precomputed/comparison_gender.json) |
-| 3. Suitable candidates can be missed | Mean recall change is −6.24 points for women and +6.76 points for men. These are synthetic labels from a fixed rule, not independent recruiter judgments. | [gender comparison](results/precomputed/comparison_gender.json) |
-| 4. Small groups make thin evidence | The 15 nonbinary applications average fewer than 2 people per vacancy; recall is undefined in several groups with no synthetic suitable cases. | [gender audit](results/precomputed/biased_audit_gender.json) |
-| 5. One group dimension hides intersections | Audits are separate by dimension; the saved reports do not test intersections or statistical uncertainty. | [all saved comparisons](results/precomputed/) |
-| 6. Complete labels do not validate decisions | All 960 suitability labels come from a fixed synthetic rule; none is a recruiter judgment. | [synthetic judgments](synthetic_hr_demo/synthetic_suitability_judgments.csv) |
+| 1. Historical decisions carry a score penalty | Group penalties and access-proxy bonuses are explicit columns in the fixed-seed cohort. | [`synthetic_historical_hr.csv`](synthetic_hr_demo/synthetic_historical_hr.csv) |
+| 2. Missing outcomes are not negative labels | 40 of 960 applications have observed hire outcomes; 920 are blank because they were not shortlisted. | [`metadata.json`](synthetic_hr_demo/metadata.json) |
+| 3. The cutoff changes group access | Gender selection rates are compared across 8 synthetic vacancies, with application counts shown. | [`comparison_gender.json`](results/precomputed/comparison_gender.json) |
+| 4. Recall needs independent outcome evidence | Saved recall uses complete fabricated suitability labels; real hire outcomes are missing for non-shortlisted people. | [saved comparisons](results/precomputed/) |
 
-All numbers above come from the committed seed-20261020 run; full per-vacancy counts and metrics are in the linked JSON reports. A change of this size is a property of the deliberately injected synthetic score recipe, not an estimate from real applicants. See [synthetic data notes](synthetic_hr_demo/README.md) and [source and license notes](data/SOURCES.md).
+Figures come from seed `20261020`; the saved outputs preserve per-vacancy values. Every row and label is synthetic. The `historical_hired` field is empty when the hiring outcome was not observed. The separate `suitable` label is generated for this exercise and is not hiring history or validated ground truth.
 
-## Set up and run
+## Setup and run
 
-From the repository root in PowerShell or Git Bash, with Python 3.12 and uv installed:
+Use Python 3.12 and the shared hub `requirements.lock` from the repository root:
 
 ```text
 uv venv --python 3.12 .venv
 uv pip sync requirements.lock
-uv run --no-sync --python 3.12 python 04-fairlearn/evaluate.py audit --run 04-fairlearn/synthetic_hr_demo/biased_historical_run.json --groups 04-fairlearn/synthetic_hr_demo/audit_groups_gender.csv --judgments 04-fairlearn/synthetic_hr_demo/synthetic_suitability_judgments.csv --output results/fairness-gender.json
+uv run --no-sync --python 3.12 python 04-fairlearn/evaluate.py audit --run 04-fairlearn/synthetic_hr_demo/biased_historical_run.json --groups 04-fairlearn/synthetic_hr_demo/audit_groups_gender.csv --judgments 04-fairlearn/synthetic_hr_demo/synthetic_suitability_judgments.csv --output 04-fairlearn/results/fairness-gender.json
 ```
 
-Open [LAB_GUIDE.md](LAB_GUIDE.md) for the two-hour, CPU-only workshop sequence. The audit reads saved inputs and writes a report; no model service or external data download is needed.
+Open the [four-episode learning notebook](HR_Fairness_Learning_Session.ipynb) in VS Code and select the repository's Python 3.12 environment as its kernel. It runs on a CPU laptop and links to saved results for discussion without rerunning calculations.
 
-## Files
+## Contents and limits
 
-- `LAB_GUIDE.md`, `FACILITATOR_NOTES.md`, `EXERCISES.md`, `INTRO_SLIDES.md`: session materials.
-- `synthetic_hr.py`, `evaluate.py`: fixed-seed data generation and Fairlearn audit code.
-- `synthetic_hr_demo/`: fabricated cohort, paired runs, audit labels, and judgments.
-- `results/precomputed/`: committed baseline, biased, and comparison reports.
-- `data/SOURCES.md`: provenance, license, and modifications.
+- [`synthetic_hr.py`](synthetic_hr.py) generates the cohort; [`evaluate.py`](evaluate.py) uses Fairlearn `MetricFrame` for group selection rate and, where labels are complete, recall.
+- [`synthetic_hr_demo/`](synthetic_hr_demo/) contains the generated data, group tables, ranking runs, and metadata.
+- [`results/precomputed/`](results/precomputed/) contains saved baseline, simulated historical, and comparison audits.
+- [Facilitator notes](FACILITATOR_NOTES.md), [exercises](EXERCISES.md), and [intro slides](INTRO_SLIDES.md) support the notebook session.
+- [`data/SOURCES.md`](data/SOURCES.md) records provenance and changes.
 
-## What Fairlearn measures
-
-For each vacancy and model run, `MetricFrame` reports `selection_rate` for each group; when the suitability labels are complete for that vacancy, it also reports group recall. A five-person cutoff means these rates move in steps, especially for small groups. A minimum group count is a warning flag, not a confidence interval. Fairlearn calculates the chosen metrics; a human must decide which comparisons, thresholds, context, and follow-up are appropriate.
-
-## Limits
-
-All records, identities, group labels, scores, suitability labels, and simulated historical decisions are fabricated. Group labels are explicitly assigned in the generator and never inferred from CVs. Suitability is a transparent synthetic rule, not validated ground truth. Separate group audits do not measure intersectional effects, uncertainty, causation in real hiring, legal compliance, or whether a disparity is acceptable. Do not use this demo to make employment decisions.
+The labels, identities, score shock, and decisions are fictional. Small groups make rates unstable; the saved exercise has no uncertainty estimates, real recruiter labels, or intersectional audit. Fairlearn computes selected metrics; people must decide the relevant measure, acceptable evidence, and response.

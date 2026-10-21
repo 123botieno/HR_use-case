@@ -1,30 +1,27 @@
 # Facilitator notes (2 hours)
 
-**Roles:** one facilitator; participants work in pairs. **Room setup:** repository root open, CPU laptop, no network or API key needed. Keep the six lab episodes on screen; use the PAUSE prompts verbatim and let participants write before discussion.
+**Roles:** one facilitator; participants work in pairs. **Room setup:** open `HR_Fairness_Learning_Session.ipynb` in VS Code and select the Python 3.12 environment. No network access or API key is needed. Keep the saved reports open so all four episodes can proceed if notebook setup fails.
 
-| Clock | Lead and say | Ask / PAUSE | Expected output | Fallback if it fails |
+| Clock | Lead and say | Ask at PAUSE | Expected output | Fallback |
 |---|---|---|---|---|
-| 00:00–00:10 | Facilitator: “These are fabricated records and outcomes. We are testing whether the audit detects a shock we put into the scoring rule.” Show README and provenance. | What would make an HR fairness result trustworthy? | Participants distinguish a demonstration from evidence about real applicants. | If setup is incomplete, use the saved reports; no install is needed to discuss them. |
-| 00:10–00:25 | Participants inspect Episode 1; facilitator explains selection-rate and recall denominators. | **PAUSE 1:** Which applicant set belongs in each denominator? | Counts/rates in the baseline report; a denominator proposal. | Open `results/precomputed/baseline_audit_gender.json`. |
-| 00:25–00:45 | Pairs compare baseline and biased gender outcomes. Point to explicit penalty/proxy columns. | **PAUSE 2:** What would you inspect before attributing a cutoff change? | They identify fixed candidates, vacancy, labels, top-five cutoff; scoring changes. | Use `comparison_gender.json` and the CSV score-effect columns. |
-| 00:45–01:05 | Facilitator introduces synthetic suitability rule. Participants compare rate and recall. | **PAUSE 3:** Which outcome matters for this decision, and what evidence is missing? | Two distinct outcome definitions; recognition labels are unvalidated. | Read the gender comparison's `recall_change` values. |
-| 01:05–01:25 | Participants review the nonbinary counts and null recalls. | **PAUSE 4:** What do you report when cells are small? | Counts beside rates; no invented/merged groups; note privacy. | Open the saved biased gender audit; explain `sufficient_sample` and null. |
-| 01:25–01:45 | Groups compare the four marginal audits and name an intersection they would investigate. | **PAUSE 5:** Which joint group is currently invisible? | A proposed intersection and a privacy concern. | Show the four comparison files; emphasize there is no joint table. |
-| 01:45–02:00 | Facilitator closes with data quality, independent judgments, and human review. | **PAUSE 6:** What must be true before this could inform a real process? | A list of evidence/controls and an accountable human decision owner. | Read source notes and limits; invite written take-home answers. |
+| 00:00–00:10 | Introduce the fictional cohort. Say: “We added a known score shock to see whether the audit can detect it. This does not tell us whether real hiring is fair.” | What would make an HR fairness result trustworthy? | Participants distinguish a controlled demonstration from real evidence. | Use the saved reports; no installation is needed for discussion. |
+| 00:10–00:35 | Work through notebook Episode 1. Point to the explicit group and proxy score columns and compare the two rankings. | **PAUSE 1:** Which historical score components would you inspect before learning from old decisions? | A list of candidate features and a human owner to review them. | Open `biased_historical_run.json` and `synthetic_historical_hr.csv`. |
+| 00:35–01:00 | Work through notebook Episode 2. Explain that non-shortlisted applicants have no observed hire outcome. | **PAUSE 2:** How would you evaluate candidates whose outcomes the earlier process never observed? | A proposal that keeps missing labels unknown and obtains independent evidence. | Read the counts in `metadata.json` and inspect blank `historical_hired` cells. |
+| 01:00–01:30 | Work through notebook Episode 3. Trace the all-applicant denominator and compare the baseline and biased gender audits. | **PAUSE 3:** What denominator answers access to shortlist review, and what would you investigate next? | Correct denominator plus a context or uncertainty question. | Open the precomputed baseline, biased, and comparison JSON files. |
+| 01:30–01:55 | Work through notebook Episode 4. Separate access rates from recall and synthetic suitability from actual observed outcomes. | **PAUSE 4:** What evidence would let you estimate missed suitable applicants? | Independent assessment or prospective review, plus named governance decisions. | Point to saved recall fields and `data/SOURCES.md`. |
+| 01:55–02:00 | Close by asking each pair to state one decision a human owner must make before deployment. | Which evidence gap would block a real evaluation? | One concrete evidence gap and accountable owner per pair. | Use an exercise as a written follow-up. |
 
-## Discussion prompts
-
-- Who chooses the fairness measure and acceptable threshold for this hiring context?
-- How could CV readability, missing evidence, vacancy requirements, or pool composition create another gap?
-- How should audit attributes be collected, access-controlled, retained, and excluded from scoring?
-- Which additional evidence would separate score effects from suitability-label or data-quality effects?
-- What action should follow a detected gap, and who can pause use of the shortlist?
-
-## Verified figures to keep visible
+## Figures and interpretation
 
 - Cohort: 8 fictional vacancies × 120 applications = 960, seed `20261020`.
-- Gender counts: 481 women, 464 men, 15 nonbinary across all vacancies.
-- Mean gender selection-rate change: women −1.86 percentage points; men +1.97 points.
-- Mean gender recall change: women −6.24 points; men +6.76 points.
+- Historical shortlist: 5 people per vacancy; 40 outcomes observed and 920 outcomes missing. These counts are calculated into `metadata.json` from the generated rows.
+- Gender, ethnicity, economic-class, and geography labels, penalties, and outcomes are simulated.
+- Saved selection-rate and recall differences summarize eight vacancy-level comparisons. The suitability labels are generated by a fixed rule, not recruiter judgments. No uncertainty test is included.
 
-These averages summarize eight vacancy-level reports. The labels and shock are simulated; no inferential uncertainty is estimated. Counts and full precision appear in `results/precomputed/`.
+## Discussion questions
+
+- Who chooses the fairness measure and the follow-up threshold for this hiring context?
+- What independent evidence could cover applicants excluded by the historical shortlist?
+- How should audit attributes be collected, restricted, retained, and kept out of scoring?
+- Which group or intersection might a marginal audit conceal, and how would small cells be protected?
+- Who can pause use of a shortlist after an unexplained gap appears?

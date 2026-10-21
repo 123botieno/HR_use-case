@@ -32,7 +32,7 @@ The default candidate pool follows source vacancy associations; `--pool-scope al
 
 The [BM25](bm25/README.md) and [TF-IDF](tfidf/README.md) lessons explain their scoring settings and how to test alternatives. Current settings are fixed in code; the runner does not automatically tune hyperparameters. Use development vacancies and independent recruiter judgments to compare alternatives, then freeze settings before held-out evaluation. [The comparison lesson](comparison/README.md) explains supported metrics and missing-label behavior.
 
-The MLOps lessons from [DVC](../01-dvc/README.md) through [Prefect](../06-prefect/README.md) share a teaching structure: where each tool fits, the flow it runs, discrepancies it can reveal, discussion prompts, and current limits. They distinguish implemented behavior from planned work.
+Shared lessons on DVC, validation, experiment tracking, monitoring, and orchestration live in the workshop hub. This folder documents HR-specific candidate matching and shortlist comparison.
 
 ## How we compare the three methods
 
@@ -59,5 +59,5 @@ The source archive has documented missing and unreadable files; inspect `data/pr
 7. The runner saves `run.json` during and after execution. It then writes ranking/shortlist CSVs, side-by-side shortlist CSV, full-pool blind judgment template, `comparison.json`, and `report.md`.
 8. `comparison.json` initially has only metrics supported without recruiter labels. Add reviewed judgments and rerun the evaluator to calculate suitable-candidate quality metrics.
 
-This sequence is the shared path used by the individual scorer scripts and the Prefect flow. See each method README for its scoring internals.
+This sequence is the shared path used by the individual scorer scripts. See each method README for its scoring details.
 

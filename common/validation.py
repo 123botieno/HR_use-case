@@ -1,13 +1,7 @@
-"""Mandatory lightweight gates, with an optional GX validation backend."""
-
-# ruff: noqa: E402
-import sys
-from pathlib import Path
-
-if __package__ in (None, ""):
-    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+"""Lightweight, HR-specific checks for prepared datasets and rankings."""
 
 import math
+
 from common.io import digest
 
 
@@ -55,40 +49,3 @@ def validate_rankings(rows, pool):
         "shortlist_count": min(5, len(rows)),
         "shortfall": max(0, 5 - len(rows)),
     }
-
-
-def great_expectations_validate(data):
-    import pandas as pd
-    import great_expectations as gx
-    import great_expectations.expectations as gxe
-
-    context = gx.get_context(mode="ephemeral")
-    source = context.data_sources.add_pandas(name="matching")
-    asset = source.add_dataframe_asset(name="candidate_pool")
-    definition = asset.add_batch_definition_whole_dataframe("all")
-    suite = context.suites.add(gx.ExpectationSuite(name="candidate_schema"))
-    for expectation in [
-        gxe.ExpectTableRowCountToBeBetween(min_value=1),
-        gxe.ExpectColumnValuesToBeUnique(column="id"),
-        gxe.ExpectColumnValuesToNotBeNull(column="id"),
-        gxe.ExpectColumnValuesToNotBeNull(column="text"),
-        gxe.ExpectColumnValuesToBeInSet(
-            column="jd_id", value_set=[j["id"] for j in data["jobs"]]
-        ),
-    ]:
-        suite.add_expectation(expectation)
-    validation = context.validation_definitions.add(
-        gx.ValidationDefinition(name="candidate_gate", data=definition, suite=suite)
-    )
-    result = validation.run(
-        batch_parameters={"dataframe": pd.DataFrame(data["candidates"])}
-    )
-    if not result.success:
-        raise ValueError("Great Expectations candidate validation failed")
-    return {"success": bool(result.success), "statistics": result.statistics}
-
-
-if __name__ == "__main__":
-    from jobmatch.cli import main
-
-    raise SystemExit(main(["validate"] + sys.argv[1:] + ["--gx"]))

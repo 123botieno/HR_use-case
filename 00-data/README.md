@@ -41,7 +41,7 @@ Sensitive source documents and generated artifacts should stay out of Git. See [
 
 ## Next stage
 
-[DVC](../01-dvc/README.md) records versions; [Great Expectations](../02-great-expectations/README.md) checks data quality before matching.
+Shared DVC and data-validation lessons are in the workshop hub. This HR case records source-file checksums in `downloads.json` and documents provenance in [`data/SOURCES.md`](../data/SOURCES.md).
 
 ## Synthetic fairness teaching data
 

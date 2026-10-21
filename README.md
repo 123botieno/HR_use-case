@@ -1,76 +1,43 @@
-# Ethiopia Job Matching and Shortlisting
+# HR shortlisting fairness
 
-Compare an open-weight LLM, BM25, and TF-IDF on the same candidate pool for each job description (JD). Each method returns its own ranked shortlist of five candidates. Recruiters review suitability and evidence; a ranking score is not a probability of hiring or job success.
+This use case asks how historical hiring decisions can teach a shortlist model to repeat past bias. It also shows why outcomes recorded only for shortlisted candidates leave the rest of the applicant pool unevaluated.
 
-## Project status
+## Walkthrough episodes
 
-Python implementations now cover document preparation, BM25, TF-IDF, OpenRouter-compatible LLM evidence scoring, top-five selection, judgment-based evaluation, and optional DVC, Great Expectations, MLflow, Fairlearn, Evidently, and Prefect integrations. Each stage folder contains its implementation and runnable command. Only file I/O, tokenization, and numbered-folder loading live in `common/`; `jobmatch/` contains the shared CLI dispatcher.
-
-See [the running guide](docs/RUNNING.md) for setup and commands. BM25 and TF-IDF have been run against the copied source documents. LLM scoring uses the workshop's shared `OPENROUTER_API_KEY` and OpenAI-compatible chat-completions API; `LLM_BASE_URL` can point to a compatible self-hosted endpoint. Reviewed rubrics are required by default; explicitly experimental runs can use draft rubrics without marking them confirmed.
-
-The source archive has missing and unreadable files. After restoring the collection, preparation writes an inventory report under `data/prepared/`; inspect it before running any comparison. Source-provided synthetic fit tiers are excluded from scoring and are not recruiter judgments.
-
-## Project organization
-
-See [implementation and verification status](docs/IMPLEMENTATION_STATUS.md) for tested features, the baseline output, and remaining configuration.
-
-The [historical LLM experiment](docs/LIVE_LLM_RUN.md) is explicitly labeled experimental; its generated reports and CV cache remain local and are not committed.
-
-| Stage | Folder | Purpose |
+| Episode | What the run shows | Saved output |
 |---|---|---|
-| 0 | [00-data](00-data/README.md) | Documents, extraction, confirmed requirements, and evaluation judgments |
-| 1 | [01-dvc](01-dvc/README.md) | Version data and experiment artifacts |
-| 2 | [02-great-expectations](02-great-expectations/README.md) | Validate inputs and outputs |
-| 3 | [03-mlflow](03-mlflow/README.md) | Track and compare matching experiments |
-| 4 | [04-fairlearn](04-fairlearn/README.md) | Evaluate group differences |
-| 5 | [05-evidently](05-evidently/README.md) | Monitor data and ranking changes |
-| 6 | [06-prefect](06-prefect/README.md) | Orchestrate the workflow |
-| 7 | [07-job-matching](07-job-matching/README.md) | Run and compare the three matching methods |
+| 1. Historical decisions carry a score penalty | The simulated score adds explicit gender, ethnicity, class, and geography penalties plus access-proxy bonuses. | [`synthetic_historical_hr.csv`](04-fairlearn/synthetic_hr_demo/synthetic_historical_hr.csv) |
+| 2. Unseen outcomes are not rejections | In the fixed-seed cohort, 40 of 960 applications have an observed historical hiring outcome; 920 are blank because they were not shortlisted. | [`metadata.json`](04-fairlearn/synthetic_hr_demo/metadata.json) |
+| 3. A top-five cutoff changes group access | The gender selection-rate shift is summarized across 8 fictional vacancies, with counts beside each group rate. | [saved gender comparison](04-fairlearn/results/precomputed/comparison_gender.json) |
+| 4. A disparity is a prompt to investigate | The comparison also shows synthetic suitability recall, small-group counts, and the limits of marginal audits. | [saved audit reports](04-fairlearn/results/precomputed/) |
 
-The numbered stage layout adapts the MLOps workshop flow to recruitment.
+All numbers are from the fixed-seed synthetic run and are described with their denominator in the saved outputs. The outcomes and group labels are simulated. `historical_hired` is blank when it was not observed; it is never converted to a negative label for non-shortlisted applicants. The separate `suitable` field is a fully synthetic teaching label, not a historical hiring outcome or recruiter judgment.
 
-## Workflow
+## Set up and run
 
-1. Inventory and version source JDs and CVs.
-2. Extract text, check readability, remove direct identity information from matching inputs where practical, and confirm each JD's job-related requirements.
-3. Validate a shared candidate pool and create fixed development and held-out evaluation partitions by vacancy.
-4. Run LLM, BM25, and TF-IDF independently on the same eligible documents.
-5. Rank candidates within each JD and method; return five unique candidates when at least five documents can be assessed.
-6. Collect independent recruiter judgments, evaluate the rankings, and inspect disagreements.
-7. Record experiment artifacts, review group differences, and monitor later batches.
-
-Prefect will own execution order. DVC will version data and artifacts rather than define a second competing orchestration pipeline.
-
-## Shortlist contract
-
-- Produce three separate top-five lists for every JD, one per algorithm.
-- Use the same candidate pool and source text version for all methods; record method-specific preprocessing.
-- Sort by descending score and break exact ties by candidate ID in ascending order. Flag ties at the cutoff.
-- Never pad a list with duplicates. If fewer than five candidates are assessable, return those available and explain the shortfall.
-- Distinguish top-five ranking from verified qualification. Flag unknown requirements and explicit gaps.
-- Quarantine unreadable documents for review and show their exclusion in the run report.
-- Preserve the full ranking, candidate pool, source references, algorithm configuration, and recruiter decisions.
-- Do not compare raw score magnitudes across algorithms.
-
-## Evaluation
-
-Use independent, rubric-based recruiter judgments with suitable and graded-relevance labels. Keep reviewers blind to algorithm identity. Include candidates beyond the union of the three shortlists to assess missed candidates. Recall@5 requires sufficiently complete judgments; otherwise label it unavailable or explicitly limited to the judged pool.
-
-Report Precision@5, NDCG@5, supported Recall@5, shortlist overlap, runtime, cost, and repeatability per vacancy and across job families. Compare methods on identical held-out JDs; tune only on development JDs. Synthetic or incomplete judgments do not establish real-world effectiveness.
-
-Sensitive audit attributes must be collected appropriately, stored separately, and excluded from scoring. Do not infer them from CVs. Missing evidence is not proof of a missing skill. Recruiters retain responsibility for final decisions.
-
-## Existing source material
-
-The raw source folders are excluded from Git and remain in the local workspace. Restore them from a trusted USB bundle when needed:
+Use Python 3.12 and the shared hub lock file. From the repository root:
 
 ```text
-python scripts/download.py --from "D:/workshop-data"
+uv venv --python 3.12 .venv
+uv pip sync requirements.lock
+code 04-fairlearn/HR_Fairness_Learning_Session.ipynb
 ```
 
-Inventory these collections before combining them: their candidate identities, duplication, and vacancy associations have not yet been verified. The copied workshop repository is not part of the job-matching runtime and is not tracked here.
+The third command opens the 2-hour, CPU-only learning session in VS Code. Select the repository's Python 3.12 environment as the notebook kernel. No API key or network access is needed for this fairness walkthrough. The separate matching demonstration uses the shared `OPENROUTER_API_KEY` through OpenRouter; see [`.env.example`](.env.example).
 
-## Original project brief
+## Files
 
-The earlier design is preserved in [docs/PROJECT_BRIEF.md](docs/PROJECT_BRIEF.md) for context. It includes supervised-model proposals; the current scope is the three-method comparison documented here.
+- [Fairness learning notebook](04-fairlearn/HR_Fairness_Learning_Session.ipynb): four episodes with PAUSE prompts, Fairlearn code, fixes, and checks.
+- [Facilitator notes](04-fairlearn/FACILITATOR_NOTES.md), [exercises](04-fairlearn/EXERCISES.md), and [intro slides](04-fairlearn/INTRO_SLIDES.md).
+- [`04-fairlearn/synthetic_hr.py`](04-fairlearn/synthetic_hr.py) and [`evaluate.py`](04-fairlearn/evaluate.py): generated cohort and Fairlearn metrics.
+- [`synthetic_hr_demo/`](04-fairlearn/synthetic_hr_demo/): fictional data, rankings, group labels, and outcome-observation metadata.
+- [`results/precomputed/`](04-fairlearn/results/precomputed/): saved baseline, biased, and comparison reports.
+- [`data/SOURCES.md`](data/SOURCES.md): data provenance, license, and modifications.
 
+## MLOps workshop
+
+This repo keeps the HR-specific fairness and shortlisting story. For shared lessons on DVC, Great Expectations, MLflow, Prefect, and other MLOps tools, use the workshop hub and its setup guide. The hub link and shared slide template were not present in this checkout; add the canonical links when available.
+
+## Interpretation
+
+Fairlearn's `MetricFrame` computes group selection rates and, when the independent synthetic suitability labels are complete, recall. A person must choose which fairness question and follow-up matter for the hiring context. Small cells, incomplete real outcomes, unvalidated labels, and separate marginal audits limit conclusions; passing these synthetic checks is not evidence that real hiring is fair.

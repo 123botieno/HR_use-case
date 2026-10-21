@@ -4,6 +4,13 @@
   "vacancy_count": 8,
   "applicants_per_vacancy": 120,
   "application_count": 960,
+  "shortlist_size_per_vacancy": 5,
+  "historical_outcome_observation": {
+    "observed_only_for": "historical_shortlisted == 1",
+    "observed_count": 40,
+    "missing_count": 920,
+    "meaning": "historical_hired is blank for applicants outside the historical shortlist; blank means outcome not observed, not not hired"
+  },
   "dimensions": [
     "gender",
     "ethnicity",

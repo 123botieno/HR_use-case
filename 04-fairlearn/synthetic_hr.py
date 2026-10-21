@@ -157,9 +157,12 @@ def generate(output_dir, seed=20261020, vacancy_count=8, applicants_per_vacancy=
             row["historical_shortlisted"] = int(
                 row["candidate_id"] in historical_top
             )
-            # Simulated historical hires are a noisy subset of historical shortlists.
-            row["historical_hired"] = int(
-                row["historical_shortlisted"] and rng.random() < 0.35
+            # Hiring outcomes are observed only for people who were shortlisted.
+            # Blank means unknown, not a negative hiring outcome.
+            row["historical_hired"] = (
+                int(rng.random() < 0.35)
+                if row["historical_shortlisted"]
+                else None
             )
             applications.append(row)
             judgments.append(
@@ -241,6 +244,13 @@ def generate(output_dir, seed=20261020, vacancy_count=8, applicants_per_vacancy=
         "vacancy_count": vacancy_count,
         "applicants_per_vacancy": applicants_per_vacancy,
         "application_count": len(applications),
+        "shortlist_size_per_vacancy": 5,
+        "historical_outcome_observation": {
+            "observed_only_for": "historical_shortlisted == 1",
+            "observed_count": sum(row["historical_shortlisted"] for row in applications),
+            "missing_count": sum(not row["historical_shortlisted"] for row in applications),
+            "meaning": "historical_hired is blank for applicants outside the historical shortlist; blank means outcome not observed, not not hired",
+        },
         "dimensions": list(GROUP_COLUMNS),
         "bias_recipe": {
             "gender": "Woman and Nonbinary groups receive -5 score points",

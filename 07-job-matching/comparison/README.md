@@ -38,14 +38,14 @@ The project does not average BM25, TF-IDF, and LLM scores or combine their ranki
 
 1. **Overlap:** shared candidate count and Jaccard similarity show agreement between pairs of methods. Agreement does not show which method is correct.
 2. **Judged quality:** Precision@5, Recall@5, and NDCG@5 use independent recruiter judgments only when their label coverage requirements are met.
-3. **Operational measures:** runtime is recorded per JD-method. LLM token use and cache hits are recorded in the run and MLflow; actual API billing is not available by default.
+3. **Operational measures:** runtime is recorded per JD-method. LLM token use and cache hits are recorded in the run; actual API billing is not available by default.
 4. **Configuration and pool:** compare `pool_hash`, method configuration, and rubric status before attributing a difference to the algorithm.
 
 Without independent judgments, the current evaluation cannot select a best-performing model. In that case, the comparison is exploratory: shortlist overlap and runtime can be reported, while suitability metrics remain unavailable.
 
 ## How the models are tested
 
-The current runner uses fixed BM25 (`k1=1.5`, `b=0.75`) and TF-IDF (word unigrams, lowercase, L2 normalization) settings. It does not sweep hyperparameters. The LLM uses a fixed configured model and confirmed rubric. To test alternatives, use the same development JDs, pools, and judgments; change one predeclared configuration at a time; compare supported metrics; track each run in MLflow; then freeze settings before held-out evaluation. Never tune on held-out outcomes.
+The current runner uses fixed BM25 (`k1=1.5`, `b=0.75`) and TF-IDF (word unigrams, lowercase, L2 normalization) settings. It does not sweep hyperparameters. The LLM uses a fixed configured model and confirmed rubric. To test alternatives, use the same development JDs, pools, and judgments; change one predeclared configuration at a time; compare supported metrics; record each run and freeze settings before held-out evaluation. Never tune on held-out outcomes.
 
 Raw scores are not comparable across methods. BM25 scores lexical term relevance, TF-IDF reports cosine similarity, and the LLM reports weighted supported-evidence coverage. Compare ranked outcomes and judgment metrics instead.
 
@@ -106,4 +106,4 @@ No independent recruiter judgments are currently supplied by default, so suitabi
 
 ## Related stages
 
-[Fairlearn](../../04-fairlearn/README.md) reports group selection rates and supported recall; [MLflow](../../03-mlflow/README.md) tracks runs and metrics.
+[Fairlearn](../../04-fairlearn/README.md) reports group selection rates and supported recall. Shared experiment tracking is covered in the workshop hub.

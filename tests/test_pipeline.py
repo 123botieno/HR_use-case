@@ -12,7 +12,7 @@ prepare = stage("data").prepare
 
 execute = stage("matching").execute
 
-validate_dataset = stage("validation").validate_dataset
+from common.validation import validate_dataset
 
 
 def dataset():

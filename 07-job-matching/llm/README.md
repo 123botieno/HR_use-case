@@ -71,4 +71,4 @@ Structured output constrains format, not truth. Literal quote checks validate ci
 
 ## Related stages
 
-See the [shared run contract](../README.md), [comparison procedure](../comparison/README.md), and [MLflow tracking](../../03-mlflow/README.md).
+See the [shared run contract](../README.md), [comparison procedure](../comparison/README.md), and workshop hub for experiment tracking.

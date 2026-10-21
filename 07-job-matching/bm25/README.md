@@ -62,4 +62,4 @@ The implementation has no stemming, synonym expansion, semantic understanding, o
 
 ## Related stages
 
-See the [shared run contract](../README.md), [benchmark metrics](../comparison/README.md), and [MLflow experiment logging](../../03-mlflow/README.md).
+See the [shared run contract](../README.md), [benchmark metrics](../comparison/README.md), and workshop hub for experiment tracking.

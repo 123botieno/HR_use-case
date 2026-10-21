@@ -7,6 +7,7 @@ from pathlib import Path
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from common.stages import stage
+from common.validation import validate_dataset, validate_rankings
 
 import os
 import platform
@@ -22,8 +23,6 @@ from common.io import digest, load, save, write_csv
 bm25 = stage("bm25").bm25
 tfidf = stage("tfidf").tfidf
 rank = stage("shortlist").rank
-validate_dataset = stage("validation").validate_dataset
-validate_rankings = stage("validation").validate_rankings
 LLMScorer = stage("llm").LLMScorer
 validate_rubric = stage("llm").validate_rubric
 DEFAULT_MODEL = stage("llm").DEFAULT_MODEL
@@ -38,7 +37,6 @@ def execute(
     methods=("bm25", "tfidf", "llm"),
     rubric_path=None,
     jd_ids=None,
-    gx=False,
     pool_scope="vacancy",
     allow_draft_rubric=False,
     llm_workers=1,
@@ -55,10 +53,6 @@ def execute(
         raise ValueError("llm_workers must be between 1 and 8")
     data = load(dataset_path)
     validate_dataset(data)
-    if gx:
-        great_expectations_validate = stage("validation").great_expectations_validate
-
-        great_expectations_validate(data)
     selected = set(jd_ids or [j["id"] for j in data["jobs"]])
     if selected - {j["id"] for j in data["jobs"]}:
         raise ValueError("Unknown or unavailable JD IDs")
