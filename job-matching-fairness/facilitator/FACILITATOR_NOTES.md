@@ -105,7 +105,11 @@ Use Fairlearn `MetricFrame` to measure selection rates, demographic parity diffe
 
 Ask pairs to predict which method will show the smallest gap and whether that means it is best. Run the sex audit, then the geography audit. Point to the `n` beside every rate. Have pairs change K for lexical methods and explain why cached LLM is fixed at K=5.
 
-**Expected output for JD-01, K=5, sex groups:** TF-IDF selects 2/19 men and 3/31 women (selection rates 10.5% and 9.7%, demographic parity difference 0.0085, ratio 0.919). BM25 selects 3/19 men and 2/31 women (15.8% and 6.5%, difference 0.0934, ratio 0.409). Cached LLM selects 2/19 men and 3/31 women (same rates as TF-IDF). These figures are per-job synthetic results; ratios can be unstable with small groups.
+**Expected output for JD-01, K=5, sex groups:** TF-IDF selects 2/19 males and 3/31 females (selection rates 10.5% and 9.7%, demographic parity difference 0.0085, ratio 0.919). BM25 selects 3/19 males and 2/31 females (15.8% and 6.5%, difference 0.0934, ratio 0.409). Cached LLM selects 2/19 males and 3/31 females (same rates as TF-IDF). These figures are per-job synthetic results; ratios can be unstable with small groups.
+
+**Explain the matching counts:** the TF-IDF and cached LLM methods happen to have the same 2-man/3-woman composition, but their Top-5 lists share only one candidate. BM25 has a 3/2 split. The methods rank text and do not receive the synthetic sex field. With only five shortlist places, equal group counts can happen even when candidate rankings differ; a matching split does not show equivalent rankings or prove fairness. Emphasize the denominators (19 males, 31 females), since the same selected counts need not yield the same rates.
+
+**Scope boundary:** the biased mechanism is in the synthetic historical shortlist labels. The three matching methods are not trained on those labels in this workshop. Participants compare their selections with historical decisions as an example of how a biased label can shape evaluation; agreement is not correctness.
 
 **Label discussion:** Fairlearn can calculate group-specific precision/recall/error rates and equalized odds when valid reference labels cover the relevant applicant pool. Here, historical shortlist agreement is shown as *agreement only*. The observed hire field is blank for non-shortlisted applicants and post-hire performance exists only for hires. Do not call either label a complete correctness target; do not calculate equalized odds from biased historical labels.
 

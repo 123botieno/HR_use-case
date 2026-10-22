@@ -57,6 +57,8 @@ job-matching-fairness/
 
 The notebook delays loading the synthetic history until Problem 3. No sex or location field is passed to a matching algorithm; those fields are only used for auditing.
 
+The synthetic group effects are introduced into the **historical shortlist decisions**. TF-IDF, BM25, and LLM matching are not trained on those decisions here; the workshop uses history to investigate selection patterns and to show why evaluating against past decisions can be misleading. It does not demonstrate training a model to reproduce biased hiring decisions.
+
 ## Setup
 
 Python 3.12 and `uv` are recommended. The lock file is included in this workshop folder so this branch can be installed on its own. From the repository root:

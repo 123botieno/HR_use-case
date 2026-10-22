@@ -349,7 +349,14 @@ def fairness_metrics(selection_data: pd.DataFrame, group: str) -> tuple[pd.DataF
         ),
     }
     result = frame.by_group["selection_rate"].to_frame()
-    result["n"] = groups.value_counts().reindex(result.index).astype(int)
+    counts = selection_data.groupby(group, observed=True)["selected"].agg(
+        selected="sum", applicants="size"
+    ).reindex(result.index)
+    result["selected"] = counts["selected"].astype(int)
+    result["applicants"] = counts["applicants"].astype(int)
+    result["selected/applicants"] = (
+        result["selected"].astype(str) + "/" + result["applicants"].astype(str)
+    )
     return result.reset_index(names=group), details
 
 
