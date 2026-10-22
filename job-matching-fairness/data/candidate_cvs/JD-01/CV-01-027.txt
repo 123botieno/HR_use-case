@@ -1,0 +1,57 @@
+Professional Summary
+
+Health professional with 4.9 years of experience across relevant assignments in Ethiopia. Background in forecasting, python, technical documentation and team collaboration. Seeking the Senior Data Scientist position.
+
+Technical and Professional Skills
+
+Forecasting | Python | Scientific writing | SQL
+
+Professional Experience
+
+Health Specialist — Fictional Ethiopian Health Services 1
+
+Ethiopia | Approx. 2.5 years
+
+Deliver documented workflows, dashboards, maps, APIs, policy briefs and manuscripts.
+
+Collaborate with public-health teams to convert policy questions into modelling objectives, prediction horizons and validation plans.
+
+Assess calibration, uncertainty, subgroup and geographic robustness, temporal and spatial leakage, and bias.
+
+Develop and compare XGBoost, LightGBM, LSTM, GRU and transformer-based forecasting models.
+
+Improved timeliness or data completeness by 17% through team-led process refinement.
+
+Health Specialist — Fictional Ethiopian Health Services 2
+
+Ethiopia | Approx. 2.5 years
+
+Evaluate CNN, GNN and representation learning where appropriate to available data.
+
+Deliver documented workflows, dashboards, maps, APIs, policy briefs and manuscripts.
+
+Harmonize health, surveillance, climate, survey and geospatial datasets, including boundaries and missing values.
+
+Build Python-based reproducible feature engineering and data preparation workflows.
+
+Improved timeliness or data completeness by 11% through team-led process refinement.
+
+Education
+
+Bachelor of Science / Arts in Statistics / Data Science — Jimma University
+
+Selected Achievements
+
+Contributed to a health workstream using Python, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Forecasting, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using SQL, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using SQL, reporting and stakeholder follow-up.
+
+Training and Languages
+
+Professional development: Python. Languages: Amharic and English.
+
+All employers, accomplishments and professional histories in this CV are fictional.

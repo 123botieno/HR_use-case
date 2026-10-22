@@ -1,0 +1,2 @@
+job_id,job_title,status,notes
+JD-13,2nd Cook,missing_source_folder,"Present in source job index, but no JD folder or source document was available in the source bundle."

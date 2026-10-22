@@ -1,0 +1,79 @@
+Professional Summary
+
+Health professional with 6.6 years of experience across relevant assignments in Ethiopia. Background in r, forecasting, technical documentation and team collaboration. Seeking the Senior Data Scientist position.
+
+Technical and Professional Skills
+
+R | Forecasting | Machine learning | Python | Scientific writing
+
+Professional Experience
+
+Senior Data Scientist — Fictional Ethiopian Health Services 1
+
+Ethiopia | Approx. 2.2 years
+
+Develop and compare XGBoost, LightGBM, LSTM, GRU and transformer-based forecasting models.
+
+Deliver documented workflows, dashboards, maps, APIs, policy briefs and manuscripts.
+
+Develop spatial risk mapping, hotspot and small-area prediction models using leakage-aware spatial validation.
+
+Evaluate CNN, GNN and representation learning where appropriate to available data.
+
+Improved timeliness or data completeness by 16% through team-led process refinement.
+
+Health Specialist — Fictional Ethiopian Health Services 2
+
+Ethiopia | Approx. 2.2 years
+
+Develop and compare XGBoost, LightGBM, LSTM, GRU and transformer-based forecasting models.
+
+Build Python-based reproducible feature engineering and data preparation workflows.
+
+Develop spatial risk mapping, hotspot and small-area prediction models using leakage-aware spatial validation.
+
+Harmonize health, surveillance, climate, survey and geospatial datasets, including boundaries and missing values.
+
+Improved timeliness or data completeness by 12% through team-led process refinement.
+
+Health Specialist — Fictional Ethiopian Health Services 3
+
+Ethiopia | Approx. 2.2 years
+
+Collaborate with public-health teams to convert policy questions into modelling objectives, prediction horizons and validation plans.
+
+Evaluate CNN, GNN and representation learning where appropriate to available data.
+
+Develop and compare XGBoost, LightGBM, LSTM, GRU and transformer-based forecasting models.
+
+Build Python-based reproducible feature engineering and data preparation workflows.
+
+Improved timeliness or data completeness by 22% through team-led process refinement.
+
+Education
+
+Bachelor of Science / Arts in Statistics / Data Science — Adama Science and Technology University
+
+Research and Publications
+
+2 fictional peer-reviewed public-health research outputs; first-author papers: 0. Publication records are synthetic and not externally verifiable.
+
+Selected Achievements
+
+Contributed to a health workstream using Machine learning, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using R, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Machine learning, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using R, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Python, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Scientific writing, reporting and stakeholder follow-up.
+
+Training and Languages
+
+Professional development: Python. Languages: Amharic and English.
+
+All employers, accomplishments and professional histories in this CV are fictional.

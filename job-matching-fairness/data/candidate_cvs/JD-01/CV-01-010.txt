@@ -1,0 +1,49 @@
+Professional Summary
+
+Health professional with 2.8 years of experience across relevant assignments in Ethiopia. Background in r, python, technical documentation and team collaboration. Seeking the Senior Data Scientist position.
+
+Technical and Professional Skills
+
+R | Python | Machine learning | Git
+
+Professional Experience
+
+Assistant Health Officer — Fictional Ethiopian Health Services 1
+
+Ethiopia | Approx. 1.4 years
+
+Deliver documented workflows, dashboards, maps, APIs, policy briefs and manuscripts.
+
+Evaluate CNN, GNN and representation learning where appropriate to available data.
+
+Develop spatial risk mapping, hotspot and small-area prediction models using leakage-aware spatial validation.
+
+Assistant Health Officer — Fictional Ethiopian Health Services 2
+
+Ethiopia | Approx. 1.4 years
+
+Deliver documented workflows, dashboards, maps, APIs, policy briefs and manuscripts.
+
+Collaborate with public-health teams to convert policy questions into modelling objectives, prediction horizons and validation plans.
+
+Develop and compare XGBoost, LightGBM, LSTM, GRU and transformer-based forecasting models.
+
+Education
+
+Bachelor of Science / Arts in Statistics / Data Science — University of Gondar
+
+Selected Achievements
+
+Contributed to a health workstream using Machine learning, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Python, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Python, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using R, reporting and stakeholder follow-up.
+
+Training and Languages
+
+Professional development: Git. Languages: Amharic and English.
+
+All employers, accomplishments and professional histories in this CV are fictional.

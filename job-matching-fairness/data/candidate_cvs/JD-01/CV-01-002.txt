@@ -1,0 +1,79 @@
+Professional Summary
+
+Health professional with 6.8 years of experience across relevant assignments in Ethiopia. Background in machine learning, git, technical documentation and team collaboration. Seeking the Senior Data Scientist position.
+
+Technical and Professional Skills
+
+Machine learning | Git | Geospatial analytics | Data quality | Forecasting
+
+Professional Experience
+
+Senior Data Scientist — Fictional Ethiopian Health Services 1
+
+Ethiopia | Approx. 2.3 years
+
+Collaborate with public-health teams to convert policy questions into modelling objectives, prediction horizons and validation plans.
+
+Mentor analysts and work with epidemiologists, policymakers and technical teams while meeting privacy and security requirements.
+
+Assess calibration, uncertainty, subgroup and geographic robustness, temporal and spatial leakage, and bias.
+
+Harmonize health, surveillance, climate, survey and geospatial datasets, including boundaries and missing values.
+
+Improved timeliness or data completeness by 19% through team-led process refinement.
+
+Health Specialist — Fictional Ethiopian Health Services 2
+
+Ethiopia | Approx. 2.3 years
+
+Build Python-based reproducible feature engineering and data preparation workflows.
+
+Develop spatial risk mapping, hotspot and small-area prediction models using leakage-aware spatial validation.
+
+Harmonize health, surveillance, climate, survey and geospatial datasets, including boundaries and missing values.
+
+Deliver documented workflows, dashboards, maps, APIs, policy briefs and manuscripts.
+
+Improved timeliness or data completeness by 8% through team-led process refinement.
+
+Health Specialist — Fictional Ethiopian Health Services 3
+
+Ethiopia | Approx. 2.3 years
+
+Harmonize health, surveillance, climate, survey and geospatial datasets, including boundaries and missing values.
+
+Deliver documented workflows, dashboards, maps, APIs, policy briefs and manuscripts.
+
+Develop and compare XGBoost, LightGBM, LSTM, GRU and transformer-based forecasting models.
+
+Mentor analysts and work with epidemiologists, policymakers and technical teams while meeting privacy and security requirements.
+
+Improved timeliness or data completeness by 14% through team-led process refinement.
+
+Education
+
+Bachelor of Science / Arts in Statistics / Data Science — Hawassa University
+
+Research and Publications
+
+7 fictional peer-reviewed public-health research outputs; first-author papers: 4. Publication records are synthetic and not externally verifiable.
+
+Selected Achievements
+
+Contributed to a health workstream using Geospatial analytics, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Git, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Geospatial analytics, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Git, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Data quality, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Machine learning, reporting and stakeholder follow-up.
+
+Training and Languages
+
+Professional development: Geospatial analytics. Languages: Amharic and English.
+
+All employers, accomplishments and professional histories in this CV are fictional.

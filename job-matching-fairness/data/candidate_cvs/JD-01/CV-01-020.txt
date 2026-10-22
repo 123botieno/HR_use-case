@@ -1,0 +1,71 @@
+Professional Summary
+
+Health professional with 5.9 years of experience across relevant assignments in Ethiopia. Background in git, python, technical documentation and team collaboration. Seeking the Senior Data Scientist position.
+
+Technical and Professional Skills
+
+Git | Python | Forecasting | Scientific writing | Geospatial analytics
+
+Professional Experience
+
+Health Specialist — Fictional Ethiopian Health Services 1
+
+Ethiopia | Approx. 2.0 years
+
+Develop spatial risk mapping, hotspot and small-area prediction models using leakage-aware spatial validation.
+
+Build Python-based reproducible feature engineering and data preparation workflows.
+
+Deliver documented workflows, dashboards, maps, APIs, policy briefs and manuscripts.
+
+Collaborate with public-health teams to convert policy questions into modelling objectives, prediction horizons and validation plans.
+
+Improved timeliness or data completeness by 22% through team-led process refinement.
+
+Health Specialist — Fictional Ethiopian Health Services 2
+
+Ethiopia | Approx. 2.0 years
+
+Mentor analysts and work with epidemiologists, policymakers and technical teams while meeting privacy and security requirements.
+
+Harmonize health, surveillance, climate, survey and geospatial datasets, including boundaries and missing values.
+
+Collaborate with public-health teams to convert policy questions into modelling objectives, prediction horizons and validation plans.
+
+Assess calibration, uncertainty, subgroup and geographic robustness, temporal and spatial leakage, and bias.
+
+Improved timeliness or data completeness by 10% through team-led process refinement.
+
+Health Specialist — Fictional Ethiopian Health Services 3
+
+Ethiopia | Approx. 2.0 years
+
+Build Python-based reproducible feature engineering and data preparation workflows.
+
+Develop and compare XGBoost, LightGBM, LSTM, GRU and transformer-based forecasting models.
+
+Develop spatial risk mapping, hotspot and small-area prediction models using leakage-aware spatial validation.
+
+Mentor analysts and work with epidemiologists, policymakers and technical teams while meeting privacy and security requirements.
+
+Improved timeliness or data completeness by 18% through team-led process refinement.
+
+Education
+
+Bachelor of Science / Arts in Statistics / Data Science — Addis Ababa University
+
+Selected Achievements
+
+Contributed to a health workstream using Forecasting, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Geospatial analytics, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Git, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Python, reporting and stakeholder follow-up.
+
+Training and Languages
+
+Professional development: Scientific writing. Languages: Amharic and English.
+
+All employers, accomplishments and professional histories in this CV are fictional.

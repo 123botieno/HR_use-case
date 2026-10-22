@@ -1,0 +1,81 @@
+Professional Summary
+
+Health professional with 7.6 years of experience across relevant assignments in Ethiopia. Background in geospatial analytics, forecasting, technical documentation and team collaboration. Seeking the Senior Data Scientist position.
+
+Technical and Professional Skills
+
+Geospatial analytics | Forecasting | SQL | R | Data quality
+
+Professional Experience
+
+Senior Data Scientist — Fictional Ethiopian Health Services 1
+
+Ethiopia | Approx. 2.5 years
+
+Develop and compare XGBoost, LightGBM, LSTM, GRU and transformer-based forecasting models.
+
+Assess calibration, uncertainty, subgroup and geographic robustness, temporal and spatial leakage, and bias.
+
+Collaborate with public-health teams to convert policy questions into modelling objectives, prediction horizons and validation plans.
+
+Mentor analysts and work with epidemiologists, policymakers and technical teams while meeting privacy and security requirements.
+
+Improved timeliness or data completeness by 17% through team-led process refinement.
+
+Health Specialist — Fictional Ethiopian Health Services 2
+
+Ethiopia | Approx. 2.5 years
+
+Collaborate with public-health teams to convert policy questions into modelling objectives, prediction horizons and validation plans.
+
+Assess calibration, uncertainty, subgroup and geographic robustness, temporal and spatial leakage, and bias.
+
+Develop and compare XGBoost, LightGBM, LSTM, GRU and transformer-based forecasting models.
+
+Mentor analysts and work with epidemiologists, policymakers and technical teams while meeting privacy and security requirements.
+
+Improved timeliness or data completeness by 24% through team-led process refinement.
+
+Health Specialist — Fictional Ethiopian Health Services 3
+
+Ethiopia | Approx. 2.5 years
+
+Develop and compare XGBoost, LightGBM, LSTM, GRU and transformer-based forecasting models.
+
+Develop spatial risk mapping, hotspot and small-area prediction models using leakage-aware spatial validation.
+
+Harmonize health, surveillance, climate, survey and geospatial datasets, including boundaries and missing values.
+
+Assess calibration, uncertainty, subgroup and geographic robustness, temporal and spatial leakage, and bias.
+
+Improved timeliness or data completeness by 21% through team-led process refinement.
+
+Education
+
+Bachelor of Science / Arts in Statistics / Data Science — Jimma University
+
+Master’s degree in Statistics / Data Science or Management — Hawassa University
+
+Research and Publications
+
+3 fictional peer-reviewed public-health research outputs; first-author papers: 0. Publication records are synthetic and not externally verifiable.
+
+Selected Achievements
+
+Contributed to a health workstream using Forecasting, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Geospatial analytics, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Geospatial analytics, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using R, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Data quality, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Forecasting, reporting and stakeholder follow-up.
+
+Training and Languages
+
+Professional development: Forecasting. Languages: Amharic and English.
+
+All employers, accomplishments and professional histories in this CV are fictional.

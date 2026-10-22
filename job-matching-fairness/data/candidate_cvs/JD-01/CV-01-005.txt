@@ -1,0 +1,103 @@
+Professional Summary
+
+Health professional with 9.9 years of experience across relevant assignments in Ethiopia. Background in python, r, technical documentation and team collaboration. Seeking the Senior Data Scientist position.
+
+Technical and Professional Skills
+
+Python | R | Machine learning | Forecasting | Geospatial analytics | Git
+
+Professional Experience
+
+Senior Data Scientist — Fictional Ethiopian Health Services 1
+
+Ethiopia | Approx. 2.5 years
+
+Collaborate with public-health teams to convert policy questions into modelling objectives, prediction horizons and validation plans.
+
+Evaluate CNN, GNN and representation learning where appropriate to available data.
+
+Develop spatial risk mapping, hotspot and small-area prediction models using leakage-aware spatial validation.
+
+Assess calibration, uncertainty, subgroup and geographic robustness, temporal and spatial leakage, and bias.
+
+Improved timeliness or data completeness by 19% through team-led process refinement.
+
+Coached 3 colleagues and reviewed outputs for quality and compliance.
+
+Senior Health Specialist — Fictional Ethiopian Health Services 2
+
+Ethiopia | Approx. 2.5 years
+
+Collaborate with public-health teams to convert policy questions into modelling objectives, prediction horizons and validation plans.
+
+Harmonize health, surveillance, climate, survey and geospatial datasets, including boundaries and missing values.
+
+Develop spatial risk mapping, hotspot and small-area prediction models using leakage-aware spatial validation.
+
+Evaluate CNN, GNN and representation learning where appropriate to available data.
+
+Improved timeliness or data completeness by 17% through team-led process refinement.
+
+Coached 5 colleagues and reviewed outputs for quality and compliance.
+
+Senior Health Specialist — Fictional Ethiopian Health Services 3
+
+Ethiopia | Approx. 2.5 years
+
+Build Python-based reproducible feature engineering and data preparation workflows.
+
+Collaborate with public-health teams to convert policy questions into modelling objectives, prediction horizons and validation plans.
+
+Harmonize health, surveillance, climate, survey and geospatial datasets, including boundaries and missing values.
+
+Deliver documented workflows, dashboards, maps, APIs, policy briefs and manuscripts.
+
+Improved timeliness or data completeness by 9% through team-led process refinement.
+
+Coached 6 colleagues and reviewed outputs for quality and compliance.
+
+Senior Health Specialist — Fictional Ethiopian Health Services 4
+
+Ethiopia | Approx. 2.5 years
+
+Develop spatial risk mapping, hotspot and small-area prediction models using leakage-aware spatial validation.
+
+Mentor analysts and work with epidemiologists, policymakers and technical teams while meeting privacy and security requirements.
+
+Assess calibration, uncertainty, subgroup and geographic robustness, temporal and spatial leakage, and bias.
+
+Build Python-based reproducible feature engineering and data preparation workflows.
+
+Improved timeliness or data completeness by 13% through team-led process refinement.
+
+Coached 6 colleagues and reviewed outputs for quality and compliance.
+
+Education
+
+Bachelor of Science / Arts in Statistics / Data Science — Hawassa University
+
+Master’s degree in Statistics / Data Science or Management — Adama Science and Technology University
+
+Research and Publications
+
+6 fictional peer-reviewed public-health research outputs; first-author papers: 3. Publication records are synthetic and not externally verifiable.
+
+Selected Achievements
+
+Contributed to a health workstream using Git, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Geospatial analytics, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Forecasting, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using R, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Geospatial analytics, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using R, reporting and stakeholder follow-up.
+
+Training and Languages
+
+Professional development: Git. Languages: Amharic and English.
+
+All employers, accomplishments and professional histories in this CV are fictional.

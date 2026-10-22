@@ -1,0 +1,79 @@
+Professional Summary
+
+Bayesian professional with 6.8 years of experience across relevant assignments in Ethiopia. Background in spatial modelling, stan, technical documentation and team collaboration. Seeking the Senior Bayesian Spatial Modeller and Small Area Estimation Expert position.
+
+Technical and Professional Skills
+
+Spatial modelling | Stan | GIS | Uncertainty analysis | R
+
+Professional Experience
+
+Senior Bayesian Spatial Modeller and Small Area Estimation Expert — Fictional Ethiopian Bayesian Services 1
+
+Ethiopia | Approx. 2.3 years
+
+Produce design-based direct estimates and standard errors before model-based estimation.
+
+Handle boundary changes, spatial misalignment, displaced survey clusters, missingness and measurement error.
+
+Use INLA, MCMC, HMC or NUTS and compare model diagnostics, assumptions and sensitivity.
+
+Frame policy questions by indicator, geography, time period, estimand and decision threshold.
+
+Improved timeliness or data completeness by 24% through team-led process refinement.
+
+Bayesian Specialist — Fictional Ethiopian Bayesian Services 2
+
+Ethiopia | Approx. 2.3 years
+
+Quantify uncertainty and communicate subnational estimates through maps, reports and policy products.
+
+Handle boundary changes, spatial misalignment, displaced survey clusters, missingness and measurement error.
+
+Fit Fay–Herriot, BYM/BYM2, CAR, Gaussian-process or related Bayesian spatial models as justified.
+
+Frame policy questions by indicator, geography, time period, estimand and decision threshold.
+
+Improved timeliness or data completeness by 18% through team-led process refinement.
+
+Bayesian Specialist — Fictional Ethiopian Bayesian Services 3
+
+Ethiopia | Approx. 2.3 years
+
+Quantify uncertainty and communicate subnational estimates through maps, reports and policy products.
+
+Fit Fay–Herriot, BYM/BYM2, CAR, Gaussian-process or related Bayesian spatial models as justified.
+
+Combine survey, census, routine health, surveillance and geospatial covariates with traceable metadata.
+
+Handle boundary changes, spatial misalignment, displaced survey clusters, missingness and measurement error.
+
+Improved timeliness or data completeness by 11% through team-led process refinement.
+
+Education
+
+Bachelor of Science / Arts in Biostatistics / Statistics — Adama Science and Technology University
+
+Research and Publications
+
+4 fictional peer-reviewed public-health research outputs; first-author papers: 1. Publication records are synthetic and not externally verifiable.
+
+Selected Achievements
+
+Contributed to a bayesian workstream using Uncertainty analysis, reporting and stakeholder follow-up.
+
+Contributed to a bayesian workstream using Uncertainty analysis, reporting and stakeholder follow-up.
+
+Contributed to a bayesian workstream using GIS, reporting and stakeholder follow-up.
+
+Contributed to a bayesian workstream using GIS, reporting and stakeholder follow-up.
+
+Contributed to a bayesian workstream using GIS, reporting and stakeholder follow-up.
+
+Contributed to a bayesian workstream using R, reporting and stakeholder follow-up.
+
+Training and Languages
+
+Professional development: R. Languages: Amharic and English.
+
+All employers, accomplishments and professional histories in this CV are fictional.

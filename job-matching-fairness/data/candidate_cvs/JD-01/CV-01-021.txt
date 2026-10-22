@@ -1,0 +1,49 @@
+Professional Summary
+
+Health professional with 2.9 years of experience across relevant assignments in Ethiopia. Background in machine learning, forecasting, technical documentation and team collaboration. Seeking the Senior Data Scientist position.
+
+Technical and Professional Skills
+
+Machine learning | Forecasting | Git | Data quality
+
+Professional Experience
+
+Assistant Health Officer — Fictional Ethiopian Health Services 1
+
+Ethiopia | Approx. 1.4 years
+
+Develop spatial risk mapping, hotspot and small-area prediction models using leakage-aware spatial validation.
+
+Collaborate with public-health teams to convert policy questions into modelling objectives, prediction horizons and validation plans.
+
+Assess calibration, uncertainty, subgroup and geographic robustness, temporal and spatial leakage, and bias.
+
+Assistant Health Officer — Fictional Ethiopian Health Services 2
+
+Ethiopia | Approx. 1.4 years
+
+Collaborate with public-health teams to convert policy questions into modelling objectives, prediction horizons and validation plans.
+
+Develop and compare XGBoost, LightGBM, LSTM, GRU and transformer-based forecasting models.
+
+Evaluate CNN, GNN and representation learning where appropriate to available data.
+
+Education
+
+Bachelor of Science / Arts in Statistics / Data Science — Adama Science and Technology University
+
+Selected Achievements
+
+Contributed to a health workstream using Forecasting, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Forecasting, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Forecasting, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Machine learning, reporting and stakeholder follow-up.
+
+Training and Languages
+
+Professional development: Data quality. Languages: Amharic and English.
+
+All employers, accomplishments and professional histories in this CV are fictional.

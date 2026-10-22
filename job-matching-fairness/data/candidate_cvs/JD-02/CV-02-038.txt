@@ -1,0 +1,79 @@
+Professional Summary
+
+Bayesian professional with 6.5 years of experience across relevant assignments in Ethiopia. Background in gis, r, technical documentation and team collaboration. Seeking the Senior Bayesian Spatial Modeller and Small Area Estimation Expert position.
+
+Technical and Professional Skills
+
+GIS | R | Survey sampling | INLA | Spatial modelling | Stan
+
+Professional Experience
+
+Senior Bayesian Spatial Modeller and Small Area Estimation Expert — Fictional Ethiopian Bayesian Services 1
+
+Ethiopia | Approx. 2.2 years
+
+Use INLA, MCMC, HMC or NUTS and compare model diagnostics, assumptions and sensitivity.
+
+Handle boundary changes, spatial misalignment, displaced survey clusters, missingness and measurement error.
+
+Frame policy questions by indicator, geography, time period, estimand and decision threshold.
+
+Fit Fay–Herriot, BYM/BYM2, CAR, Gaussian-process or related Bayesian spatial models as justified.
+
+Improved timeliness or data completeness by 20% through team-led process refinement.
+
+Bayesian Specialist — Fictional Ethiopian Bayesian Services 2
+
+Ethiopia | Approx. 2.2 years
+
+Quantify uncertainty and communicate subnational estimates through maps, reports and policy products.
+
+Frame policy questions by indicator, geography, time period, estimand and decision threshold.
+
+Handle boundary changes, spatial misalignment, displaced survey clusters, missingness and measurement error.
+
+Train and mentor analysts and support reproducible statistical workflows.
+
+Improved timeliness or data completeness by 14% through team-led process refinement.
+
+Bayesian Specialist — Fictional Ethiopian Bayesian Services 3
+
+Ethiopia | Approx. 2.2 years
+
+Handle boundary changes, spatial misalignment, displaced survey clusters, missingness and measurement error.
+
+Quantify uncertainty and communicate subnational estimates through maps, reports and policy products.
+
+Produce design-based direct estimates and standard errors before model-based estimation.
+
+Fit Fay–Herriot, BYM/BYM2, CAR, Gaussian-process or related Bayesian spatial models as justified.
+
+Improved timeliness or data completeness by 8% through team-led process refinement.
+
+Education
+
+Bachelor of Science / Arts in Biostatistics / Statistics — Jimma University
+
+Research and Publications
+
+4 fictional peer-reviewed public-health research outputs; first-author papers: 1. Publication records are synthetic and not externally verifiable.
+
+Selected Achievements
+
+Contributed to a bayesian workstream using Survey sampling, reporting and stakeholder follow-up.
+
+Contributed to a bayesian workstream using Survey sampling, reporting and stakeholder follow-up.
+
+Contributed to a bayesian workstream using INLA, reporting and stakeholder follow-up.
+
+Contributed to a bayesian workstream using Stan, reporting and stakeholder follow-up.
+
+Contributed to a bayesian workstream using Stan, reporting and stakeholder follow-up.
+
+Contributed to a bayesian workstream using INLA, reporting and stakeholder follow-up.
+
+Training and Languages
+
+Professional development: Stan. Languages: Amharic and English.
+
+All employers, accomplishments and professional histories in this CV are fictional.

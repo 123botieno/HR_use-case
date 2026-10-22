@@ -1,0 +1,57 @@
+Professional Summary
+
+Bayesian professional with 4.8 years of experience across relevant assignments in Ethiopia. Background in inla, stan, technical documentation and team collaboration. Seeking the Senior Bayesian Spatial Modeller and Small Area Estimation Expert position.
+
+Technical and Professional Skills
+
+INLA | Stan | Uncertainty analysis | Survey sampling
+
+Professional Experience
+
+Bayesian Specialist — Fictional Ethiopian Bayesian Services 1
+
+Ethiopia | Approx. 2.4 years
+
+Use INLA, MCMC, HMC or NUTS and compare model diagnostics, assumptions and sensitivity.
+
+Frame policy questions by indicator, geography, time period, estimand and decision threshold.
+
+Produce design-based direct estimates and standard errors before model-based estimation.
+
+Combine survey, census, routine health, surveillance and geospatial covariates with traceable metadata.
+
+Improved timeliness or data completeness by 23% through team-led process refinement.
+
+Bayesian Specialist — Fictional Ethiopian Bayesian Services 2
+
+Ethiopia | Approx. 2.4 years
+
+Fit Fay–Herriot, BYM/BYM2, CAR, Gaussian-process or related Bayesian spatial models as justified.
+
+Quantify uncertainty and communicate subnational estimates through maps, reports and policy products.
+
+Use INLA, MCMC, HMC or NUTS and compare model diagnostics, assumptions and sensitivity.
+
+Combine survey, census, routine health, surveillance and geospatial covariates with traceable metadata.
+
+Improved timeliness or data completeness by 17% through team-led process refinement.
+
+Education
+
+Bachelor of Science / Arts in Biostatistics / Statistics — Hawassa University
+
+Selected Achievements
+
+Contributed to a bayesian workstream using Uncertainty analysis, reporting and stakeholder follow-up.
+
+Contributed to a bayesian workstream using Stan, reporting and stakeholder follow-up.
+
+Contributed to a bayesian workstream using INLA, reporting and stakeholder follow-up.
+
+Contributed to a bayesian workstream using INLA, reporting and stakeholder follow-up.
+
+Training and Languages
+
+Professional development: Uncertainty analysis. Languages: Amharic and English.
+
+All employers, accomplishments and professional histories in this CV are fictional.

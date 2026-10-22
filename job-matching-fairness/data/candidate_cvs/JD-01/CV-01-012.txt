@@ -1,0 +1,87 @@
+Professional Summary
+
+Health professional with 8.6 years of experience across relevant assignments in Ethiopia. Background in r, sql, technical documentation and team collaboration. Seeking the Senior Data Scientist position.
+
+Technical and Professional Skills
+
+R | SQL | Data quality | Scientific writing | Forecasting | Git
+
+Professional Experience
+
+Senior Data Scientist — Fictional Ethiopian Health Services 1
+
+Ethiopia | Approx. 2.9 years
+
+Harmonize health, surveillance, climate, survey and geospatial datasets, including boundaries and missing values.
+
+Mentor analysts and work with epidemiologists, policymakers and technical teams while meeting privacy and security requirements.
+
+Develop and compare XGBoost, LightGBM, LSTM, GRU and transformer-based forecasting models.
+
+Build Python-based reproducible feature engineering and data preparation workflows.
+
+Improved timeliness or data completeness by 16% through team-led process refinement.
+
+Coached 7 colleagues and reviewed outputs for quality and compliance.
+
+Senior Health Specialist — Fictional Ethiopian Health Services 2
+
+Ethiopia | Approx. 2.9 years
+
+Deliver documented workflows, dashboards, maps, APIs, policy briefs and manuscripts.
+
+Assess calibration, uncertainty, subgroup and geographic robustness, temporal and spatial leakage, and bias.
+
+Harmonize health, surveillance, climate, survey and geospatial datasets, including boundaries and missing values.
+
+Collaborate with public-health teams to convert policy questions into modelling objectives, prediction horizons and validation plans.
+
+Improved timeliness or data completeness by 24% through team-led process refinement.
+
+Coached 2 colleagues and reviewed outputs for quality and compliance.
+
+Senior Health Specialist — Fictional Ethiopian Health Services 3
+
+Ethiopia | Approx. 2.9 years
+
+Develop and compare XGBoost, LightGBM, LSTM, GRU and transformer-based forecasting models.
+
+Deliver documented workflows, dashboards, maps, APIs, policy briefs and manuscripts.
+
+Develop spatial risk mapping, hotspot and small-area prediction models using leakage-aware spatial validation.
+
+Build Python-based reproducible feature engineering and data preparation workflows.
+
+Improved timeliness or data completeness by 12% through team-led process refinement.
+
+Coached 7 colleagues and reviewed outputs for quality and compliance.
+
+Education
+
+Bachelor of Science / Arts in Statistics / Data Science — Hawassa University
+
+Master’s degree in Statistics / Data Science or Management — Addis Ababa University
+
+Research and Publications
+
+4 fictional peer-reviewed public-health research outputs; first-author papers: 1. Publication records are synthetic and not externally verifiable.
+
+Selected Achievements
+
+Contributed to a health workstream using Forecasting, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Data quality, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Data quality, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Data quality, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using Forecasting, reporting and stakeholder follow-up.
+
+Contributed to a health workstream using R, reporting and stakeholder follow-up.
+
+Training and Languages
+
+Professional development: Data quality. Languages: Amharic and English.
+
+All employers, accomplishments and professional histories in this CV are fictional.

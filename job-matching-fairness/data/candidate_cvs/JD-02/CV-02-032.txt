@@ -1,0 +1,49 @@
+Professional Summary
+
+Bayesian professional with 2.9 years of experience across relevant assignments in Ethiopia. Background in uncertainty analysis, r, technical documentation and team collaboration. Seeking the Senior Bayesian Spatial Modeller and Small Area Estimation Expert position.
+
+Technical and Professional Skills
+
+Uncertainty analysis | R | Survey sampling | INLA
+
+Professional Experience
+
+Assistant Bayesian Officer — Fictional Ethiopian Bayesian Services 1
+
+Ethiopia | Approx. 1.4 years
+
+Train and mentor analysts and support reproducible statistical workflows.
+
+Fit Fay–Herriot, BYM/BYM2, CAR, Gaussian-process or related Bayesian spatial models as justified.
+
+Frame policy questions by indicator, geography, time period, estimand and decision threshold.
+
+Assistant Bayesian Officer — Fictional Ethiopian Bayesian Services 2
+
+Ethiopia | Approx. 1.4 years
+
+Use INLA, MCMC, HMC or NUTS and compare model diagnostics, assumptions and sensitivity.
+
+Quantify uncertainty and communicate subnational estimates through maps, reports and policy products.
+
+Produce design-based direct estimates and standard errors before model-based estimation.
+
+Education
+
+Bachelor of Science / Arts in Biostatistics / Statistics — Adama Science and Technology University
+
+Selected Achievements
+
+Contributed to a bayesian workstream using INLA, reporting and stakeholder follow-up.
+
+Contributed to a bayesian workstream using R, reporting and stakeholder follow-up.
+
+Contributed to a bayesian workstream using Survey sampling, reporting and stakeholder follow-up.
+
+Contributed to a bayesian workstream using Uncertainty analysis, reporting and stakeholder follow-up.
+
+Training and Languages
+
+Professional development: Uncertainty analysis. Languages: Amharic and English.
+
+All employers, accomplishments and professional histories in this CV are fictional.

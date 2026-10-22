@@ -1,0 +1,53 @@
+Senior Bayesian Spatial Modeller and Small Area Estimation Expert
+
+Ethiopian Public Health Institute
+
+Health / Biostatistics | Senior | Ethiopia
+
+Job Information
+
+Contract, Addis Ababa; one year renewable; 1 vacancy; deadline Oct 2, 2026
+
+Background
+
+Ethiopian Public Health Institute is the public-sector employer advertising this position in health / biostatistics. The role information below is a source-faithful paraphrase of the identified vacancy, not a verbatim reproduction.
+
+Job Summary / Purpose of the Position
+
+The Senior Bayesian Spatial Modeller and Small Area Estimation Expert position supports the organisation’s work in health / biostatistics. The advertisement specifies the education, experience and technical requirements below.
+
+Roles and Responsibilities
+
+Frame policy questions by indicator, geography, time period, estimand and decision threshold.
+
+Combine survey, census, routine health, surveillance and geospatial covariates with traceable metadata.
+
+Handle boundary changes, spatial misalignment, displaced survey clusters, missingness and measurement error.
+
+Produce design-based direct estimates and standard errors before model-based estimation.
+
+Fit Fay–Herriot, BYM/BYM2, CAR, Gaussian-process or related Bayesian spatial models as justified.
+
+Use INLA, MCMC, HMC or NUTS and compare model diagnostics, assumptions and sensitivity.
+
+Quantify uncertainty and communicate subnational estimates through maps, reports and policy products.
+
+Train and mentor analysts and support reproducible statistical workflows.
+
+Qualifications and Experience
+
+PhD in statistics, biostatistics, demography, survey methodology or related discipline plus 2 years; or Master’s plus 6 years. Six public-health papers, three first-author.
+
+Required and Desired Skills
+
+Bayesian inference, small area estimation, spatial statistics, R, INLA/Stan, GIS, survey analysis and uncertainty assessment.
+
+Employment Terms and Application
+
+Contract, Addis Ababa; one year renewable; 1 vacancy; deadline Oct 2, 2026
+
+Original Job Advertisement
+
+https://ethio-jobs.net.et/vacancy-detail.php?id=50344
+
+Source note: Text is paraphrased, and the original employer notice should be consulted for exact wording. This is a historical training dataset; deadlines may have passed.

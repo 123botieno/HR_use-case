@@ -1,0 +1,700 @@
+candidate_id,job_id,qualifications,skills,experience_years,simulated_qualification_score,sex,geographic_location,historical_shortlisted,historical_hired,post_hire_performance,performance_observed
+CV-01-001,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Addis Ababa University,SQL | Python | R | Forecasting | Geospatial analytics | Git,6.4,67.3,Man,Outside Addis Ababa,0,,,0
+CV-01-002,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Hawassa University,Machine learning | Git | Geospatial analytics | Data quality | Forecasting,6.8,61.8,Woman,Addis Ababa,0,,,0
+CV-01-003,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Bahir Dar University,Git | Forecasting | Data quality | Scientific writing | SQL,6.1,60.0,Woman,Addis Ababa,0,,,0
+CV-01-004,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Jimma University,R | Geospatial analytics | Python | Data quality,3.0,56.3,Woman,Addis Ababa,0,,,0
+CV-01-005,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Hawassa University,Python | R | Machine learning | Forecasting | Geospatial analytics | Git,9.9,68.2,Woman,Outside Addis Ababa,0,,,0
+CV-01-006,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Adama Science and Technology University,Forecasting | Data quality | R | SQL | Python | Scientific writing,8.6,69.1,Woman,Outside Addis Ababa,0,,,0
+CV-01-007,JD-01,Bachelor of Science / Arts in Statistics / Data Science — University of Gondar,Git | Python | Scientific writing | Machine learning | Data quality,5.7,61.2,Woman,Addis Ababa,0,,,0
+CV-01-008,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Bahir Dar University,Python | Geospatial analytics | Machine learning | SQL | Data quality,5.6,58.1,Woman,Outside Addis Ababa,0,,,0
+CV-01-009,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Jimma University,Machine learning | Git | Python | Geospatial analytics | R,6.2,62.0,Man,Addis Ababa,1,False,,0
+CV-01-010,JD-01,Bachelor of Science / Arts in Statistics / Data Science — University of Gondar,R | Python | Machine learning | Git,2.8,56.6,Woman,Addis Ababa,0,,,0
+CV-01-011,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Jimma University,Git | Data quality | Geospatial analytics | Machine learning | R | Forecasting,9.5,74.3,Woman,Addis Ababa,1,True,3.1,1
+CV-01-012,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Hawassa University,R | SQL | Data quality | Scientific writing | Forecasting | Git,8.6,65.4,Man,Addis Ababa,0,,,0
+CV-01-013,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Hawassa University,Machine learning | SQL | Forecasting | R | Geospatial analytics,5.5,60.9,Woman,Outside Addis Ababa,0,,,0
+CV-01-014,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Bahir Dar University,Git | Forecasting | R | Machine learning | SQL,5.5,57.4,Woman,Outside Addis Ababa,0,,,0
+CV-01-015,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Addis Ababa University,Data quality | SQL | R | Python,4.8,60.0,Man,Addis Ababa,0,,,0
+CV-01-016,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Bahir Dar University,Git | Geospatial analytics | Scientific writing | Data quality,4.1,55.1,Woman,Addis Ababa,0,,,0
+CV-01-017,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Hawassa University,R | Geospatial analytics | Data quality | Scientific writing | Machine learning | Git,9.0,73.1,Man,Addis Ababa,1,True,3.1,1
+CV-01-018,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Addis Ababa University,Scientific writing | Python | Forecasting | R | Geospatial analytics | Git,8.5,72.3,Woman,Addis Ababa,1,True,3.8,1
+CV-01-019,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Addis Ababa University,R | Forecasting | Data quality | Git | Machine learning,6.9,66.0,Woman,Addis Ababa,0,,,0
+CV-01-020,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Addis Ababa University,Git | Python | Forecasting | Scientific writing | Geospatial analytics,5.9,61.4,Man,Outside Addis Ababa,0,,,0
+CV-01-021,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Adama Science and Technology University,Machine learning | Forecasting | Git | Data quality,2.9,55.5,Man,Addis Ababa,0,,,0
+CV-01-022,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Bahir Dar University,R | Git | Data quality | Geospatial analytics | SQL | Python,9.7,73.7,Man,Outside Addis Ababa,1,True,4.2,1
+CV-01-023,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Bahir Dar University,Data quality | Machine learning | SQL | R | Python | Forecasting,7.8,70.3,Man,Outside Addis Ababa,1,False,,0
+CV-01-024,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Hawassa University,Forecasting | Data quality | Python | Geospatial analytics | SQL,6.8,61.4,Man,Outside Addis Ababa,0,,,0
+CV-01-025,JD-01,Bachelor of Science / Arts in Statistics / Data Science — University of Gondar,R | Git | Geospatial analytics | Forecasting | Machine learning,5.4,60.5,Man,Outside Addis Ababa,0,,,0
+CV-01-026,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Bahir Dar University,Data quality | Machine learning | Scientific writing | SQL | Python,6.6,65.8,Woman,Addis Ababa,0,,,0
+CV-01-027,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Jimma University,Forecasting | Python | Scientific writing | SQL,4.9,59.8,Man,Outside Addis Ababa,0,,,0
+CV-01-028,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Adama Science and Technology University,Git | SQL | Forecasting | Machine learning | Scientific writing | R,8.8,72.1,Woman,Addis Ababa,1,False,,0
+CV-01-029,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Adama Science and Technology University,Data quality | Git | Forecasting | Python | Machine learning | Geospatial analytics,9.5,72.8,Man,Outside Addis Ababa,1,True,3.5,1
+CV-01-030,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Jimma University,Geospatial analytics | Forecasting | SQL | R | Data quality,7.6,65.6,Woman,Addis Ababa,0,,,0
+CV-01-031,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Hawassa University,Forecasting | SQL | Machine learning | R | Scientific writing,7.2,64.9,Woman,Outside Addis Ababa,0,,,0
+CV-01-032,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Hawassa University,Forecasting | R | Data quality | Scientific writing,2.7,52.2,Woman,Outside Addis Ababa,0,,,0
+CV-01-033,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Bahir Dar University,R | Forecasting | Scientific writing | Geospatial analytics | Machine learning | Python,8.3,64.8,Woman,Addis Ababa,0,,,0
+CV-01-034,JD-01,Bachelor of Science / Arts in Statistics / Data Science — University of Gondar,Git | Python | Forecasting | SQL | Machine learning | Data quality,8.5,69.9,Man,Outside Addis Ababa,0,,,0
+CV-01-035,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Adama Science and Technology University,R | Forecasting | Machine learning | Python | Scientific writing,6.6,61.3,Woman,Addis Ababa,0,,,0
+CV-01-036,JD-01,Bachelor of Science / Arts in Statistics / Data Science — University of Gondar,Scientific writing | Machine learning | Data quality | Git | Python,6.5,60.1,Man,Addis Ababa,0,,,0
+CV-01-037,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Addis Ababa University,Data quality | SQL | R | Forecasting | Machine learning,6.9,63.4,Woman,Addis Ababa,0,,,0
+CV-01-038,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Addis Ababa University,Data quality | Scientific writing | R | Git,4.9,57.0,Woman,Outside Addis Ababa,0,,,0
+CV-01-039,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Adama Science and Technology University,Geospatial analytics | SQL | Git | R | Data quality | Machine learning,6.8,62.1,Woman,Addis Ababa,0,,,0
+CV-01-040,JD-01,Bachelor of Science / Arts in Statistics / Data Science — University of Gondar,Data quality | SQL | Python | R | Machine learning | Geospatial analytics,6.5,61.7,Woman,Outside Addis Ababa,0,,,0
+CV-01-041,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Jimma University,Python | Geospatial analytics | Data quality | Forecasting | Machine learning,6.9,64.0,Woman,Outside Addis Ababa,0,,,0
+CV-01-042,JD-01,Bachelor of Science / Arts in Statistics / Data Science — University of Gondar,Machine learning | Git | SQL | Python | Geospatial analytics,6.3,63.6,Man,Addis Ababa,1,False,,0
+CV-01-043,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Addis Ababa University,SQL | Data quality | R | Scientific writing,4.3,57.1,Woman,Outside Addis Ababa,0,,,0
+CV-01-044,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Addis Ababa University,R | Scientific writing | Geospatial analytics | Data quality | Git | Machine learning,9.0,70.3,Woman,Outside Addis Ababa,0,,,0
+CV-01-045,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Bahir Dar University,Scientific writing | Git | SQL | Forecasting | R | Machine learning,6.6,67.6,Woman,Addis Ababa,0,,,0
+CV-01-046,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Bahir Dar University,Scientific writing | Python | SQL | Git | Machine learning,6.9,66.1,Man,Addis Ababa,0,,,0
+CV-01-047,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Hawassa University,Geospatial analytics | Machine learning | Data quality | Scientific writing | R,5.5,61.6,Man,Addis Ababa,0,,,0
+CV-01-048,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Hawassa University,Forecasting | Scientific writing | Geospatial analytics | R | SQL,5.6,62.5,Woman,Outside Addis Ababa,0,,,0
+CV-01-049,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Addis Ababa University,Forecasting | Data quality | Scientific writing | Git,3.9,56.6,Woman,Addis Ababa,0,,,0
+CV-01-050,JD-01,Bachelor of Science / Arts in Statistics / Data Science — Bahir Dar University,Machine learning | Geospatial analytics | R | Python | Git | SQL,8.6,67.6,Man,Addis Ababa,1,False,,0
+CV-02-001,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Addis Ababa University,Survey sampling | Scientific writing | Spatial modelling | R | Stan,7.5,65.1,Woman,Outside Addis Ababa,0,,,0
+CV-02-002,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Bahir Dar University,Uncertainty analysis | INLA | Survey sampling | Scientific writing | R,6.3,60.5,Man,Outside Addis Ababa,0,,,0
+CV-02-003,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Jimma University,Stan | Scientific writing | R | INLA | Uncertainty analysis,6.7,61.3,Woman,Addis Ababa,0,,,0
+CV-02-004,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Bahir Dar University,Scientific writing | GIS | Uncertainty analysis | Stan,3.6,54.3,Man,Outside Addis Ababa,0,,,0
+CV-02-005,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Addis Ababa University,GIS | Spatial modelling | Survey sampling | Scientific writing | Stan | INLA,8.8,70.6,Woman,Outside Addis Ababa,0,,,0
+CV-02-006,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Adama Science and Technology University,Scientific writing | Uncertainty analysis | Spatial modelling | Stan | INLA | R,6.8,62.3,Woman,Outside Addis Ababa,0,,,0
+CV-02-007,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Hawassa University,INLA | Stan | R | Uncertainty analysis | Scientific writing,6.2,58.8,Man,Outside Addis Ababa,0,,,0
+CV-02-008,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Adama Science and Technology University,Spatial modelling | R | Survey sampling | Uncertainty analysis | Stan,5.6,61.8,Woman,Outside Addis Ababa,0,,,0
+CV-02-009,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Adama Science and Technology University,R | GIS | Survey sampling | INLA,4.1,52.9,Man,Outside Addis Ababa,0,,,0
+CV-02-010,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Addis Ababa University,GIS | Scientific writing | INLA | R | Uncertainty analysis | Spatial modelling,6.8,62.1,Woman,Addis Ababa,0,,,0
+CV-02-011,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Hawassa University,Spatial modelling | INLA | Survey sampling | GIS | R | Stan,7.8,65.6,Man,Addis Ababa,1,False,,0
+CV-02-012,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Bahir Dar University,R | Survey sampling | Scientific writing | INLA | Stan,7.2,68.6,Woman,Addis Ababa,1,True,2.9,1
+CV-02-013,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Bahir Dar University,Spatial modelling | GIS | INLA | Uncertainty analysis | R,7.7,62.8,Woman,Outside Addis Ababa,0,,,0
+CV-02-014,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Adama Science and Technology University,Spatial modelling | R | Uncertainty analysis | Scientific writing | Stan,6.5,61.7,Woman,Outside Addis Ababa,0,,,0
+CV-02-015,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Hawassa University,Stan | INLA | R | Scientific writing,4.7,56.6,Man,Addis Ababa,0,,,0
+CV-02-016,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Jimma University,Survey sampling | Uncertainty analysis | Stan | Spatial modelling | INLA | GIS,7.6,63.9,Man,Addis Ababa,0,,,0
+CV-02-017,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Hawassa University,GIS | INLA | Survey sampling | R | Stan | Scientific writing,9.1,69.3,Man,Outside Addis Ababa,1,True,3.7,1
+CV-02-018,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Jimma University,INLA | Scientific writing | GIS | Survey sampling | Stan,7.4,63.1,Woman,Addis Ababa,0,,,0
+CV-02-019,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — University of Gondar,R | Uncertainty analysis | Stan | INLA | Spatial modelling,6.9,66.4,Woman,Addis Ababa,0,,,0
+CV-02-020,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Hawassa University,INLA | Stan | Uncertainty analysis | Survey sampling,4.8,57.3,Woman,Addis Ababa,0,,,0
+CV-02-021,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Hawassa University,R | Spatial modelling | Stan | Uncertainty analysis,4.0,58.3,Woman,Addis Ababa,0,,,0
+CV-02-022,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Adama Science and Technology University,Spatial modelling | Scientific writing | Stan | R | Uncertainty analysis | GIS,6.6,64.9,Man,Addis Ababa,0,,,0
+CV-02-023,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Addis Ababa University,Scientific writing | GIS | Survey sampling | Stan | INLA | R,8.5,72.5,Woman,Outside Addis Ababa,0,,,0
+CV-02-024,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Jimma University,Stan | INLA | Survey sampling | GIS | Uncertainty analysis,5.7,64.9,Woman,Outside Addis Ababa,0,,,0
+CV-02-025,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Addis Ababa University,INLA | R | Stan | Scientific writing | Spatial modelling,5.5,63.4,Woman,Outside Addis Ababa,0,,,0
+CV-02-026,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Bahir Dar University,Uncertainty analysis | R | Stan | Scientific writing,3.7,53.1,Man,Outside Addis Ababa,0,,,0
+CV-02-027,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Jimma University,GIS | Scientific writing | Uncertainty analysis | Survey sampling | INLA | Stan,6.9,68.5,Man,Addis Ababa,1,True,3.2,1
+CV-02-028,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Hawassa University,Scientific writing | Stan | R | Survey sampling | GIS | INLA,8.2,65.0,Woman,Addis Ababa,0,,,0
+CV-02-029,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Bahir Dar University,Survey sampling | Spatial modelling | Stan | INLA | Uncertainty analysis,5.4,57.3,Woman,Addis Ababa,0,,,0
+CV-02-030,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — University of Gondar,Stan | Uncertainty analysis | GIS | Survey sampling | INLA,7.7,67.8,Woman,Outside Addis Ababa,0,,,0
+CV-02-031,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Hawassa University,INLA | GIS | Uncertainty analysis | Spatial modelling | Survey sampling,7.0,62.5,Woman,Outside Addis Ababa,0,,,0
+CV-02-032,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Adama Science and Technology University,Uncertainty analysis | R | Survey sampling | INLA,2.9,51.1,Woman,Outside Addis Ababa,0,,,0
+CV-02-033,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Adama Science and Technology University,Stan | Scientific writing | Uncertainty analysis | INLA | R | Spatial modelling,6.9,67.4,Man,Outside Addis Ababa,1,False,,0
+CV-02-034,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Hawassa University,Scientific writing | GIS | Uncertainty analysis | Survey sampling | INLA | R,9.5,74.6,Woman,Addis Ababa,1,True,3.9,1
+CV-02-035,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Hawassa University,Uncertainty analysis | Scientific writing | R | Survey sampling | GIS,6.3,62.0,Woman,Addis Ababa,0,,,0
+CV-02-036,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Bahir Dar University,R | Spatial modelling | Uncertainty analysis | Scientific writing | INLA,5.8,65.3,Woman,Addis Ababa,0,,,0
+CV-02-037,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Adama Science and Technology University,GIS | Uncertainty analysis | R | Scientific writing,3.8,59.4,Woman,Addis Ababa,0,,,0
+CV-02-038,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Jimma University,GIS | R | Survey sampling | INLA | Spatial modelling | Stan,6.5,62.0,Woman,Addis Ababa,0,,,0
+CV-02-039,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Addis Ababa University,Uncertainty analysis | Survey sampling | R | Stan | Spatial modelling | INLA,7.1,63.9,Man,Addis Ababa,1,False,,0
+CV-02-040,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Jimma University,INLA | R | Stan | GIS | Survey sampling,6.7,61.2,Woman,Addis Ababa,0,,,0
+CV-02-041,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Bahir Dar University,INLA | Spatial modelling | Survey sampling | GIS | Stan,6.6,65.5,Woman,Outside Addis Ababa,0,,,0
+CV-02-042,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Jimma University,Spatial modelling | Uncertainty analysis | Stan | Scientific writing | R,7.1,67.2,Woman,Outside Addis Ababa,0,,,0
+CV-02-043,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — University of Gondar,Spatial modelling | Survey sampling | R | INLA,4.7,61.6,Man,Outside Addis Ababa,0,,,0
+CV-02-044,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Jimma University,R | Spatial modelling | Uncertainty analysis | Stan | GIS | Scientific writing,9.9,72.4,Woman,Addis Ababa,0,,,0
+CV-02-045,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Bahir Dar University,Uncertainty analysis | Scientific writing | Spatial modelling | Survey sampling | INLA | R,9.8,73.8,Man,Outside Addis Ababa,1,True,3.7,1
+CV-02-046,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Adama Science and Technology University,Spatial modelling | Stan | GIS | Uncertainty analysis | R,6.8,62.4,Man,Addis Ababa,1,False,,0
+CV-02-047,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Addis Ababa University,GIS | INLA | Spatial modelling | Scientific writing | Survey sampling,5.3,63.1,Man,Addis Ababa,1,False,,0
+CV-02-048,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Addis Ababa University,Spatial modelling | Stan | Survey sampling | INLA,4.9,60.3,Man,Outside Addis Ababa,0,,,0
+CV-02-049,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — Jimma University,R | Scientific writing | Stan | GIS | Survey sampling | Spatial modelling,6.6,61.6,Woman,Outside Addis Ababa,0,,,0
+CV-02-050,JD-02,Bachelor of Science / Arts in Biostatistics / Statistics — University of Gondar,Uncertainty analysis | Survey sampling | INLA | GIS | Spatial modelling | R,7.7,66.7,Woman,Addis Ababa,0,,,0
+CV-03-001,JD-03,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,e-GP | Contract management | Excel | Inventory | ERP,4.2,58.9,Man,Addis Ababa,1,False,,0
+CV-03-002,JD-03,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Excel | Tendering | e-GP | Contract management | Supplier evaluation,4.0,60.7,Woman,Addis Ababa,0,,,0
+CV-03-003,JD-03,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Excel | Tendering | e-GP | Inventory,1.4,48.9,Woman,Outside Addis Ababa,0,,,0
+CV-03-004,JD-03,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Inventory | Supplier evaluation | ERP | Tendering | Contract management | e-GP,5.3,60.3,Woman,Outside Addis Ababa,0,,,0
+CV-03-005,JD-03,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Excel | Tendering | e-GP | ERP | Inventory | Supplier evaluation,4.5,62.4,Man,Addis Ababa,1,False,,0
+CV-03-006,JD-03,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,e-GP | Excel | ERP | Contract management | Inventory,4.8,61.9,Woman,Addis Ababa,0,,,0
+CV-03-007,JD-03,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Supplier evaluation | e-GP | Contract management | Excel | Tendering,3.7,58.0,Woman,Outside Addis Ababa,0,,,0
+CV-03-008,JD-03,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Inventory | Excel | Tendering | Supplier evaluation | ERP,4.4,60.7,Woman,Addis Ababa,0,,,0
+CV-03-009,JD-03,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Supplier evaluation | Tendering | ERP | Inventory,2.6,50.7,Woman,Addis Ababa,0,,,0
+CV-03-010,JD-03,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Inventory | Contract management | e-GP | Tendering | ERP | Supplier evaluation,7.1,65.5,Man,Outside Addis Ababa,0,,,0
+CV-03-011,JD-03,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Inventory | Excel | Tendering | e-GP | ERP | Supplier evaluation,6.7,65.2,Man,Addis Ababa,1,True,2.8,1
+CV-03-012,JD-03,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,ERP | Inventory | Excel | Supplier evaluation | e-GP,4.3,60.7,Man,Outside Addis Ababa,0,,,0
+CV-03-013,JD-03,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,ERP | Inventory | Supplier evaluation | e-GP | Excel,3.6,54.5,Man,Addis Ababa,1,False,,0
+CV-03-014,JD-03,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Inventory | Excel | Contract management | Tendering,1.8,48.1,Woman,Outside Addis Ababa,0,,,0
+CV-03-015,JD-03,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Inventory | Tendering | Excel | Supplier evaluation | Contract management | e-GP,5.5,58.8,Man,Outside Addis Ababa,0,,,0
+CV-03-016,JD-03,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,e-GP | Inventory | ERP | Tendering | Contract management | Supplier evaluation,5.3,60.3,Man,Outside Addis Ababa,0,,,0
+CV-03-017,JD-03,Bachelor of Science / Arts in Supply Chain Management — Jimma University,ERP | Excel | Contract management | e-GP | Supplier evaluation,5.3,63.8,Man,Addis Ababa,1,True,3.6,1
+CV-03-018,JD-03,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Inventory | Supplier evaluation | Contract management | ERP | Excel,3.3,57.7,Man,Addis Ababa,0,,,0
+CV-03-019,JD-03,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Inventory | Tendering | e-GP | Supplier evaluation | Excel,5.4,62.0,Woman,Outside Addis Ababa,0,,,0
+CV-03-020,JD-03,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Supplier evaluation | Excel | Inventory | Tendering,1.9,55.7,Woman,Outside Addis Ababa,0,,,0
+CV-03-021,JD-03,Bachelor of Science / Arts in Supply Chain Management — Jimma University,e-GP | Excel | Tendering | Supplier evaluation | Inventory | ERP,7.8,70.5,Man,Outside Addis Ababa,1,True,3.6,1
+CV-03-022,JD-03,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Excel | ERP | Inventory | Supplier evaluation | Tendering | e-GP,5.6,59.6,Man,Addis Ababa,1,False,,0
+CV-03-023,JD-03,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Inventory | Supplier evaluation | ERP | Excel | Tendering,4.6,58.2,Woman,Addis Ababa,0,,,0
+CV-03-024,JD-03,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Inventory | Supplier evaluation | ERP | Excel | Contract management,4.0,59.3,Man,Addis Ababa,0,,,0
+CV-03-025,JD-03,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Excel | Supplier evaluation | Tendering | e-GP,1.3,51.6,Woman,Addis Ababa,0,,,0
+CV-03-026,JD-03,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Excel | Inventory | Tendering | Contract management,2.1,54.7,Woman,Outside Addis Ababa,0,,,0
+CV-03-027,JD-03,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Excel | ERP | Supplier evaluation | e-GP | Contract management | Tendering,7.4,65.4,Woman,Addis Ababa,0,,,0
+CV-03-028,JD-03,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,e-GP | ERP | Inventory | Contract management | Supplier evaluation | Excel,5.9,66.5,Woman,Addis Ababa,0,,,0
+CV-03-029,JD-03,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Tendering | Supplier evaluation | Contract management | Excel | e-GP,3.4,59.3,Woman,Addis Ababa,0,,,0
+CV-03-030,JD-03,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Tendering | ERP | Inventory | Excel | Supplier evaluation,4.6,57.2,Man,Addis Ababa,0,,,0
+CV-03-031,JD-03,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,e-GP | Excel | Supplier evaluation | Inventory,2.0,48.3,Woman,Addis Ababa,0,,,0
+CV-03-032,JD-03,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Contract management | Excel | ERP | Tendering | Supplier evaluation | e-GP,5.6,59.1,Man,Addis Ababa,0,,,0
+CV-03-033,JD-03,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Supplier evaluation | Excel | Contract management | Inventory | Tendering | ERP,7.9,68.5,Man,Outside Addis Ababa,1,True,3.9,1
+CV-03-034,JD-03,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Contract management | ERP | Inventory | Supplier evaluation | Tendering,3.9,57.2,Woman,Addis Ababa,0,,,0
+CV-03-035,JD-03,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Inventory | Excel | Contract management | ERP | Supplier evaluation,5.4,59.0,Man,Addis Ababa,0,,,0
+CV-03-036,JD-03,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Inventory | ERP | Tendering | Excel | e-GP,4.1,55.9,Woman,Addis Ababa,0,,,0
+CV-03-037,JD-03,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Contract management | ERP | Inventory | Tendering,1.9,48.4,Man,Outside Addis Ababa,0,,,0
+CV-03-038,JD-03,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,ERP | Inventory | Supplier evaluation | Tendering | Contract management | Excel,6.7,61.8,Woman,Addis Ababa,0,,,0
+CV-03-039,JD-03,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Inventory | Supplier evaluation | Tendering | Contract management | Excel | e-GP,6.5,63.0,Woman,Outside Addis Ababa,0,,,0
+CV-03-040,JD-03,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Contract management | Excel | Inventory | Supplier evaluation | ERP,5.0,62.4,Man,Addis Ababa,1,False,,0
+CV-03-041,JD-03,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,e-GP | Supplier evaluation | ERP | Excel | Contract management,3.9,57.5,Woman,Addis Ababa,0,,,0
+CV-03-042,JD-03,Bachelor of Science / Arts in Supply Chain Management — Jimma University,e-GP | Contract management | Excel | Tendering,2.9,56.2,Woman,Outside Addis Ababa,0,,,0
+CV-03-043,JD-03,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,ERP | Excel | Contract management | Tendering | Inventory | e-GP,6.9,63.0,Woman,Addis Ababa,0,,,0
+CV-03-044,JD-03,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Excel | ERP | e-GP | Inventory | Tendering | Supplier evaluation,5.4,59.3,Woman,Addis Ababa,0,,,0
+CV-03-045,JD-03,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Contract management | ERP | e-GP | Supplier evaluation | Excel,4.2,54.5,Man,Addis Ababa,0,,,0
+CV-03-046,JD-03,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Inventory | Tendering | Excel | Contract management | ERP,5.3,60.7,Woman,Addis Ababa,0,,,0
+CV-03-047,JD-03,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,ERP | Excel | Inventory | Contract management | Supplier evaluation,5.2,58.0,Man,Addis Ababa,0,,,0
+CV-03-048,JD-03,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Tendering | Contract management | e-GP | ERP,2.9,50.1,Man,Addis Ababa,0,,,0
+CV-03-049,JD-03,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Tendering | Supplier evaluation | Inventory | Contract management | e-GP | ERP,4.6,61.6,Woman,Outside Addis Ababa,0,,,0
+CV-03-050,JD-03,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Excel | e-GP | ERP | Contract management | Inventory | Tendering,6.2,64.7,Woman,Addis Ababa,1,True,3.4,1
+CV-04-001,JD-04,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Excel | e-GP | Inventory | Tendering | Contract management,1.8,56.9,Woman,Addis Ababa,0,,,0
+CV-04-002,JD-04,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Contract management | Inventory | Supplier evaluation | e-GP | ERP,1.3,54.8,Man,Addis Ababa,1,True,2.3,1
+CV-04-003,JD-04,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Contract management | Tendering | e-GP | ERP,1.3,50.0,Man,Addis Ababa,0,,,0
+CV-04-004,JD-04,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Contract management | Supplier evaluation | Tendering | ERP | Excel | Inventory,1.4,52.7,Man,Addis Ababa,1,False,,0
+CV-04-005,JD-04,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,e-GP | Contract management | Supplier evaluation | Inventory | Tendering | Excel,1.0,52.2,Man,Addis Ababa,0,,,0
+CV-04-006,JD-04,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Excel | Tendering | Inventory | Contract management | ERP,1.0,48.3,Man,Outside Addis Ababa,0,,,0
+CV-04-007,JD-04,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,ERP | Inventory | e-GP | Tendering | Contract management,1.3,49.5,Woman,Outside Addis Ababa,0,,,0
+CV-04-008,JD-04,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Supplier evaluation | Tendering | Contract management | e-GP,0.6,49.9,Woman,Addis Ababa,0,,,0
+CV-04-009,JD-04,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Tendering | Excel | e-GP | Inventory | ERP | Supplier evaluation,1.5,55.0,Woman,Outside Addis Ababa,0,,,0
+CV-04-010,JD-04,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Tendering | Supplier evaluation | Contract management | ERP | Excel | Inventory,1.5,49.7,Woman,Outside Addis Ababa,0,,,0
+CV-04-011,JD-04,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Supplier evaluation | Inventory | e-GP | Excel | Contract management,0.5,52.7,Man,Outside Addis Ababa,0,,,0
+CV-04-012,JD-04,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Contract management | Excel | e-GP | Inventory | ERP,0.5,52.3,Woman,Addis Ababa,0,,,0
+CV-04-013,JD-04,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Contract management | Inventory | e-GP | Excel | Tendering,1.0,49.5,Man,Outside Addis Ababa,0,,,0
+CV-04-014,JD-04,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Inventory | ERP | Excel | Tendering,0.4,49.4,Woman,Addis Ababa,0,,,0
+CV-04-015,JD-04,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,ERP | Excel | Inventory | Supplier evaluation | e-GP | Tendering,1.0,54.4,Man,Addis Ababa,1,True,2.1,1
+CV-04-016,JD-04,Bachelor of Science / Arts in Supply Chain Management — Jimma University,e-GP | Tendering | Inventory | ERP | Excel | Supplier evaluation,1.6,52.0,Woman,Addis Ababa,0,,,0
+CV-04-017,JD-04,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Excel | Contract management | Supplier evaluation | Inventory | ERP,1.1,50.9,Man,Addis Ababa,0,,,0
+CV-04-018,JD-04,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Supplier evaluation | Inventory | Excel | ERP | e-GP,1.4,55.2,Woman,Outside Addis Ababa,0,,,0
+CV-04-019,JD-04,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,ERP | Excel | Contract management | e-GP,1.5,52.3,Woman,Addis Ababa,0,,,0
+CV-04-020,JD-04,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,ERP | e-GP | Contract management | Supplier evaluation | Inventory | Excel,0.4,50.4,Man,Addis Ababa,0,,,0
+CV-04-021,JD-04,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Supplier evaluation | ERP | Inventory | Contract management | e-GP | Tendering,0.4,53.1,Woman,Outside Addis Ababa,0,,,0
+CV-04-022,JD-04,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Excel | Contract management | ERP | Tendering | Supplier evaluation,1.6,48.7,Man,Addis Ababa,1,False,,0
+CV-04-023,JD-04,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Excel | ERP | Supplier evaluation | Contract management | Inventory,1.6,52.1,Man,Addis Ababa,1,False,,0
+CV-04-024,JD-04,Bachelor of Science / Arts in Supply Chain Management — Jimma University,ERP | Contract management | Excel | Tendering | e-GP,0.7,46.7,Woman,Addis Ababa,0,,,0
+CV-04-025,JD-04,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,ERP | e-GP | Tendering | Contract management,1.5,52.3,Man,Outside Addis Ababa,0,,,0
+CV-04-026,JD-04,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Contract management | Excel | Inventory | Tendering | e-GP | Supplier evaluation,1.7,56.8,Woman,Outside Addis Ababa,0,,,0
+CV-04-027,JD-04,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,ERP | e-GP | Inventory | Contract management | Excel | Supplier evaluation,0.6,50.8,Man,Addis Ababa,0,,,0
+CV-04-028,JD-04,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,e-GP | Contract management | Tendering | ERP | Inventory,1.1,48.2,Man,Addis Ababa,0,,,0
+CV-04-029,JD-04,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Supplier evaluation | ERP | Tendering | Excel | e-GP,0.4,51.3,Man,Addis Ababa,0,,,0
+CV-04-030,JD-04,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Tendering | Contract management | Supplier evaluation | e-GP,1.3,48.5,Woman,Addis Ababa,0,,,0
+CV-04-031,JD-04,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Supplier evaluation | Inventory | Tendering | Contract management,0.6,52.0,Man,Outside Addis Ababa,0,,,0
+CV-04-032,JD-04,Bachelor of Science / Arts in Supply Chain Management — Jimma University,ERP | e-GP | Supplier evaluation | Contract management | Inventory | Tendering,0.9,51.8,Man,Outside Addis Ababa,0,,,0
+CV-04-033,JD-04,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Tendering | Contract management | Supplier evaluation | Inventory | Excel | e-GP,1.5,55.6,Woman,Outside Addis Ababa,0,,,0
+CV-04-034,JD-04,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Supplier evaluation | ERP | Excel | Inventory | e-GP,0.5,46.6,Man,Outside Addis Ababa,0,,,0
+CV-04-035,JD-04,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,ERP | Inventory | Supplier evaluation | e-GP | Contract management,1.4,53.9,Man,Outside Addis Ababa,0,,,0
+CV-04-036,JD-04,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Excel | Supplier evaluation | Inventory | ERP,1.7,48.2,Woman,Outside Addis Ababa,0,,,0
+CV-04-037,JD-04,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Contract management | Supplier evaluation | Inventory | ERP | Tendering | Excel,1.5,53.3,Woman,Outside Addis Ababa,0,,,0
+CV-04-038,JD-04,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Supplier evaluation | Excel | e-GP | ERP | Contract management | Tendering,0.5,47.8,Man,Outside Addis Ababa,0,,,0
+CV-04-039,JD-04,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Contract management | Inventory | ERP | Tendering | Excel,0.1,47.2,Man,Outside Addis Ababa,0,,,0
+CV-04-040,JD-04,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Contract management | Tendering | e-GP | Supplier evaluation | Excel,1.2,51.5,Woman,Addis Ababa,0,,,0
+CV-04-041,JD-04,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,e-GP | Contract management | Tendering | Inventory | Supplier evaluation,1.0,54.9,Man,Addis Ababa,1,True,2.4,1
+CV-04-042,JD-04,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Supplier evaluation | ERP | Tendering | e-GP,0.1,45.6,Man,Outside Addis Ababa,0,,,0
+CV-04-043,JD-04,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Contract management | e-GP | Supplier evaluation | ERP | Excel | Inventory,0.5,47.5,Woman,Outside Addis Ababa,0,,,0
+CV-04-044,JD-04,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,e-GP | Contract management | ERP | Tendering | Supplier evaluation | Inventory,0.8,53.1,Woman,Addis Ababa,0,,,0
+CV-04-045,JD-04,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,ERP | Supplier evaluation | Contract management | Tendering | Inventory,1.6,49.3,Man,Addis Ababa,1,False,,0
+CV-04-046,JD-04,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,e-GP | Inventory | Contract management | Excel | Tendering,1.4,55.2,Man,Outside Addis Ababa,1,True,2.5,1
+CV-04-047,JD-04,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Supplier evaluation | ERP | Tendering | Contract management,1.8,52.9,Man,Outside Addis Ababa,1,True,3.2,1
+CV-04-048,JD-04,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,e-GP | Contract management | Supplier evaluation | Tendering | Excel | ERP,0.1,50.7,Man,Addis Ababa,1,False,,0
+CV-04-049,JD-04,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,ERP | Supplier evaluation | Excel | Inventory | Tendering | e-GP,0.8,49.5,Man,Addis Ababa,0,,,0
+CV-04-050,JD-04,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Contract management | e-GP | Supplier evaluation | Tendering | Excel,1.0,48.2,Woman,Outside Addis Ababa,0,,,0
+CV-05-001,JD-05,Bachelor of Science / Arts in Accounting and Finance — Bahir Dar University,Financial reporting | Audit | Excel | Reconciliation | ERP,8.2,64.5,Woman,Outside Addis Ababa,0,,,0
+CV-05-002,JD-05,Bachelor of Science / Arts in Accounting and Finance — Bahir Dar University,Audit | IFRS | ERP | Budgeting,6.0,60.8,Man,Addis Ababa,0,,,0
+CV-05-003,JD-05,Bachelor of Science / Arts in Accounting and Finance — Addis Ababa University,IFRS | Excel | ERP | Budgeting | Audit | Financial reporting,12.0,76.3,Man,Addis Ababa,1,True,4.0,1
+CV-05-004,JD-05,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Excel | Reconciliation | Financial reporting | ERP | Budgeting | Audit,11.8,74.4,Woman,Outside Addis Ababa,0,,,0
+CV-05-005,JD-05,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Budgeting | Audit | Reconciliation | IFRS | ERP,8.5,68.5,Woman,Addis Ababa,0,,,0
+CV-05-006,JD-05,Bachelor of Science / Arts in Accounting and Finance — Bahir Dar University,Excel | Reconciliation | IFRS | Financial reporting | Budgeting,7.5,65.9,Woman,Outside Addis Ababa,0,,,0
+CV-05-007,JD-05,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Audit | IFRS | Reconciliation | Financial reporting | Excel,8.0,64.6,Woman,Addis Ababa,0,,,0
+CV-05-008,JD-05,Bachelor of Science / Arts in Accounting and Finance — Addis Ababa University,Reconciliation | IFRS | Audit | Financial reporting,6.5,63.7,Man,Addis Ababa,0,,,0
+CV-05-009,JD-05,Bachelor of Science / Arts in Accounting and Finance — Addis Ababa University,ERP | IFRS | Audit | Financial reporting | Budgeting | Reconciliation,11.8,79.8,Woman,Addis Ababa,1,True,4.2,1
+CV-05-010,JD-05,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,Financial reporting | Audit | Excel | IFRS | Reconciliation | ERP,10.1,69.8,Woman,Addis Ababa,0,,,0
+CV-05-011,JD-05,Bachelor of Science / Arts in Accounting and Finance — Addis Ababa University,ERP | Audit | Excel | Financial reporting | Reconciliation,9.2,67.9,Man,Addis Ababa,1,False,,0
+CV-05-012,JD-05,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Audit | Reconciliation | Excel | IFRS | Financial reporting,9.5,73.2,Woman,Addis Ababa,0,,,0
+CV-05-013,JD-05,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Audit | Financial reporting | IFRS | Reconciliation,4.9,58.9,Woman,Addis Ababa,0,,,0
+CV-05-014,JD-05,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,IFRS | Reconciliation | Budgeting | Financial reporting | Audit | Excel,10.6,75.2,Woman,Addis Ababa,0,,,0
+CV-05-015,JD-05,Bachelor of Science / Arts in Accounting and Finance — Addis Ababa University,Budgeting | Financial reporting | Audit | IFRS | Reconciliation | ERP,9.3,72.0,Man,Addis Ababa,0,,,0
+CV-05-016,JD-05,Bachelor of Science / Arts in Accounting and Finance — Bahir Dar University,Budgeting | Financial reporting | ERP | IFRS | Reconciliation,9.8,70.0,Man,Addis Ababa,1,False,,0
+CV-05-017,JD-05,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Excel | IFRS | Financial reporting | ERP | Reconciliation,8.7,70.9,Woman,Addis Ababa,0,,,0
+CV-05-018,JD-05,Bachelor of Science / Arts in Accounting and Finance — Addis Ababa University,IFRS | Excel | Budgeting | Audit | ERP,9.0,68.9,Man,Addis Ababa,0,,,0
+CV-05-019,JD-05,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Excel | ERP | Budgeting | Audit,6.0,58.9,Woman,Addis Ababa,0,,,0
+CV-05-020,JD-05,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Audit | ERP | Financial reporting | IFRS | Budgeting | Reconciliation,11.6,78.8,Man,Outside Addis Ababa,1,True,3.4,1
+CV-05-021,JD-05,Bachelor of Science / Arts in Accounting and Finance — Jimma University,IFRS | Financial reporting | Budgeting | ERP | Audit | Reconciliation,11.5,74.2,Woman,Addis Ababa,0,,,0
+CV-05-022,JD-05,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,Reconciliation | Excel | Financial reporting | Budgeting | ERP,8.6,65.9,Woman,Outside Addis Ababa,0,,,0
+CV-05-023,JD-05,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Financial reporting | ERP | IFRS | Budgeting | Audit,8.7,71.3,Woman,Addis Ababa,0,,,0
+CV-05-024,JD-05,Bachelor of Science / Arts in Accounting and Finance — Addis Ababa University,Budgeting | IFRS | Reconciliation | Excel,5.1,58.7,Woman,Addis Ababa,0,,,0
+CV-05-025,JD-05,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,Financial reporting | ERP | Audit | Budgeting | IFRS | Excel,11.0,78.2,Man,Outside Addis Ababa,1,True,3.5,1
+CV-05-026,JD-05,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,IFRS | ERP | Budgeting | Audit | Reconciliation | Excel,11.1,76.9,Man,Outside Addis Ababa,1,True,4.1,1
+CV-05-027,JD-05,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Financial reporting | ERP | Excel | Reconciliation | Audit,9.5,73.6,Man,Addis Ababa,1,False,,0
+CV-05-028,JD-05,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Audit | Reconciliation | Financial reporting | ERP | Budgeting,9.0,67.4,Woman,Outside Addis Ababa,0,,,0
+CV-05-029,JD-05,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,ERP | Audit | Excel | Reconciliation | Budgeting,9.3,68.1,Woman,Addis Ababa,0,,,0
+CV-05-030,JD-05,Bachelor of Science / Arts in Accounting and Finance — Addis Ababa University,ERP | Reconciliation | IFRS | Excel,5.3,59.3,Man,Outside Addis Ababa,0,,,0
+CV-05-031,JD-05,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,IFRS | Audit | Reconciliation | Budgeting | Excel | ERP,10.7,73.5,Man,Outside Addis Ababa,0,,,0
+CV-05-032,JD-05,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,Excel | IFRS | Reconciliation | ERP | Audit | Financial reporting,10.9,72.0,Man,Outside Addis Ababa,0,,,0
+CV-05-033,JD-05,Bachelor of Science / Arts in Accounting and Finance — Addis Ababa University,Financial reporting | Excel | Budgeting | IFRS | Reconciliation,8.0,69.0,Man,Addis Ababa,1,False,,0
+CV-05-034,JD-05,Bachelor of Science / Arts in Accounting and Finance — Bahir Dar University,IFRS | ERP | Excel | Audit | Financial reporting,7.3,63.5,Man,Outside Addis Ababa,0,,,0
+CV-05-035,JD-05,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Audit | Reconciliation | ERP | Budgeting,6.0,57.7,Man,Outside Addis Ababa,0,,,0
+CV-05-036,JD-05,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,Reconciliation | Excel | Financial reporting | IFRS,6.8,62.4,Woman,Outside Addis Ababa,0,,,0
+CV-05-037,JD-05,Bachelor of Science / Arts in Accounting and Finance — Bahir Dar University,Audit | ERP | Financial reporting | Reconciliation | IFRS | Excel,10.8,75.1,Woman,Outside Addis Ababa,0,,,0
+CV-05-038,JD-05,Bachelor of Science / Arts in Accounting and Finance — Addis Ababa University,IFRS | Excel | ERP | Audit | Reconciliation | Financial reporting,10.7,72.4,Man,Outside Addis Ababa,0,,,0
+CV-05-039,JD-05,Bachelor of Science / Arts in Accounting and Finance — Addis Ababa University,ERP | Budgeting | Excel | Financial reporting | IFRS,7.8,67.8,Woman,Outside Addis Ababa,0,,,0
+CV-05-040,JD-05,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,Reconciliation | IFRS | Financial reporting | Budgeting | Excel,8.4,65.9,Man,Addis Ababa,1,False,,0
+CV-05-041,JD-05,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,Audit | ERP | Reconciliation | Budgeting,4.6,60.5,Woman,Addis Ababa,0,,,0
+CV-05-042,JD-05,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Audit | Excel | ERP | Financial reporting | IFRS | Budgeting,9.4,70.9,Woman,Outside Addis Ababa,0,,,0
+CV-05-043,JD-05,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Excel | ERP | Budgeting | Reconciliation | IFRS | Financial reporting,9.7,70.8,Man,Outside Addis Ababa,0,,,0
+CV-05-044,JD-05,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,Financial reporting | Excel | Audit | Budgeting | ERP,9.6,67.3,Man,Outside Addis Ababa,0,,,0
+CV-05-045,JD-05,Bachelor of Science / Arts in Accounting and Finance — Addis Ababa University,Audit | Budgeting | Excel | Reconciliation | Financial reporting,8.8,67.6,Woman,Addis Ababa,0,,,0
+CV-05-046,JD-05,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,ERP | Budgeting | Audit | Reconciliation | Financial reporting,8.4,68.6,Woman,Outside Addis Ababa,0,,,0
+CV-05-047,JD-05,Bachelor of Science / Arts in Accounting and Finance — Bahir Dar University,Reconciliation | ERP | Audit | Financial reporting,4.8,55.9,Man,Outside Addis Ababa,0,,,0
+CV-05-048,JD-05,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Audit | IFRS | Budgeting | ERP | Financial reporting | Reconciliation,9.8,68.1,Woman,Outside Addis Ababa,0,,,0
+CV-05-049,JD-05,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,Excel | Audit | Budgeting | Financial reporting | ERP | Reconciliation,9.2,67.6,Woman,Outside Addis Ababa,0,,,0
+CV-05-050,JD-05,Bachelor of Science / Arts in Accounting and Finance — Jimma University,ERP | Audit | Budgeting | Excel | Reconciliation,8.2,64.5,Woman,Addis Ababa,0,,,0
+CV-06-001,JD-06,Bachelor of Science / Arts in Business Administration — Bahir Dar University,BPR | M&E | Strategic planning | Stakeholder engagement | Reporting,5.7,58.0,Man,Outside Addis Ababa,0,,,0
+CV-06-002,JD-06,Bachelor of Science / Arts in Business Administration — Bahir Dar University,Stakeholder engagement | Change management | BPR | Strategic planning,3.8,53.8,Man,Addis Ababa,0,,,0
+CV-06-003,JD-06,Bachelor of Science / Arts in Business Administration — University of Gondar,Change management | BPR | M&E | Strategic planning | Stakeholder engagement | Reporting,6.5,63.3,Woman,Outside Addis Ababa,0,,,0
+CV-06-004,JD-06,Bachelor of Science / Arts in Business Administration — Adama Science and Technology University,Reporting | M&E | BPR | Stakeholder engagement | Strategic planning | Change management,7.5,68.7,Woman,Addis Ababa,0,,,0
+CV-06-005,JD-06,Bachelor of Science / Arts in Business Administration — Adama Science and Technology University,Stakeholder engagement | BPR | Change management | Strategic planning | Reporting,7.3,61.8,Man,Addis Ababa,1,False,,0
+CV-06-006,JD-06,Bachelor of Science / Arts in Business Administration — Addis Ababa University,Reporting | Strategic planning | Change management | Stakeholder engagement | M&E,6.8,64.1,Man,Outside Addis Ababa,0,,,0
+CV-06-007,JD-06,Bachelor of Science / Arts in Business Administration — Jimma University,M&E | Strategic planning | Reporting | BPR,2.9,56.7,Man,Addis Ababa,0,,,0
+CV-06-008,JD-06,Bachelor of Science / Arts in Business Administration — University of Gondar,Reporting | Strategic planning | Change management | Stakeholder engagement | BPR | M&E,6.7,64.5,Woman,Addis Ababa,0,,,0
+CV-06-009,JD-06,Bachelor of Science / Arts in Business Administration — Jimma University,BPR | Change management | Reporting | Stakeholder engagement | M&E | Strategic planning,6.8,63.3,Man,Addis Ababa,1,False,,0
+CV-06-010,JD-06,Bachelor of Science / Arts in Business Administration — Jimma University,M&E | Stakeholder engagement | BPR | Reporting | Strategic planning,5.6,58.1,Man,Outside Addis Ababa,0,,,0
+CV-06-011,JD-06,Bachelor of Science / Arts in Business Administration — University of Gondar,Change management | Strategic planning | Reporting | M&E | BPR,6.9,62.1,Woman,Addis Ababa,0,,,0
+CV-06-012,JD-06,Bachelor of Science / Arts in Business Administration — Hawassa University,Stakeholder engagement | M&E | BPR | Reporting | Strategic planning,6.9,65.7,Woman,Outside Addis Ababa,0,,,0
+CV-06-013,JD-06,Bachelor of Science / Arts in Business Administration — University of Gondar,Change management | Reporting | Stakeholder engagement | BPR,3.5,56.7,Woman,Addis Ababa,0,,,0
+CV-06-014,JD-06,Bachelor of Science / Arts in Business Administration — Jimma University,Reporting | Strategic planning | Change management | BPR | M&E | Stakeholder engagement,9.5,73.4,Man,Outside Addis Ababa,1,True,4.2,1
+CV-06-015,JD-06,Bachelor of Science / Arts in Business Administration — Hawassa University,BPR | Stakeholder engagement | M&E | Change management | Strategic planning | Reporting,9.9,72.6,Man,Addis Ababa,1,True,4.3,1
+CV-06-016,JD-06,Bachelor of Science / Arts in Business Administration — University of Gondar,Stakeholder engagement | Reporting | Change management | M&E | Strategic planning,7.4,67.8,Woman,Addis Ababa,0,,,0
+CV-06-017,JD-06,Bachelor of Science / Arts in Business Administration — Adama Science and Technology University,M&E | BPR | Strategic planning | Stakeholder engagement | Change management,6.1,63.3,Woman,Outside Addis Ababa,0,,,0
+CV-06-018,JD-06,Bachelor of Science / Arts in Business Administration — University of Gondar,Stakeholder engagement | BPR | Reporting | Change management,4.9,60.9,Man,Outside Addis Ababa,0,,,0
+CV-06-019,JD-06,Bachelor of Science / Arts in Business Administration — Adama Science and Technology University,M&E | Change management | Stakeholder engagement | BPR | Strategic planning | Reporting,8.6,69.3,Woman,Addis Ababa,0,,,0
+CV-06-020,JD-06,Bachelor of Science / Arts in Business Administration — Addis Ababa University,Reporting | Strategic planning | BPR | Change management | M&E | Stakeholder engagement,6.4,65.1,Woman,Addis Ababa,0,,,0
+CV-06-021,JD-06,Bachelor of Science / Arts in Business Administration — University of Gondar,BPR | Strategic planning | Reporting | Change management | Stakeholder engagement,7.2,63.3,Man,Outside Addis Ababa,0,,,0
+CV-06-022,JD-06,Bachelor of Science / Arts in Business Administration — Jimma University,Reporting | Change management | BPR | Stakeholder engagement | M&E,7.2,60.9,Woman,Outside Addis Ababa,0,,,0
+CV-06-023,JD-06,Bachelor of Science / Arts in Business Administration — Hawassa University,Change management | M&E | Reporting | BPR | Stakeholder engagement,5.4,61.8,Man,Addis Ababa,0,,,0
+CV-06-024,JD-06,Bachelor of Science / Arts in Business Administration — Bahir Dar University,Stakeholder engagement | M&E | Change management | BPR,3.3,51.1,Man,Addis Ababa,0,,,0
+CV-06-025,JD-06,Bachelor of Science / Arts in Business Administration — Jimma University,M&E | Strategic planning | BPR | Change management | Reporting | Stakeholder engagement,9.9,75.6,Woman,Outside Addis Ababa,0,,,0
+CV-06-026,JD-06,Bachelor of Science / Arts in Business Administration — University of Gondar,Stakeholder engagement | M&E | Strategic planning | Reporting | BPR | Change management,7.3,64.3,Man,Addis Ababa,1,False,,0
+CV-06-027,JD-06,Bachelor of Science / Arts in Business Administration — Addis Ababa University,Stakeholder engagement | M&E | Strategic planning | BPR | Reporting,5.5,58.1,Man,Addis Ababa,0,,,0
+CV-06-028,JD-06,Bachelor of Science / Arts in Business Administration — Bahir Dar University,Stakeholder engagement | M&E | Reporting | BPR | Strategic planning,6.1,61.9,Woman,Addis Ababa,0,,,0
+CV-06-029,JD-06,Bachelor of Science / Arts in Business Administration — Adama Science and Technology University,Reporting | Stakeholder engagement | BPR | M&E,3.1,56.2,Woman,Addis Ababa,0,,,0
+CV-06-030,JD-06,Bachelor of Science / Arts in Business Administration — University of Gondar,BPR | Reporting | Change management | M&E | Stakeholder engagement | Strategic planning,7.5,68.4,Woman,Outside Addis Ababa,0,,,0
+CV-06-031,JD-06,Bachelor of Science / Arts in Business Administration — Jimma University,Change management | Stakeholder engagement | Strategic planning | M&E | Reporting | BPR,8.9,73.0,Woman,Outside Addis Ababa,0,,,0
+CV-06-032,JD-06,Bachelor of Science / Arts in Business Administration — Hawassa University,Change management | Reporting | Strategic planning | M&E | BPR,6.2,61.6,Woman,Addis Ababa,0,,,0
+CV-06-033,JD-06,Bachelor of Science / Arts in Business Administration — Adama Science and Technology University,Stakeholder engagement | Reporting | Strategic planning | Change management | BPR,7.3,64.8,Man,Addis Ababa,0,,,0
+CV-06-034,JD-06,Bachelor of Science / Arts in Business Administration — Bahir Dar University,Stakeholder engagement | M&E | Reporting | Strategic planning | Change management,5.8,60.5,Man,Outside Addis Ababa,0,,,0
+CV-06-035,JD-06,Bachelor of Science / Arts in Business Administration — Jimma University,Strategic planning | Change management | Stakeholder engagement | BPR,2.6,54.8,Woman,Addis Ababa,0,,,0
+CV-06-036,JD-06,Bachelor of Science / Arts in Business Administration — University of Gondar,Strategic planning | M&E | Reporting | Stakeholder engagement | Change management | BPR,7.8,70.3,Man,Outside Addis Ababa,1,True,3.5,1
+CV-06-037,JD-06,Bachelor of Science / Arts in Business Administration — Jimma University,Reporting | Change management | M&E | Strategic planning | Stakeholder engagement | BPR,9.6,71.7,Man,Addis Ababa,1,True,3.9,1
+CV-06-038,JD-06,Bachelor of Science / Arts in Business Administration — Jimma University,Stakeholder engagement | BPR | Change management | Reporting | Strategic planning,7.7,66.0,Man,Outside Addis Ababa,1,False,,0
+CV-06-039,JD-06,Bachelor of Science / Arts in Business Administration — Bahir Dar University,M&E | Stakeholder engagement | BPR | Strategic planning | Reporting,5.6,61.7,Man,Outside Addis Ababa,0,,,0
+CV-06-040,JD-06,Bachelor of Science / Arts in Business Administration — Jimma University,Change management | M&E | Strategic planning | Reporting,4.5,54.4,Woman,Outside Addis Ababa,0,,,0
+CV-06-041,JD-06,Bachelor of Science / Arts in Business Administration — Hawassa University,Change management | M&E | Reporting | Strategic planning,3.0,56.4,Man,Outside Addis Ababa,0,,,0
+CV-06-042,JD-06,Bachelor of Science / Arts in Business Administration — Adama Science and Technology University,Stakeholder engagement | M&E | Reporting | BPR | Change management | Strategic planning,7.9,70.1,Man,Addis Ababa,1,True,3.2,1
+CV-06-043,JD-06,Bachelor of Science / Arts in Business Administration — Adama Science and Technology University,Reporting | BPR | Strategic planning | Change management | M&E | Stakeholder engagement,8.2,67.3,Woman,Outside Addis Ababa,0,,,0
+CV-06-044,JD-06,Bachelor of Science / Arts in Business Administration — Hawassa University,M&E | Stakeholder engagement | Reporting | Strategic planning | Change management,5.8,58.4,Woman,Outside Addis Ababa,0,,,0
+CV-06-045,JD-06,Bachelor of Science / Arts in Business Administration — Hawassa University,Change management | M&E | Strategic planning | Reporting | BPR,6.1,58.5,Woman,Outside Addis Ababa,0,,,0
+CV-06-046,JD-06,Bachelor of Science / Arts in Business Administration — Bahir Dar University,Change management | Reporting | Stakeholder engagement | Strategic planning,3.0,51.4,Man,Outside Addis Ababa,0,,,0
+CV-06-047,JD-06,Bachelor of Science / Arts in Business Administration — Hawassa University,M&E | BPR | Reporting | Change management | Strategic planning | Stakeholder engagement,9.1,69.9,Woman,Outside Addis Ababa,0,,,0
+CV-06-048,JD-06,Bachelor of Science / Arts in Business Administration — Hawassa University,M&E | BPR | Strategic planning | Reporting | Stakeholder engagement | Change management,7.6,70.1,Man,Addis Ababa,1,False,,0
+CV-06-049,JD-06,Bachelor of Science / Arts in Business Administration — Addis Ababa University,Strategic planning | M&E | Stakeholder engagement | Reporting | Change management,6.9,60.4,Man,Addis Ababa,0,,,0
+CV-06-050,JD-06,Bachelor of Science / Arts in Business Administration — Bahir Dar University,Reporting | Change management | M&E | Strategic planning | Stakeholder engagement,7.2,67.2,Woman,Outside Addis Ababa,0,,,0
+CV-07-001,JD-07,Bachelor of Science / Arts in Civil Engineering — Addis Ababa University,BOQ | Primavera | AutoCAD | Site supervision,9.3,67.8,Man,Outside Addis Ababa,0,,,0
+CV-07-002,JD-07,Bachelor of Science / Arts in Civil Engineering — Jimma University,Civil 3D | Site supervision | MS Project | BOQ | AutoCAD | Quality assurance,14.8,83.1,Woman,Outside Addis Ababa,0,,,0
+CV-07-003,JD-07,Bachelor of Science / Arts in Civil Engineering — Jimma University,Primavera | AutoCAD | MS Project | Quality assurance | BOQ | Site supervision,15.7,83.0,Man,Outside Addis Ababa,1,True,4.6,1
+CV-07-004,JD-07,Bachelor of Science / Arts in Civil Engineering — Hawassa University,Site supervision | Civil 3D | AutoCAD | Quality assurance | MS Project,12.1,76.9,Man,Outside Addis Ababa,0,,,0
+CV-07-005,JD-07,Bachelor of Science / Arts in Civil Engineering — Hawassa University,Primavera | Civil 3D | BOQ | MS Project | Quality assurance,12.2,77.1,Man,Addis Ababa,1,False,,0
+CV-07-006,JD-07,Bachelor of Science / Arts in Civil Engineering — University of Gondar,Primavera | BOQ | Civil 3D | MS Project | Quality assurance,12.6,74.3,Man,Addis Ababa,1,False,,0
+CV-07-007,JD-07,Bachelor of Science / Arts in Civil Engineering — Addis Ababa University,AutoCAD | MS Project | Civil 3D | BOQ,10.7,73.2,Man,Addis Ababa,0,,,0
+CV-07-008,JD-07,Bachelor of Science / Arts in Civil Engineering — Jimma University,AutoCAD | Primavera | Civil 3D | MS Project | Site supervision | Quality assurance,13.8,78.5,Woman,Addis Ababa,0,,,0
+CV-07-009,JD-07,Bachelor of Science / Arts in Civil Engineering — University of Gondar,Quality assurance | MS Project | Site supervision | Primavera | AutoCAD | Civil 3D,15.5,82.7,Woman,Outside Addis Ababa,0,,,0
+CV-07-010,JD-07,Bachelor of Science / Arts in Civil Engineering — University of Gondar,AutoCAD | Quality assurance | Civil 3D | Site supervision | MS Project,11.3,73.2,Man,Addis Ababa,0,,,0
+CV-07-011,JD-07,Bachelor of Science / Arts in Civil Engineering — Jimma University,Site supervision | Primavera | Civil 3D | Quality assurance | AutoCAD,13.1,81.6,Man,Outside Addis Ababa,1,True,4.5,1
+CV-07-012,JD-07,Bachelor of Science / Arts in Civil Engineering — Jimma University,AutoCAD | Primavera | Quality assurance | Site supervision,10.9,71.9,Man,Outside Addis Ababa,0,,,0
+CV-07-013,JD-07,Bachelor of Science / Arts in Civil Engineering — Jimma University,Quality assurance | AutoCAD | Civil 3D | BOQ | Primavera | Site supervision,13.4,79.8,Woman,Outside Addis Ababa,0,,,0
+CV-07-014,JD-07,Bachelor of Science / Arts in Civil Engineering — Addis Ababa University,BOQ | Civil 3D | Quality assurance | Site supervision | Primavera | MS Project,13.0,82.0,Woman,Outside Addis Ababa,0,,,0
+CV-07-015,JD-07,Bachelor of Science / Arts in Civil Engineering — Bahir Dar University,MS Project | Civil 3D | AutoCAD | Quality assurance | Primavera,13.6,76.0,Man,Outside Addis Ababa,0,,,0
+CV-07-016,JD-07,Bachelor of Science / Arts in Civil Engineering — University of Gondar,BOQ | Civil 3D | AutoCAD | Site supervision | Quality assurance,12.6,80.4,Woman,Outside Addis Ababa,0,,,0
+CV-07-017,JD-07,Bachelor of Science / Arts in Civil Engineering — Addis Ababa University,Site supervision | AutoCAD | MS Project | BOQ | Primavera,12.1,76.7,Man,Addis Ababa,0,,,0
+CV-07-018,JD-07,Bachelor of Science / Arts in Civil Engineering — Jimma University,BOQ | Site supervision | Primavera | AutoCAD,10.2,67.3,Woman,Addis Ababa,0,,,0
+CV-07-019,JD-07,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,Site supervision | BOQ | AutoCAD | Civil 3D | MS Project | Primavera,13.1,76.8,Man,Outside Addis Ababa,0,,,0
+CV-07-020,JD-07,Bachelor of Science / Arts in Civil Engineering — University of Gondar,AutoCAD | Quality assurance | Primavera | Site supervision | MS Project | Civil 3D,12.8,78.5,Man,Outside Addis Ababa,0,,,0
+CV-07-021,JD-07,Bachelor of Science / Arts in Civil Engineering — University of Gondar,Site supervision | MS Project | BOQ | Civil 3D | Primavera,11.5,72.0,Man,Addis Ababa,0,,,0
+CV-07-022,JD-07,Bachelor of Science / Arts in Civil Engineering — University of Gondar,Primavera | MS Project | AutoCAD | Quality assurance | Site supervision,13.4,80.5,Man,Outside Addis Ababa,1,True,3.3,1
+CV-07-023,JD-07,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,AutoCAD | Quality assurance | Site supervision | Civil 3D,8.5,63.6,Man,Outside Addis Ababa,0,,,0
+CV-07-024,JD-07,Bachelor of Science / Arts in Civil Engineering — University of Gondar,Civil 3D | Quality assurance | MS Project | Primavera | BOQ | AutoCAD,14.0,83.8,Woman,Outside Addis Ababa,0,,,0
+CV-07-025,JD-07,Bachelor of Science / Arts in Civil Engineering — University of Gondar,AutoCAD | Primavera | Civil 3D | MS Project | Site supervision | BOQ,12.7,80.6,Man,Outside Addis Ababa,0,,,0
+CV-07-026,JD-07,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,Quality assurance | Primavera | Civil 3D | MS Project | BOQ,13.0,75.5,Woman,Outside Addis Ababa,0,,,0
+CV-07-027,JD-07,Bachelor of Science / Arts in Civil Engineering — Bahir Dar University,MS Project | BOQ | AutoCAD | Site supervision | Quality assurance,12.3,80.0,Woman,Outside Addis Ababa,0,,,0
+CV-07-028,JD-07,Bachelor of Science / Arts in Civil Engineering — Jimma University,Quality assurance | Civil 3D | Primavera | BOQ | Site supervision,11.5,77.1,Woman,Addis Ababa,0,,,0
+CV-07-029,JD-07,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,MS Project | Site supervision | BOQ | Civil 3D,10.6,70.3,Man,Outside Addis Ababa,0,,,0
+CV-07-030,JD-07,Bachelor of Science / Arts in Civil Engineering — Hawassa University,Quality assurance | Primavera | MS Project | AutoCAD | BOQ | Site supervision,13.4,78.7,Man,Outside Addis Ababa,0,,,0
+CV-07-031,JD-07,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,Primavera | Quality assurance | BOQ | Site supervision | Civil 3D | AutoCAD,12.6,76.7,Man,Addis Ababa,1,False,,0
+CV-07-032,JD-07,Bachelor of Science / Arts in Civil Engineering — Jimma University,AutoCAD | Quality assurance | MS Project | Site supervision | Civil 3D,11.4,76.7,Man,Addis Ababa,1,False,,0
+CV-07-033,JD-07,Bachelor of Science / Arts in Civil Engineering — Hawassa University,Site supervision | MS Project | Civil 3D | BOQ | Primavera,13.7,79.4,Man,Outside Addis Ababa,0,,,0
+CV-07-034,JD-07,Bachelor of Science / Arts in Civil Engineering — University of Gondar,Quality assurance | Site supervision | Primavera | Civil 3D,9.8,68.1,Man,Outside Addis Ababa,0,,,0
+CV-07-035,JD-07,Bachelor of Science / Arts in Civil Engineering — University of Gondar,Site supervision | MS Project | AutoCAD | Civil 3D | Quality assurance | BOQ,14.6,86.4,Woman,Addis Ababa,0,,,0
+CV-07-036,JD-07,Bachelor of Science / Arts in Civil Engineering — Hawassa University,BOQ | Site supervision | Primavera | MS Project | AutoCAD | Civil 3D,14.1,78.2,Man,Addis Ababa,1,True,4.5,1
+CV-07-037,JD-07,Bachelor of Science / Arts in Civil Engineering — University of Gondar,Quality assurance | Civil 3D | BOQ | Primavera | AutoCAD,13.6,77.4,Man,Outside Addis Ababa,0,,,0
+CV-07-038,JD-07,Bachelor of Science / Arts in Civil Engineering — University of Gondar,AutoCAD | Site supervision | MS Project | Civil 3D | Primavera,11.4,77.5,Man,Outside Addis Ababa,0,,,0
+CV-07-039,JD-07,Bachelor of Science / Arts in Civil Engineering — Bahir Dar University,BOQ | MS Project | Quality assurance | Civil 3D | Primavera,12.2,72.0,Man,Addis Ababa,1,False,,0
+CV-07-040,JD-07,Bachelor of Science / Arts in Civil Engineering — Hawassa University,MS Project | BOQ | Site supervision | AutoCAD,11.0,69.9,Woman,Outside Addis Ababa,0,,,0
+CV-07-041,JD-07,Bachelor of Science / Arts in Civil Engineering — Bahir Dar University,MS Project | Site supervision | AutoCAD | Quality assurance | BOQ | Primavera,13.7,77.9,Woman,Outside Addis Ababa,0,,,0
+CV-07-042,JD-07,Bachelor of Science / Arts in Civil Engineering — Addis Ababa University,BOQ | Site supervision | Quality assurance | AutoCAD | Civil 3D | Primavera,15.4,86.4,Woman,Outside Addis Ababa,0,,,0
+CV-07-043,JD-07,Bachelor of Science / Arts in Civil Engineering — Bahir Dar University,MS Project | Site supervision | Primavera | Quality assurance | BOQ,11.3,73.7,Man,Outside Addis Ababa,0,,,0
+CV-07-044,JD-07,Bachelor of Science / Arts in Civil Engineering — Hawassa University,AutoCAD | Site supervision | Quality assurance | BOQ | Primavera,13.6,82.1,Woman,Outside Addis Ababa,0,,,0
+CV-07-045,JD-07,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,MS Project | Civil 3D | Quality assurance | AutoCAD,9.3,70.8,Man,Addis Ababa,0,,,0
+CV-07-046,JD-07,Bachelor of Science / Arts in Civil Engineering — Jimma University,Site supervision | BOQ | Primavera | Civil 3D,10.5,67.0,Woman,Addis Ababa,0,,,0
+CV-07-047,JD-07,Bachelor of Science / Arts in Civil Engineering — Jimma University,Primavera | AutoCAD | Civil 3D | Site supervision | MS Project | Quality assurance,15.9,88.4,Woman,Outside Addis Ababa,0,,,0
+CV-07-048,JD-07,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,Quality assurance | Primavera | AutoCAD | BOQ | Site supervision | MS Project,15.6,87.5,Man,Outside Addis Ababa,1,True,4.4,1
+CV-07-049,JD-07,Bachelor of Science / Arts in Civil Engineering — University of Gondar,BOQ | Primavera | Site supervision | Civil 3D | MS Project,11.8,77.6,Man,Outside Addis Ababa,0,,,0
+CV-07-050,JD-07,Bachelor of Science / Arts in Civil Engineering — Hawassa University,MS Project | Site supervision | Civil 3D | AutoCAD | Primavera,12.8,76.7,Woman,Addis Ababa,0,,,0
+CV-08-001,JD-08,Bachelor of Science / Arts in Civil Engineering — Hawassa University,Quality assurance | Primavera | AutoCAD | Civil 3D,3.4,55.0,Man,Outside Addis Ababa,0,,,0
+CV-08-002,JD-08,Bachelor of Science / Arts in Civil Engineering — Bahir Dar University,Primavera | AutoCAD | MS Project | Civil 3D | BOQ | Quality assurance,7.0,65.3,Woman,Outside Addis Ababa,0,,,0
+CV-08-003,JD-08,Bachelor of Science / Arts in Civil Engineering — Addis Ababa University,MS Project | Site supervision | AutoCAD | BOQ | Primavera | Quality assurance,9.9,71.5,Man,Addis Ababa,1,True,3.6,1
+CV-08-004,JD-08,Bachelor of Science / Arts in Civil Engineering — Bahir Dar University,BOQ | Primavera | AutoCAD | Civil 3D | Site supervision,7.3,68.7,Woman,Outside Addis Ababa,0,,,0
+CV-08-005,JD-08,Bachelor of Science / Arts in Civil Engineering — Hawassa University,Site supervision | MS Project | AutoCAD | BOQ | Quality assurance,7.5,61.6,Woman,Addis Ababa,0,,,0
+CV-08-006,JD-08,Bachelor of Science / Arts in Civil Engineering — Bahir Dar University,BOQ | MS Project | AutoCAD | Quality assurance,4.3,60.3,Man,Addis Ababa,1,False,,0
+CV-08-007,JD-08,Bachelor of Science / Arts in Civil Engineering — Bahir Dar University,BOQ | Primavera | MS Project | Quality assurance | AutoCAD | Civil 3D,7.6,66.3,Woman,Addis Ababa,0,,,0
+CV-08-008,JD-08,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,Primavera | Site supervision | Quality assurance | Civil 3D | MS Project | BOQ,8.1,67.2,Man,Addis Ababa,1,False,,0
+CV-08-009,JD-08,Bachelor of Science / Arts in Civil Engineering — University of Gondar,BOQ | Site supervision | AutoCAD | MS Project | Civil 3D,7.6,64.0,Woman,Outside Addis Ababa,0,,,0
+CV-08-010,JD-08,Bachelor of Science / Arts in Civil Engineering — Hawassa University,MS Project | Civil 3D | BOQ | AutoCAD | Primavera,7.2,61.8,Woman,Outside Addis Ababa,0,,,0
+CV-08-011,JD-08,Bachelor of Science / Arts in Civil Engineering — Hawassa University,Site supervision | AutoCAD | BOQ | Primavera | Quality assurance,7.6,68.2,Woman,Outside Addis Ababa,0,,,0
+CV-08-012,JD-08,Bachelor of Science / Arts in Civil Engineering — Jimma University,Quality assurance | Civil 3D | AutoCAD | MS Project,2.6,51.3,Woman,Addis Ababa,0,,,0
+CV-08-013,JD-08,Bachelor of Science / Arts in Civil Engineering — University of Gondar,BOQ | Quality assurance | Primavera | MS Project | Civil 3D | AutoCAD,9.4,73.9,Man,Outside Addis Ababa,1,True,3.7,1
+CV-08-014,JD-08,Bachelor of Science / Arts in Civil Engineering — Hawassa University,Site supervision | Primavera | Civil 3D | Quality assurance | BOQ | MS Project,9.6,72.1,Woman,Addis Ababa,1,True,3.7,1
+CV-08-015,JD-08,Bachelor of Science / Arts in Civil Engineering — University of Gondar,Civil 3D | BOQ | AutoCAD | Quality assurance | MS Project,6.1,59.5,Woman,Outside Addis Ababa,0,,,0
+CV-08-016,JD-08,Bachelor of Science / Arts in Civil Engineering — University of Gondar,Primavera | Civil 3D | Site supervision | Quality assurance | MS Project,6.0,59.1,Man,Outside Addis Ababa,0,,,0
+CV-08-017,JD-08,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,Quality assurance | Civil 3D | Primavera | AutoCAD,4.3,58.6,Man,Addis Ababa,0,,,0
+CV-08-018,JD-08,Bachelor of Science / Arts in Civil Engineering — Addis Ababa University,AutoCAD | Quality assurance | Site supervision | BOQ | Primavera | MS Project,6.9,63.6,Man,Outside Addis Ababa,0,,,0
+CV-08-019,JD-08,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,MS Project | BOQ | Primavera | Site supervision | Civil 3D | Quality assurance,9.1,68.6,Man,Addis Ababa,1,True,2.9,1
+CV-08-020,JD-08,Bachelor of Science / Arts in Civil Engineering — Jimma University,Quality assurance | MS Project | BOQ | Site supervision | AutoCAD,7.4,64.6,Woman,Addis Ababa,0,,,0
+CV-08-021,JD-08,Bachelor of Science / Arts in Civil Engineering — Bahir Dar University,MS Project | AutoCAD | Primavera | Quality assurance | Civil 3D,7.7,68.5,Woman,Outside Addis Ababa,0,,,0
+CV-08-022,JD-08,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,AutoCAD | Site supervision | BOQ | Primavera | Quality assurance,6.0,62.1,Woman,Addis Ababa,0,,,0
+CV-08-023,JD-08,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,Civil 3D | Primavera | MS Project | AutoCAD,4.0,57.8,Woman,Outside Addis Ababa,0,,,0
+CV-08-024,JD-08,Bachelor of Science / Arts in Civil Engineering — Hawassa University,BOQ | Quality assurance | Site supervision | Primavera | MS Project | Civil 3D,9.5,70.7,Man,Outside Addis Ababa,1,True,3.2,1
+CV-08-025,JD-08,Bachelor of Science / Arts in Civil Engineering — University of Gondar,Primavera | MS Project | AutoCAD | Site supervision | Quality assurance | BOQ,8.3,68.0,Man,Outside Addis Ababa,0,,,0
+CV-08-026,JD-08,Bachelor of Science / Arts in Civil Engineering — Jimma University,AutoCAD | Quality assurance | Site supervision | BOQ | MS Project,5.4,58.8,Woman,Outside Addis Ababa,0,,,0
+CV-08-027,JD-08,Bachelor of Science / Arts in Civil Engineering — Hawassa University,MS Project | BOQ | AutoCAD | Primavera | Civil 3D,7.7,66.2,Man,Outside Addis Ababa,0,,,0
+CV-08-028,JD-08,Bachelor of Science / Arts in Civil Engineering — University of Gondar,AutoCAD | BOQ | Primavera | MS Project,3.6,54.0,Man,Outside Addis Ababa,0,,,0
+CV-08-029,JD-08,Bachelor of Science / Arts in Civil Engineering — Bahir Dar University,BOQ | MS Project | Site supervision | AutoCAD | Civil 3D | Quality assurance,9.0,66.6,Woman,Outside Addis Ababa,0,,,0
+CV-08-030,JD-08,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,Civil 3D | Site supervision | AutoCAD | BOQ | Primavera | MS Project,8.4,66.7,Woman,Addis Ababa,1,False,,0
+CV-08-031,JD-08,Bachelor of Science / Arts in Civil Engineering — Jimma University,BOQ | Primavera | AutoCAD | MS Project | Quality assurance,5.6,60.2,Man,Outside Addis Ababa,0,,,0
+CV-08-032,JD-08,Bachelor of Science / Arts in Civil Engineering — Addis Ababa University,BOQ | AutoCAD | Site supervision | MS Project | Civil 3D,5.5,62.2,Woman,Outside Addis Ababa,0,,,0
+CV-08-033,JD-08,Bachelor of Science / Arts in Civil Engineering — Addis Ababa University,AutoCAD | Civil 3D | Primavera | BOQ | MS Project,7.3,66.9,Woman,Outside Addis Ababa,0,,,0
+CV-08-034,JD-08,Bachelor of Science / Arts in Civil Engineering — University of Gondar,Site supervision | AutoCAD | Primavera | MS Project,2.7,49.7,Man,Addis Ababa,0,,,0
+CV-08-035,JD-08,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,Quality assurance | Primavera | AutoCAD | MS Project | BOQ | Civil 3D,7.1,63.2,Woman,Addis Ababa,0,,,0
+CV-08-036,JD-08,Bachelor of Science / Arts in Civil Engineering — University of Gondar,AutoCAD | Quality assurance | Primavera | Civil 3D | Site supervision | MS Project,9.1,70.1,Woman,Outside Addis Ababa,0,,,0
+CV-08-037,JD-08,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,Primavera | BOQ | MS Project | AutoCAD | Quality assurance,7.3,64.7,Woman,Outside Addis Ababa,0,,,0
+CV-08-038,JD-08,Bachelor of Science / Arts in Civil Engineering — Jimma University,AutoCAD | MS Project | Quality assurance | Primavera | Site supervision,7.1,62.6,Woman,Outside Addis Ababa,0,,,0
+CV-08-039,JD-08,Bachelor of Science / Arts in Civil Engineering — Hawassa University,BOQ | Quality assurance | Civil 3D | AutoCAD,3.2,58.0,Man,Outside Addis Ababa,0,,,0
+CV-08-040,JD-08,Bachelor of Science / Arts in Civil Engineering — Bahir Dar University,BOQ | AutoCAD | Site supervision | Civil 3D | Primavera | Quality assurance,7.5,67.9,Man,Outside Addis Ababa,0,,,0
+CV-08-041,JD-08,Bachelor of Science / Arts in Civil Engineering — Bahir Dar University,Civil 3D | Primavera | Quality assurance | MS Project | BOQ | Site supervision,9.0,66.3,Woman,Outside Addis Ababa,0,,,0
+CV-08-042,JD-08,Bachelor of Science / Arts in Civil Engineering — Jimma University,Site supervision | MS Project | Quality assurance | AutoCAD | Primavera,7.2,64.0,Man,Outside Addis Ababa,0,,,0
+CV-08-043,JD-08,Bachelor of Science / Arts in Civil Engineering — Bahir Dar University,Site supervision | Civil 3D | MS Project | Quality assurance | AutoCAD,5.8,60.8,Woman,Addis Ababa,0,,,0
+CV-08-044,JD-08,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,Primavera | BOQ | MS Project | Quality assurance | Civil 3D,7.6,68.1,Man,Outside Addis Ababa,1,False,,0
+CV-08-045,JD-08,Bachelor of Science / Arts in Civil Engineering — Jimma University,Quality assurance | MS Project | Primavera | Site supervision,3.6,52.6,Man,Addis Ababa,0,,,0
+CV-08-046,JD-08,Bachelor of Science / Arts in Civil Engineering — Jimma University,Civil 3D | MS Project | Primavera | Site supervision | BOQ | Quality assurance,9.7,74.5,Woman,Outside Addis Ababa,0,,,0
+CV-08-047,JD-08,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,MS Project | AutoCAD | Primavera | Civil 3D | Site supervision | Quality assurance,8.2,65.9,Man,Outside Addis Ababa,0,,,0
+CV-08-048,JD-08,Bachelor of Science / Arts in Civil Engineering — University of Gondar,BOQ | Quality assurance | Civil 3D | AutoCAD | Site supervision,6.1,62.1,Woman,Outside Addis Ababa,0,,,0
+CV-08-049,JD-08,Bachelor of Science / Arts in Civil Engineering — University of Gondar,Site supervision | MS Project | AutoCAD | BOQ | Civil 3D,7.1,61.3,Man,Outside Addis Ababa,0,,,0
+CV-08-050,JD-08,Bachelor of Science / Arts in Civil Engineering — University of Gondar,AutoCAD | Site supervision | Primavera | Quality assurance,3.1,57.2,Man,Addis Ababa,1,False,,0
+CV-09-001,JD-09,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,ERP | Excel | Tendering | Inventory | Contract management | e-GP,1.0,49.1,Man,Outside Addis Ababa,0,,,0
+CV-09-002,JD-09,Bachelor of Science / Arts in Supply Chain Management — Jimma University,ERP | e-GP | Tendering | Supplier evaluation | Contract management | Inventory,1.4,50.6,Man,Outside Addis Ababa,0,,,0
+CV-09-003,JD-09,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Inventory | Tendering | e-GP | Supplier evaluation | ERP,0.7,51.8,Woman,Addis Ababa,0,,,0
+CV-09-004,JD-09,Bachelor of Science / Arts in Supply Chain Management — Jimma University,ERP | Supplier evaluation | e-GP | Tendering | Contract management,1.5,56.1,Man,Addis Ababa,1,True,2.1,1
+CV-09-005,JD-09,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Contract management | e-GP | Excel | Inventory,0.5,47.2,Man,Addis Ababa,0,,,0
+CV-09-006,JD-09,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,ERP | Excel | e-GP | Contract management,1.1,50.9,Woman,Outside Addis Ababa,0,,,0
+CV-09-007,JD-09,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,e-GP | Tendering | Excel | Supplier evaluation | ERP | Contract management,0.3,47.3,Woman,Outside Addis Ababa,0,,,0
+CV-09-008,JD-09,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Excel | Supplier evaluation | Inventory | Tendering | ERP | Contract management,1.3,57.1,Man,Outside Addis Ababa,1,True,2.5,1
+CV-09-009,JD-09,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Excel | e-GP | Supplier evaluation | Contract management | Tendering,1.8,49.3,Woman,Outside Addis Ababa,0,,,0
+CV-09-010,JD-09,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Inventory | ERP | Tendering | Supplier evaluation | Contract management,0.6,48.4,Woman,Addis Ababa,0,,,0
+CV-09-011,JD-09,Bachelor of Science / Arts in Supply Chain Management — Jimma University,ERP | Contract management | Excel | Tendering,0.9,47.6,Woman,Outside Addis Ababa,0,,,0
+CV-09-012,JD-09,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Excel | Contract management | Inventory | e-GP | Supplier evaluation | Tendering,0.8,52.3,Man,Outside Addis Ababa,0,,,0
+CV-09-013,JD-09,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Excel | e-GP | Contract management | ERP | Inventory | Supplier evaluation,0.7,54.5,Man,Addis Ababa,1,False,,0
+CV-09-014,JD-09,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Supplier evaluation | ERP | Inventory | Tendering | Excel,0.4,47.4,Woman,Outside Addis Ababa,0,,,0
+CV-09-015,JD-09,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Contract management | Tendering | Supplier evaluation | ERP | e-GP,0.6,49.8,Woman,Outside Addis Ababa,0,,,0
+CV-09-016,JD-09,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Tendering | Excel | e-GP | Inventory | Contract management,0.5,50.3,Woman,Addis Ababa,0,,,0
+CV-09-017,JD-09,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Supplier evaluation | Excel | Contract management | e-GP,0.5,45.8,Woman,Addis Ababa,0,,,0
+CV-09-018,JD-09,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Contract management | Tendering | e-GP | Excel | ERP | Supplier evaluation,1.1,49.7,Woman,Outside Addis Ababa,0,,,0
+CV-09-019,JD-09,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,e-GP | Excel | ERP | Contract management | Tendering | Supplier evaluation,0.9,54.3,Woman,Addis Ababa,0,,,0
+CV-09-020,JD-09,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Inventory | Contract management | e-GP | Tendering | Excel,1.5,55.4,Man,Outside Addis Ababa,0,,,0
+CV-09-021,JD-09,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Inventory | ERP | Supplier evaluation | e-GP | Tendering,1.2,52.8,Woman,Outside Addis Ababa,0,,,0
+CV-09-022,JD-09,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Inventory | Tendering | ERP | Supplier evaluation,0.3,51.5,Man,Outside Addis Ababa,0,,,0
+CV-09-023,JD-09,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Supplier evaluation | Inventory | Tendering | Contract management | Excel | ERP,0.7,50.8,Man,Outside Addis Ababa,0,,,0
+CV-09-024,JD-09,Bachelor of Science / Arts in Supply Chain Management — Jimma University,e-GP | Contract management | Excel | Inventory | ERP | Supplier evaluation,1.4,55.1,Man,Outside Addis Ababa,0,,,0
+CV-09-025,JD-09,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,e-GP | Supplier evaluation | Inventory | Tendering | ERP,0.6,52.6,Woman,Outside Addis Ababa,0,,,0
+CV-09-026,JD-09,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Inventory | Supplier evaluation | e-GP | Excel | ERP,0.6,50.2,Woman,Outside Addis Ababa,0,,,0
+CV-09-027,JD-09,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,ERP | Tendering | Supplier evaluation | Excel | e-GP,1.1,50.8,Man,Outside Addis Ababa,1,False,,0
+CV-09-028,JD-09,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Supplier evaluation | e-GP | Excel | Inventory,1.5,52.0,Man,Outside Addis Ababa,0,,,0
+CV-09-029,JD-09,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Inventory | Supplier evaluation | Tendering | ERP | e-GP | Contract management,0.7,55.8,Woman,Addis Ababa,0,,,0
+CV-09-030,JD-09,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Excel | Inventory | Tendering | Supplier evaluation | ERP | Contract management,1.2,55.0,Woman,Addis Ababa,1,True,2.8,1
+CV-09-031,JD-09,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Tendering | Excel | ERP | Supplier evaluation | Inventory,1.2,51.2,Man,Addis Ababa,1,False,,0
+CV-09-032,JD-09,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Inventory | ERP | Tendering | e-GP | Supplier evaluation,1.1,54.6,Woman,Outside Addis Ababa,0,,,0
+CV-09-033,JD-09,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,ERP | Inventory | e-GP | Excel,1.6,47.7,Woman,Outside Addis Ababa,0,,,0
+CV-09-034,JD-09,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Inventory | Contract management | Tendering | Excel | Supplier evaluation | ERP,1.3,57.1,Woman,Addis Ababa,1,True,2.9,1
+CV-09-035,JD-09,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,ERP | Inventory | Contract management | Supplier evaluation | e-GP | Tendering,0.0,50.2,Woman,Addis Ababa,0,,,0
+CV-09-036,JD-09,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Supplier evaluation | ERP | Tendering | Inventory | e-GP,0.8,48.4,Man,Outside Addis Ababa,0,,,0
+CV-09-037,JD-09,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Contract management | ERP | Supplier evaluation | Inventory | Excel,0.8,51.1,Man,Outside Addis Ababa,0,,,0
+CV-09-038,JD-09,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,e-GP | ERP | Contract management | Inventory | Tendering,1.1,52.3,Man,Addis Ababa,1,False,,0
+CV-09-039,JD-09,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Contract management | Supplier evaluation | ERP | Excel,0.4,52.0,Man,Outside Addis Ababa,0,,,0
+CV-09-040,JD-09,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Supplier evaluation | Inventory | Contract management | Excel | ERP | e-GP,0.6,48.8,Man,Outside Addis Ababa,0,,,0
+CV-09-041,JD-09,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Tendering | ERP | Supplier evaluation | Excel | Contract management | e-GP,1.0,56.0,Man,Outside Addis Ababa,1,True,2.2,1
+CV-09-042,JD-09,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Contract management | Inventory | Supplier evaluation | Tendering | Excel,0.2,45.6,Man,Addis Ababa,0,,,0
+CV-09-043,JD-09,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Contract management | Supplier evaluation | e-GP | Excel | Inventory,0.3,51.1,Woman,Outside Addis Ababa,0,,,0
+CV-09-044,JD-09,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,e-GP | Inventory | ERP | Excel,0.2,44.1,Woman,Addis Ababa,0,,,0
+CV-09-045,JD-09,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Supplier evaluation | Excel | Contract management | Tendering | e-GP | Inventory,1.2,56.1,Woman,Addis Ababa,0,,,0
+CV-09-046,JD-09,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,ERP | Inventory | Excel | Tendering | Contract management | e-GP,0.7,55.0,Woman,Outside Addis Ababa,0,,,0
+CV-09-047,JD-09,Bachelor of Science / Arts in Supply Chain Management — Jimma University,ERP | Tendering | Supplier evaluation | Inventory | Contract management,1.0,51.9,Woman,Addis Ababa,0,,,0
+CV-09-048,JD-09,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Supplier evaluation | ERP | Tendering | e-GP | Inventory,0.9,49.6,Woman,Addis Ababa,0,,,0
+CV-09-049,JD-09,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Inventory | ERP | Supplier evaluation | Tendering | Excel,0.9,50.4,Man,Addis Ababa,1,False,,0
+CV-09-050,JD-09,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Supplier evaluation | ERP | e-GP | Tendering,1.0,48.4,Man,Addis Ababa,0,,,0
+CV-10-001,JD-10,Bachelor of Science / Arts in Civil Engineering — Hawassa University,AutoCAD | Civil 3D | BOQ | Primavera | MS Project | Quality assurance,6.3,68.1,Woman,Addis Ababa,1,True,3.5,1
+CV-10-002,JD-10,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,Site supervision | Quality assurance | BOQ | MS Project | Civil 3D,4.8,56.2,Woman,Outside Addis Ababa,0,,,0
+CV-10-003,JD-10,Bachelor of Science / Arts in Civil Engineering — University of Gondar,BOQ | Site supervision | Civil 3D | AutoCAD | Primavera,4.5,55.8,Woman,Addis Ababa,0,,,0
+CV-10-004,JD-10,Bachelor of Science / Arts in Civil Engineering — Bahir Dar University,BOQ | Quality assurance | Primavera | AutoCAD | Civil 3D,5.3,63.6,Woman,Addis Ababa,0,,,0
+CV-10-005,JD-10,Bachelor of Science / Arts in Civil Engineering — Jimma University,Site supervision | BOQ | Civil 3D | Quality assurance,0.5,47.2,Woman,Outside Addis Ababa,0,,,0
+CV-10-006,JD-10,Bachelor of Science / Arts in Civil Engineering — University of Gondar,MS Project | Site supervision | Primavera | Quality assurance | BOQ | Civil 3D,6.1,64.7,Woman,Outside Addis Ababa,0,,,0
+CV-10-007,JD-10,Bachelor of Science / Arts in Civil Engineering — Addis Ababa University,MS Project | Civil 3D | Primavera | Site supervision | BOQ | AutoCAD,5.1,58.3,Man,Outside Addis Ababa,0,,,0
+CV-10-008,JD-10,Bachelor of Science / Arts in Civil Engineering — Bahir Dar University,Site supervision | Quality assurance | MS Project | Primavera | Civil 3D,4.3,58.5,Man,Addis Ababa,0,,,0
+CV-10-009,JD-10,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,Primavera | Civil 3D | Quality assurance | Site supervision | BOQ,4.0,61.5,Woman,Outside Addis Ababa,0,,,0
+CV-10-010,JD-10,Bachelor of Science / Arts in Civil Engineering — Addis Ababa University,BOQ | AutoCAD | Quality assurance | Site supervision,2.7,56.8,Woman,Outside Addis Ababa,0,,,0
+CV-10-011,JD-10,Bachelor of Science / Arts in Civil Engineering — Jimma University,MS Project | BOQ | AutoCAD | Site supervision,0.6,51.3,Woman,Outside Addis Ababa,0,,,0
+CV-10-012,JD-10,Bachelor of Science / Arts in Civil Engineering — Jimma University,MS Project | Site supervision | AutoCAD | Civil 3D | Quality assurance | Primavera,5.9,63.5,Woman,Addis Ababa,0,,,0
+CV-10-013,JD-10,Bachelor of Science / Arts in Civil Engineering — Addis Ababa University,Site supervision | Civil 3D | AutoCAD | BOQ | Quality assurance | MS Project,6.0,64.7,Woman,Outside Addis Ababa,0,,,0
+CV-10-014,JD-10,Bachelor of Science / Arts in Civil Engineering — University of Gondar,MS Project | Quality assurance | Site supervision | Civil 3D | Primavera,5.1,60.1,Woman,Outside Addis Ababa,0,,,0
+CV-10-015,JD-10,Bachelor of Science / Arts in Civil Engineering — Hawassa University,Primavera | MS Project | BOQ | AutoCAD | Quality assurance,3.2,56.1,Man,Outside Addis Ababa,0,,,0
+CV-10-016,JD-10,Bachelor of Science / Arts in Civil Engineering — Jimma University,BOQ | Civil 3D | Primavera | Quality assurance,0.9,52.3,Man,Outside Addis Ababa,0,,,0
+CV-10-017,JD-10,Bachelor of Science / Arts in Civil Engineering — Hawassa University,AutoCAD | Civil 3D | Quality assurance | MS Project | Site supervision | BOQ,6.8,62.4,Woman,Addis Ababa,0,,,0
+CV-10-018,JD-10,Bachelor of Science / Arts in Civil Engineering — Hawassa University,Primavera | MS Project | AutoCAD | BOQ | Site supervision | Civil 3D,5.4,62.8,Woman,Outside Addis Ababa,0,,,0
+CV-10-019,JD-10,Bachelor of Science / Arts in Civil Engineering — Jimma University,MS Project | BOQ | Primavera | AutoCAD | Civil 3D,4.4,57.2,Man,Outside Addis Ababa,0,,,0
+CV-10-020,JD-10,Bachelor of Science / Arts in Civil Engineering — Hawassa University,Quality assurance | Primavera | BOQ | Site supervision | MS Project,3.7,61.0,Man,Outside Addis Ababa,0,,,0
+CV-10-021,JD-10,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,Primavera | BOQ | Civil 3D | Site supervision | AutoCAD,4.2,57.0,Woman,Outside Addis Ababa,0,,,0
+CV-10-022,JD-10,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,BOQ | MS Project | AutoCAD | Site supervision,1.2,51.2,Man,Outside Addis Ababa,0,,,0
+CV-10-023,JD-10,Bachelor of Science / Arts in Civil Engineering — Bahir Dar University,BOQ | Site supervision | Quality assurance | MS Project | Civil 3D | Primavera,7.8,64.6,Man,Outside Addis Ababa,1,False,,0
+CV-10-024,JD-10,Bachelor of Science / Arts in Civil Engineering — Jimma University,Primavera | MS Project | Quality assurance | Site supervision | BOQ | Civil 3D,5.6,59.6,Woman,Outside Addis Ababa,0,,,0
+CV-10-025,JD-10,Bachelor of Science / Arts in Civil Engineering — Jimma University,Primavera | Site supervision | Quality assurance | AutoCAD | Civil 3D,4.0,53.9,Man,Outside Addis Ababa,0,,,0
+CV-10-026,JD-10,Bachelor of Science / Arts in Civil Engineering — Addis Ababa University,Civil 3D | Quality assurance | BOQ | Primavera | Site supervision,4.8,62.7,Woman,Outside Addis Ababa,0,,,0
+CV-10-027,JD-10,Bachelor of Science / Arts in Civil Engineering — University of Gondar,Primavera | BOQ | Civil 3D | Site supervision,0.8,51.0,Man,Addis Ababa,0,,,0
+CV-10-028,JD-10,Bachelor of Science / Arts in Civil Engineering — Hawassa University,AutoCAD | Primavera | BOQ | MS Project | Site supervision | Quality assurance,5.9,61.0,Woman,Outside Addis Ababa,0,,,0
+CV-10-029,JD-10,Bachelor of Science / Arts in Civil Engineering — Addis Ababa University,Site supervision | AutoCAD | Quality assurance | Civil 3D | MS Project | Primavera,5.7,62.5,Man,Outside Addis Ababa,0,,,0
+CV-10-030,JD-10,Bachelor of Science / Arts in Civil Engineering — Bahir Dar University,Quality assurance | Primavera | Site supervision | AutoCAD | MS Project,3.4,55.6,Woman,Addis Ababa,0,,,0
+CV-10-031,JD-10,Bachelor of Science / Arts in Civil Engineering — Addis Ababa University,BOQ | MS Project | AutoCAD | Quality assurance | Civil 3D,4.8,59.0,Man,Addis Ababa,1,False,,0
+CV-10-032,JD-10,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,AutoCAD | MS Project | Quality assurance | Primavera | Civil 3D,3.7,61.0,Woman,Addis Ababa,0,,,0
+CV-10-033,JD-10,Bachelor of Science / Arts in Civil Engineering — Addis Ababa University,Quality assurance | AutoCAD | MS Project | BOQ,0.7,45.9,Man,Addis Ababa,0,,,0
+CV-10-034,JD-10,Bachelor of Science / Arts in Civil Engineering — Addis Ababa University,MS Project | BOQ | Civil 3D | Quality assurance | Primavera | AutoCAD,7.5,64.8,Woman,Addis Ababa,1,True,3.9,1
+CV-10-035,JD-10,Bachelor of Science / Arts in Civil Engineering — Hawassa University,Primavera | Quality assurance | Site supervision | MS Project | AutoCAD | BOQ,5.0,59.6,Man,Addis Ababa,1,False,,0
+CV-10-036,JD-10,Bachelor of Science / Arts in Civil Engineering — Hawassa University,Site supervision | BOQ | Civil 3D | Primavera | MS Project,4.2,54.4,Man,Addis Ababa,0,,,0
+CV-10-037,JD-10,Bachelor of Science / Arts in Civil Engineering — Addis Ababa University,Quality assurance | Site supervision | BOQ | Primavera | MS Project,4.7,56.9,Man,Addis Ababa,1,False,,0
+CV-10-038,JD-10,Bachelor of Science / Arts in Civil Engineering — University of Gondar,Civil 3D | BOQ | Quality assurance | Site supervision,2.4,52.6,Woman,Addis Ababa,0,,,0
+CV-10-039,JD-10,Bachelor of Science / Arts in Civil Engineering — Hawassa University,AutoCAD | Civil 3D | Primavera | Site supervision | Quality assurance | MS Project,6.6,65.4,Man,Outside Addis Ababa,0,,,0
+CV-10-040,JD-10,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,Site supervision | BOQ | Civil 3D | Primavera | Quality assurance | MS Project,4.9,65.0,Man,Addis Ababa,1,True,3.8,1
+CV-10-041,JD-10,Bachelor of Science / Arts in Civil Engineering — Jimma University,Site supervision | Civil 3D | BOQ | MS Project | Quality assurance,5.0,56.7,Man,Addis Ababa,0,,,0
+CV-10-042,JD-10,Bachelor of Science / Arts in Civil Engineering — Hawassa University,Quality assurance | Site supervision | BOQ | MS Project | Civil 3D,5.1,57.2,Man,Addis Ababa,1,False,,0
+CV-10-043,JD-10,Bachelor of Science / Arts in Civil Engineering — Jimma University,Primavera | Site supervision | MS Project | Quality assurance | BOQ,4.4,55.2,Man,Outside Addis Ababa,0,,,0
+CV-10-044,JD-10,Bachelor of Science / Arts in Civil Engineering — Jimma University,Primavera | MS Project | BOQ | AutoCAD,2.6,54.1,Woman,Addis Ababa,0,,,0
+CV-10-045,JD-10,Bachelor of Science / Arts in Civil Engineering — University of Gondar,MS Project | Site supervision | AutoCAD | Civil 3D | Quality assurance | BOQ,7.5,70.1,Man,Addis Ababa,1,True,3.3,1
+CV-10-046,JD-10,Bachelor of Science / Arts in Civil Engineering — Hawassa University,Site supervision | MS Project | AutoCAD | Civil 3D | BOQ | Primavera,7.2,68.6,Man,Addis Ababa,1,True,3.7,1
+CV-10-047,JD-10,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,AutoCAD | Primavera | MS Project | Site supervision | Quality assurance,4.8,56.3,Woman,Outside Addis Ababa,0,,,0
+CV-10-048,JD-10,Bachelor of Science / Arts in Civil Engineering — Bahir Dar University,MS Project | BOQ | Quality assurance | Site supervision | Civil 3D,4.7,61.4,Man,Addis Ababa,0,,,0
+CV-10-049,JD-10,Bachelor of Science / Arts in Civil Engineering — Addis Ababa University,BOQ | MS Project | Site supervision | Primavera,2.8,50.5,Woman,Outside Addis Ababa,0,,,0
+CV-10-050,JD-10,Bachelor of Science / Arts in Civil Engineering — Adama Science and Technology University,BOQ | Site supervision | Civil 3D | AutoCAD | Quality assurance | MS Project,7.5,67.1,Man,Outside Addis Ababa,0,,,0
+CV-11-001,JD-11,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,Excel | IFRS | Budgeting | Financial reporting | ERP | Reconciliation,1.2,50.0,Woman,Outside Addis Ababa,0,,,0
+CV-11-002,JD-11,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Reconciliation | Budgeting | ERP | Excel | Financial reporting,0.4,47.5,Woman,Addis Ababa,0,,,0
+CV-11-003,JD-11,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,Budgeting | Financial reporting | Audit | ERP | IFRS,1.5,51.8,Woman,Outside Addis Ababa,0,,,0
+CV-11-004,JD-11,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Budgeting | Excel | ERP | Financial reporting,1.0,51.1,Woman,Outside Addis Ababa,0,,,0
+CV-11-005,JD-11,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,IFRS | Financial reporting | Reconciliation | ERP | Excel | Budgeting,0.5,54.1,Man,Addis Ababa,1,True,3.4,1
+CV-11-006,JD-11,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,IFRS | Financial reporting | Budgeting | Audit | Reconciliation | ERP,0.2,50.0,Man,Addis Ababa,1,False,,0
+CV-11-007,JD-11,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,Audit | Financial reporting | Budgeting | Excel | Reconciliation,0.9,53.1,Man,Outside Addis Ababa,0,,,0
+CV-11-008,JD-11,Bachelor of Science / Arts in Accounting and Finance — Bahir Dar University,Budgeting | ERP | Reconciliation | Audit | Excel,0.5,53.8,Man,Addis Ababa,1,True,2.2,1
+CV-11-009,JD-11,Bachelor of Science / Arts in Accounting and Finance — Bahir Dar University,Reconciliation | Excel | IFRS | ERP | Financial reporting,0.7,48.5,Woman,Outside Addis Ababa,0,,,0
+CV-11-010,JD-11,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Audit | ERP | Budgeting | IFRS,0.9,47.9,Woman,Outside Addis Ababa,0,,,0
+CV-11-011,JD-11,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,ERP | Reconciliation | IFRS | Financial reporting | Excel | Budgeting,1.3,50.7,Man,Addis Ababa,1,False,,0
+CV-11-012,JD-11,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Budgeting | IFRS | Reconciliation | ERP | Financial reporting | Audit,1.5,50.3,Man,Addis Ababa,1,False,,0
+CV-11-013,JD-11,Bachelor of Science / Arts in Accounting and Finance — Bahir Dar University,Budgeting | Excel | IFRS | ERP | Financial reporting,0.8,51.3,Woman,Addis Ababa,0,,,0
+CV-11-014,JD-11,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Reconciliation | Excel | ERP | Audit | Budgeting,0.4,47.8,Man,Outside Addis Ababa,0,,,0
+CV-11-015,JD-11,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Audit | Budgeting | Excel | ERP,1.2,46.8,Woman,Outside Addis Ababa,0,,,0
+CV-11-016,JD-11,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,Audit | Reconciliation | Budgeting | ERP,0.9,52.8,Man,Outside Addis Ababa,0,,,0
+CV-11-017,JD-11,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,Audit | Budgeting | ERP | Reconciliation | Excel | Financial reporting,0.5,52.6,Woman,Outside Addis Ababa,0,,,0
+CV-11-018,JD-11,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,IFRS | Excel | Financial reporting | ERP | Budgeting | Audit,0.4,47.7,Man,Addis Ababa,1,False,,0
+CV-11-019,JD-11,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,Excel | IFRS | Budgeting | Audit | ERP,1.1,50.5,Man,Outside Addis Ababa,0,,,0
+CV-11-020,JD-11,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,IFRS | Audit | Financial reporting | Budgeting | ERP,1.3,48.8,Man,Outside Addis Ababa,0,,,0
+CV-11-021,JD-11,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,Budgeting | ERP | Audit | Excel,1.7,51.0,Man,Addis Ababa,0,,,0
+CV-11-022,JD-11,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Reconciliation | Financial reporting | Audit | Excel | IFRS | Budgeting,1.8,58.3,Woman,Outside Addis Ababa,0,,,0
+CV-11-023,JD-11,Bachelor of Science / Arts in Accounting and Finance — Addis Ababa University,Audit | ERP | Excel | Budgeting | Reconciliation | IFRS,0.8,51.8,Man,Addis Ababa,1,True,2.3,1
+CV-11-024,JD-11,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Budgeting | Reconciliation | ERP | IFRS | Financial reporting,1.6,54.1,Woman,Addis Ababa,0,,,0
+CV-11-025,JD-11,Bachelor of Science / Arts in Accounting and Finance — Addis Ababa University,Budgeting | Audit | ERP | Financial reporting | IFRS,0.3,45.7,Man,Outside Addis Ababa,0,,,0
+CV-11-026,JD-11,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Audit | Budgeting | Reconciliation | Financial reporting | IFRS,1.3,51.6,Woman,Addis Ababa,0,,,0
+CV-11-027,JD-11,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,IFRS | Financial reporting | Audit | ERP,0.5,51.7,Woman,Outside Addis Ababa,0,,,0
+CV-11-028,JD-11,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Budgeting | Excel | Reconciliation | IFRS | Audit | Financial reporting,0.6,52.2,Man,Addis Ababa,0,,,0
+CV-11-029,JD-11,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Audit | IFRS | ERP | Financial reporting | Budgeting | Excel,0.4,54.7,Man,Addis Ababa,1,True,2.1,1
+CV-11-030,JD-11,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,Excel | Reconciliation | Financial reporting | IFRS | Budgeting,1.0,53.4,Woman,Addis Ababa,0,,,0
+CV-11-031,JD-11,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,ERP | IFRS | Budgeting | Reconciliation | Audit,0.6,47.6,Man,Addis Ababa,0,,,0
+CV-11-032,JD-11,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Audit | Reconciliation | Financial reporting | ERP,1.5,47.4,Woman,Addis Ababa,0,,,0
+CV-11-033,JD-11,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,Reconciliation | ERP | Audit | Excel | Budgeting | IFRS,1.6,57.7,Woman,Outside Addis Ababa,0,,,0
+CV-11-034,JD-11,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,ERP | Budgeting | Audit | Reconciliation | IFRS | Financial reporting,1.5,55.3,Man,Outside Addis Ababa,0,,,0
+CV-11-035,JD-11,Bachelor of Science / Arts in Accounting and Finance — Jimma University,ERP | Budgeting | IFRS | Reconciliation | Financial reporting,1.8,49.5,Man,Addis Ababa,1,False,,0
+CV-11-036,JD-11,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,Excel | IFRS | ERP | Financial reporting | Reconciliation,0.7,50.4,Man,Outside Addis Ababa,0,,,0
+CV-11-037,JD-11,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,Excel | ERP | Audit | Financial reporting | Reconciliation,0.7,50.2,Woman,Outside Addis Ababa,0,,,0
+CV-11-038,JD-11,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Budgeting | IFRS | Audit | ERP,1.1,48.8,Woman,Outside Addis Ababa,0,,,0
+CV-11-039,JD-11,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Excel | IFRS | Audit | Reconciliation | ERP | Financial reporting,1.3,53.9,Man,Outside Addis Ababa,0,,,0
+CV-11-040,JD-11,Bachelor of Science / Arts in Accounting and Finance — Jimma University,ERP | Financial reporting | IFRS | Audit | Budgeting | Excel,0.3,48.4,Woman,Outside Addis Ababa,0,,,0
+CV-11-041,JD-11,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,Excel | Financial reporting | Budgeting | Audit | ERP,1.7,54.9,Woman,Addis Ababa,0,,,0
+CV-11-042,JD-11,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,IFRS | ERP | Reconciliation | Excel | Audit,1.1,50.6,Woman,Outside Addis Ababa,0,,,0
+CV-11-043,JD-11,Bachelor of Science / Arts in Accounting and Finance — Bahir Dar University,Audit | Budgeting | Excel | Financial reporting,0.4,47.9,Man,Outside Addis Ababa,0,,,0
+CV-11-044,JD-11,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,Audit | Financial reporting | Budgeting | Reconciliation | ERP | IFRS,1.3,52.1,Woman,Addis Ababa,0,,,0
+CV-11-045,JD-11,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Budgeting | Excel | ERP | Financial reporting | Reconciliation | IFRS,0.0,49.1,Woman,Addis Ababa,0,,,0
+CV-11-046,JD-11,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,ERP | IFRS | Reconciliation | Budgeting | Financial reporting,0.4,50.9,Man,Outside Addis Ababa,0,,,0
+CV-11-047,JD-11,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Financial reporting | IFRS | Reconciliation | Excel | ERP,0.1,47.5,Woman,Outside Addis Ababa,0,,,0
+CV-11-048,JD-11,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,IFRS | Budgeting | ERP | Audit | Excel,1.7,51.5,Man,Addis Ababa,1,True,2.5,1
+CV-11-049,JD-11,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,Reconciliation | Audit | IFRS | Budgeting,1.3,47.1,Woman,Outside Addis Ababa,0,,,0
+CV-11-050,JD-11,Bachelor of Science / Arts in Accounting and Finance — Addis Ababa University,Budgeting | Reconciliation | Financial reporting | IFRS | Audit | Excel,0.8,50.7,Man,Addis Ababa,0,,,0
+CV-12-001,JD-12,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Supplier management | Contract negotiation | Procurement | Leadership | Commodity operations,9.6,72.1,Man,Outside Addis Ababa,0,,,0
+CV-12-002,JD-12,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Leadership | Fuel logistics | Supplier management | Contract negotiation | Procurement,10.5,73.3,Woman,Outside Addis Ababa,0,,,0
+CV-12-003,JD-12,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Commodity operations | Procurement | Supplier management | Contract negotiation | Leadership,8.2,65.0,Man,Addis Ababa,0,,,0
+CV-12-004,JD-12,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Fuel logistics | Procurement | Leadership | Commodity operations,7.1,63.8,Woman,Outside Addis Ababa,0,,,0
+CV-12-005,JD-12,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Contract negotiation | Leadership | Fuel logistics | Commodity operations | Procurement | Supplier management,9.7,69.3,Woman,Addis Ababa,0,,,0
+CV-12-006,JD-12,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Leadership | Commodity operations | Contract negotiation | Procurement | Fuel logistics | Supplier management,11.4,72.8,Man,Outside Addis Ababa,0,,,0
+CV-12-007,JD-12,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Leadership | Fuel logistics | Procurement | Contract negotiation | Supplier management,10.3,72.2,Woman,Addis Ababa,0,,,0
+CV-12-008,JD-12,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Fuel logistics | Contract negotiation | Commodity operations | Procurement | Leadership,9.2,66.3,Woman,Addis Ababa,0,,,0
+CV-12-009,JD-12,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Fuel logistics | Contract negotiation | Commodity operations | Supplier management,8.0,64.5,Woman,Addis Ababa,0,,,0
+CV-12-010,JD-12,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Supplier management | Fuel logistics | Commodity operations | Contract negotiation | Leadership | Procurement,11.8,74.8,Man,Addis Ababa,1,True,3.4,1
+CV-12-011,JD-12,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Fuel logistics | Contract negotiation | Supplier management | Commodity operations | Procurement | Leadership,12.3,76.1,Man,Outside Addis Ababa,0,,,0
+CV-12-012,JD-12,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Fuel logistics | Supplier management | Procurement | Leadership | Contract negotiation,10.4,73.2,Man,Addis Ababa,1,False,,0
+CV-12-013,JD-12,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Procurement | Leadership | Fuel logistics | Supplier management | Contract negotiation,9.8,67.1,Man,Addis Ababa,0,,,0
+CV-12-014,JD-12,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Commodity operations | Fuel logistics | Contract negotiation | Leadership | Supplier management,9.8,70.6,Man,Outside Addis Ababa,0,,,0
+CV-12-015,JD-12,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Procurement | Fuel logistics | Contract negotiation | Leadership,6.9,61.4,Woman,Outside Addis Ababa,0,,,0
+CV-12-016,JD-12,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Procurement | Contract negotiation | Commodity operations | Fuel logistics | Leadership | Supplier management,12.8,75.1,Man,Addis Ababa,1,True,4.3,1
+CV-12-017,JD-12,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Contract negotiation | Commodity operations | Supplier management | Leadership | Procurement | Fuel logistics,9.5,72.1,Man,Addis Ababa,0,,,0
+CV-12-018,JD-12,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Supplier management | Fuel logistics | Leadership | Commodity operations | Contract negotiation,10.8,72.0,Man,Outside Addis Ababa,0,,,0
+CV-12-019,JD-12,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Leadership | Contract negotiation | Commodity operations | Supplier management | Procurement,10.2,70.3,Man,Outside Addis Ababa,0,,,0
+CV-12-020,JD-12,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Contract negotiation | Commodity operations | Procurement | Supplier management,5.6,58.2,Man,Addis Ababa,0,,,0
+CV-12-021,JD-12,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Contract negotiation | Commodity operations | Fuel logistics | Leadership,5.7,61.7,Woman,Outside Addis Ababa,0,,,0
+CV-12-022,JD-12,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Commodity operations | Leadership | Procurement | Supplier management | Fuel logistics | Contract negotiation,9.8,71.9,Woman,Outside Addis Ababa,0,,,0
+CV-12-023,JD-12,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Contract negotiation | Procurement | Commodity operations | Fuel logistics | Supplier management | Leadership,12.1,79.1,Woman,Addis Ababa,1,True,4.5,1
+CV-12-024,JD-12,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Contract negotiation | Supplier management | Leadership | Procurement | Commodity operations,10.6,69.2,Man,Outside Addis Ababa,0,,,0
+CV-12-025,JD-12,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Commodity operations | Leadership | Contract negotiation | Fuel logistics | Procurement,8.9,72.2,Man,Addis Ababa,1,False,,0
+CV-12-026,JD-12,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Contract negotiation | Leadership | Fuel logistics | Supplier management,5.8,63.6,Woman,Addis Ababa,0,,,0
+CV-12-027,JD-12,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Leadership | Commodity operations | Contract negotiation | Supplier management | Procurement | Fuel logistics,10.8,77.3,Woman,Outside Addis Ababa,0,,,0
+CV-12-028,JD-12,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Fuel logistics | Commodity operations | Contract negotiation | Supplier management | Leadership | Procurement,12.9,74.9,Man,Addis Ababa,1,True,3.8,1
+CV-12-029,JD-12,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Contract negotiation | Commodity operations | Procurement | Supplier management | Fuel logistics,9.1,70.6,Man,Addis Ababa,1,False,,0
+CV-12-030,JD-12,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Contract negotiation | Leadership | Supplier management | Commodity operations | Procurement,8.9,70.5,Woman,Addis Ababa,0,,,0
+CV-12-031,JD-12,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Fuel logistics | Leadership | Supplier management | Contract negotiation | Procurement,8.7,66.5,Man,Addis Ababa,0,,,0
+CV-12-032,JD-12,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Leadership | Supplier management | Commodity operations | Procurement,6.8,62.0,Woman,Addis Ababa,0,,,0
+CV-12-033,JD-12,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Supplier management | Procurement | Contract negotiation | Fuel logistics | Commodity operations | Leadership,12.5,74.8,Woman,Addis Ababa,0,,,0
+CV-12-034,JD-12,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Contract negotiation | Fuel logistics | Supplier management | Commodity operations | Procurement | Leadership,9.6,74.7,Man,Addis Ababa,1,False,,0
+CV-12-035,JD-12,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Fuel logistics | Procurement | Supplier management | Contract negotiation | Commodity operations,9.0,66.0,Woman,Outside Addis Ababa,0,,,0
+CV-12-036,JD-12,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Commodity operations | Procurement | Contract negotiation | Fuel logistics | Supplier management,9.1,73.0,Man,Outside Addis Ababa,1,False,,0
+CV-12-037,JD-12,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Supplier management | Procurement | Fuel logistics | Contract negotiation,6.8,64.6,Woman,Addis Ababa,0,,,0
+CV-12-038,JD-12,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Procurement | Contract negotiation | Supplier management | Fuel logistics | Commodity operations | Leadership,10.6,70.3,Man,Outside Addis Ababa,0,,,0
+CV-12-039,JD-12,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Supplier management | Fuel logistics | Commodity operations | Contract negotiation | Leadership | Procurement,11.2,73.3,Man,Addis Ababa,0,,,0
+CV-12-040,JD-12,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Contract negotiation | Commodity operations | Supplier management | Fuel logistics | Procurement,10.6,69.8,Woman,Addis Ababa,0,,,0
+CV-12-041,JD-12,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Fuel logistics | Leadership | Supplier management | Procurement | Commodity operations,10.5,70.4,Woman,Addis Ababa,0,,,0
+CV-12-042,JD-12,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Contract negotiation | Procurement | Supplier management | Leadership | Commodity operations,9.9,68.7,Woman,Addis Ababa,0,,,0
+CV-12-043,JD-12,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Commodity operations | Supplier management | Leadership | Fuel logistics,7.4,64.6,Woman,Outside Addis Ababa,0,,,0
+CV-12-044,JD-12,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Leadership | Contract negotiation | Commodity operations | Fuel logistics | Supplier management | Procurement,12.8,79.6,Woman,Outside Addis Ababa,0,,,0
+CV-12-045,JD-12,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Supplier management | Fuel logistics | Contract negotiation | Leadership | Procurement | Commodity operations,11.9,74.0,Man,Outside Addis Ababa,0,,,0
+CV-12-046,JD-12,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Procurement | Contract negotiation | Fuel logistics | Leadership | Supplier management,9.0,69.9,Woman,Addis Ababa,0,,,0
+CV-12-047,JD-12,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Procurement | Commodity operations | Leadership | Supplier management | Fuel logistics,9.2,68.6,Man,Addis Ababa,0,,,0
+CV-12-048,JD-12,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Fuel logistics | Supplier management | Procurement | Leadership,6.4,65.0,Man,Outside Addis Ababa,0,,,0
+CV-12-049,JD-12,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Commodity operations | Leadership | Fuel logistics | Contract negotiation | Supplier management | Procurement,11.9,74.8,Man,Outside Addis Ababa,0,,,0
+CV-12-050,JD-12,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Contract negotiation | Procurement | Fuel logistics | Commodity operations | Supplier management | Leadership,11.7,79.3,Man,Outside Addis Ababa,1,True,4.4,1
+CV-14-001,JD-14,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,Audit | IFRS | Excel | Budgeting | Financial reporting,0.2,45.6,Woman,Addis Ababa,0,,,0
+CV-14-002,JD-14,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,ERP | Audit | Financial reporting | Reconciliation | IFRS,0.4,47.9,Woman,Outside Addis Ababa,0,,,0
+CV-14-003,JD-14,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Excel | Reconciliation | Audit | Budgeting,0.3,45.5,Man,Addis Ababa,0,,,0
+CV-14-004,JD-14,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,ERP | Financial reporting | IFRS | Reconciliation | Audit | Excel,0.8,55.4,Woman,Outside Addis Ababa,0,,,0
+CV-14-005,JD-14,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Budgeting | IFRS | ERP | Audit | Excel | Reconciliation,0.6,52.6,Man,Addis Ababa,1,True,2.7,1
+CV-14-006,JD-14,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Reconciliation | ERP | Budgeting | IFRS | Audit,1.4,48.1,Woman,Addis Ababa,0,,,0
+CV-14-007,JD-14,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Audit | Financial reporting | IFRS | ERP | Budgeting,1.0,48.3,Woman,Addis Ababa,0,,,0
+CV-14-008,JD-14,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,Financial reporting | Audit | Reconciliation | Excel,1.5,52.6,Woman,Outside Addis Ababa,0,,,0
+CV-14-009,JD-14,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Reconciliation | Audit | Budgeting | Excel | IFRS | ERP,0.2,49.7,Man,Addis Ababa,1,False,,0
+CV-14-010,JD-14,Bachelor of Science / Arts in Accounting and Finance — Addis Ababa University,Excel | ERP | Reconciliation | Audit | Budgeting | Financial reporting,1.7,51.8,Woman,Addis Ababa,0,,,0
+CV-14-011,JD-14,Bachelor of Science / Arts in Accounting and Finance — Bahir Dar University,IFRS | Financial reporting | Audit | ERP | Excel,0.6,52.4,Man,Addis Ababa,1,True,2.0,1
+CV-14-012,JD-14,Bachelor of Science / Arts in Accounting and Finance — Bahir Dar University,Excel | ERP | IFRS | Financial reporting | Audit,0.2,45.8,Man,Outside Addis Ababa,0,,,0
+CV-14-013,JD-14,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Audit | Financial reporting | Reconciliation | IFRS | ERP,0.8,49.8,Man,Addis Ababa,1,False,,0
+CV-14-014,JD-14,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Audit | ERP | Excel | Budgeting,0.6,50.7,Man,Addis Ababa,1,False,,0
+CV-14-015,JD-14,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,Audit | ERP | Budgeting | Reconciliation | Financial reporting | IFRS,0.6,49.1,Woman,Addis Ababa,0,,,0
+CV-14-016,JD-14,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Budgeting | Financial reporting | Audit | IFRS | Excel | ERP,1.6,55.4,Man,Outside Addis Ababa,1,True,3.3,1
+CV-14-017,JD-14,Bachelor of Science / Arts in Accounting and Finance — Bahir Dar University,Excel | ERP | Budgeting | Financial reporting | IFRS,1.4,53.6,Man,Addis Ababa,0,,,0
+CV-14-018,JD-14,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Audit | Budgeting | Excel | ERP | IFRS,0.2,49.7,Woman,Outside Addis Ababa,0,,,0
+CV-14-019,JD-14,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,Financial reporting | Budgeting | Reconciliation | IFRS,0.2,47.6,Man,Addis Ababa,0,,,0
+CV-14-020,JD-14,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,Financial reporting | IFRS | Budgeting | Audit | Excel | ERP,1.7,57.3,Woman,Outside Addis Ababa,0,,,0
+CV-14-021,JD-14,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,Budgeting | Reconciliation | Audit | Excel | Financial reporting | IFRS,0.7,53.9,Man,Outside Addis Ababa,1,True,3.1,1
+CV-14-022,JD-14,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Excel | Reconciliation | IFRS | Financial reporting | ERP,0.0,49.4,Man,Addis Ababa,0,,,0
+CV-14-023,JD-14,Bachelor of Science / Arts in Accounting and Finance — Addis Ababa University,Budgeting | Excel | IFRS | Reconciliation | ERP,1.1,51.4,Man,Addis Ababa,1,False,,0
+CV-14-024,JD-14,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,IFRS | Financial reporting | Excel | Reconciliation | Budgeting,1.3,52.0,Man,Addis Ababa,1,True,2.7,1
+CV-14-025,JD-14,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Reconciliation | Audit | Excel | Financial reporting,1.3,46.6,Woman,Outside Addis Ababa,0,,,0
+CV-14-026,JD-14,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Audit | Financial reporting | Budgeting | Reconciliation | Excel | ERP,1.0,49.4,Woman,Outside Addis Ababa,0,,,0
+CV-14-027,JD-14,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Budgeting | Financial reporting | Reconciliation | Excel | ERP | Audit,0.4,48.4,Woman,Outside Addis Ababa,0,,,0
+CV-14-028,JD-14,Bachelor of Science / Arts in Accounting and Finance — Bahir Dar University,Financial reporting | IFRS | ERP | Excel | Reconciliation,1.1,48.6,Woman,Addis Ababa,0,,,0
+CV-14-029,JD-14,Bachelor of Science / Arts in Accounting and Finance — Addis Ababa University,Audit | ERP | Budgeting | Excel | Reconciliation,0.3,46.7,Woman,Addis Ababa,0,,,0
+CV-14-030,JD-14,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Reconciliation | Excel | Financial reporting | IFRS,1.2,52.6,Woman,Addis Ababa,0,,,0
+CV-14-031,JD-14,Bachelor of Science / Arts in Accounting and Finance — Bahir Dar University,Audit | Excel | Budgeting | ERP,1.2,53.2,Woman,Addis Ababa,0,,,0
+CV-14-032,JD-14,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Reconciliation | Financial reporting | IFRS | Budgeting | Excel | Audit,1.6,53.2,Woman,Outside Addis Ababa,0,,,0
+CV-14-033,JD-14,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,Excel | Budgeting | ERP | Reconciliation | Audit | IFRS,1.0,55.2,Woman,Outside Addis Ababa,0,,,0
+CV-14-034,JD-14,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Budgeting | ERP | IFRS | Audit | Excel,0.5,48.7,Man,Outside Addis Ababa,0,,,0
+CV-14-035,JD-14,Bachelor of Science / Arts in Accounting and Finance — Addis Ababa University,ERP | Budgeting | Reconciliation | Excel | IFRS,0.8,51.2,Woman,Addis Ababa,0,,,0
+CV-14-036,JD-14,Bachelor of Science / Arts in Accounting and Finance — Bahir Dar University,Excel | Audit | ERP | IFRS,1.2,54.1,Woman,Addis Ababa,0,,,0
+CV-14-037,JD-14,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,Budgeting | Excel | Financial reporting | Audit | ERP | Reconciliation,1.8,54.6,Man,Outside Addis Ababa,0,,,0
+CV-14-038,JD-14,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Reconciliation | Financial reporting | Audit | Excel | Budgeting | ERP,0.6,49.2,Man,Addis Ababa,0,,,0
+CV-14-039,JD-14,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,IFRS | Reconciliation | Financial reporting | Excel | ERP,0.6,51.0,Woman,Addis Ababa,0,,,0
+CV-14-040,JD-14,Bachelor of Science / Arts in Accounting and Finance — Bahir Dar University,Reconciliation | Financial reporting | Excel | Audit | Budgeting,0.1,52.8,Man,Addis Ababa,0,,,0
+CV-14-041,JD-14,Bachelor of Science / Arts in Accounting and Finance — Addis Ababa University,Audit | ERP | Budgeting | Excel | IFRS,0.2,46.9,Man,Addis Ababa,0,,,0
+CV-14-042,JD-14,Bachelor of Science / Arts in Accounting and Finance — Addis Ababa University,Financial reporting | ERP | Reconciliation | IFRS,1.0,53.5,Woman,Addis Ababa,0,,,0
+CV-14-043,JD-14,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,Excel | ERP | Budgeting | Audit | Reconciliation | IFRS,0.3,49.2,Man,Addis Ababa,1,False,,0
+CV-14-044,JD-14,Bachelor of Science / Arts in Accounting and Finance — University of Gondar,Financial reporting | Reconciliation | Budgeting | ERP | Audit | IFRS,1.7,55.7,Woman,Addis Ababa,0,,,0
+CV-14-045,JD-14,Bachelor of Science / Arts in Accounting and Finance — Jimma University,Excel | IFRS | ERP | Audit | Budgeting,1.4,49.0,Man,Outside Addis Ababa,0,,,0
+CV-14-046,JD-14,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,Audit | Budgeting | Financial reporting | Reconciliation | ERP,0.5,52.4,Man,Outside Addis Ababa,0,,,0
+CV-14-047,JD-14,Bachelor of Science / Arts in Accounting and Finance — Adama Science and Technology University,Audit | Excel | Reconciliation | Financial reporting,1.0,48.9,Woman,Outside Addis Ababa,0,,,0
+CV-14-048,JD-14,Bachelor of Science / Arts in Accounting and Finance — Hawassa University,IFRS | Financial reporting | Budgeting | Reconciliation | Audit | ERP,1.4,57.2,Man,Outside Addis Ababa,0,,,0
+CV-14-049,JD-14,Bachelor of Science / Arts in Accounting and Finance — Bahir Dar University,Reconciliation | ERP | Excel | IFRS | Audit | Financial reporting,0.7,54.3,Man,Outside Addis Ababa,0,,,0
+CV-14-050,JD-14,Bachelor of Science / Arts in Accounting and Finance — Jimma University,ERP | Audit | Financial reporting | Budgeting | Excel,0.6,53.5,Woman,Addis Ababa,0,,,0
+CV-15-001,JD-15,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,ERP | Contract management | Supplier evaluation | e-GP | Excel,7.3,67.6,Woman,Outside Addis Ababa,0,,,0
+CV-15-002,JD-15,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Excel | ERP | e-GP | Contract management,4.9,57.6,Man,Addis Ababa,0,,,0
+CV-15-003,JD-15,Bachelor of Science / Arts in Supply Chain Management — Jimma University,ERP | Tendering | e-GP | Supplier evaluation | Contract management | Inventory,6.8,63.0,Man,Addis Ababa,1,False,,0
+CV-15-004,JD-15,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Contract management | Excel | Tendering | ERP | Supplier evaluation | e-GP,7.3,64.1,Man,Addis Ababa,1,False,,0
+CV-15-005,JD-15,Bachelor of Science / Arts in Supply Chain Management — Jimma University,e-GP | ERP | Contract management | Tendering | Supplier evaluation,7.2,61.3,Woman,Addis Ababa,0,,,0
+CV-15-006,JD-15,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Inventory | Excel | Contract management | ERP | e-GP,6.7,65.4,Man,Addis Ababa,0,,,0
+CV-15-007,JD-15,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,ERP | Supplier evaluation | Excel | Contract management | Tendering,5.7,64.3,Man,Addis Ababa,1,False,,0
+CV-15-008,JD-15,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,ERP | Supplier evaluation | Excel | e-GP,4.9,58.8,Woman,Outside Addis Ababa,0,,,0
+CV-15-009,JD-15,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Contract management | Tendering | Excel | ERP | Supplier evaluation | e-GP,9.5,73.1,Woman,Addis Ababa,0,,,0
+CV-15-010,JD-15,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,ERP | Tendering | Contract management | Excel | Inventory | e-GP,7.5,69.5,Woman,Outside Addis Ababa,0,,,0
+CV-15-011,JD-15,Bachelor of Science / Arts in Supply Chain Management — Jimma University,e-GP | Supplier evaluation | ERP | Tendering | Contract management,6.3,59.0,Woman,Outside Addis Ababa,0,,,0
+CV-15-012,JD-15,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Inventory | ERP | Tendering | e-GP | Contract management,6.5,60.8,Man,Outside Addis Ababa,0,,,0
+CV-15-013,JD-15,Bachelor of Science / Arts in Supply Chain Management — Jimma University,e-GP | Tendering | Excel | Contract management,2.9,57.2,Man,Outside Addis Ababa,0,,,0
+CV-15-014,JD-15,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Excel | Tendering | Inventory | ERP | Supplier evaluation | Contract management,7.0,65.5,Man,Outside Addis Ababa,0,,,0
+CV-15-015,JD-15,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,ERP | Excel | Tendering | Inventory | Supplier evaluation | e-GP,8.6,68.5,Woman,Addis Ababa,0,,,0
+CV-15-016,JD-15,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Supplier evaluation | ERP | e-GP | Contract management | Tendering,7.5,61.9,Woman,Outside Addis Ababa,0,,,0
+CV-15-017,JD-15,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,e-GP | Contract management | Inventory | Supplier evaluation | Excel,7.7,69.2,Woman,Outside Addis Ababa,0,,,0
+CV-15-018,JD-15,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Contract management | ERP | Supplier evaluation | e-GP | Tendering,5.3,63.2,Woman,Outside Addis Ababa,0,,,0
+CV-15-019,JD-15,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Tendering | e-GP | ERP | Supplier evaluation,4.7,54.5,Woman,Outside Addis Ababa,0,,,0
+CV-15-020,JD-15,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Excel | Contract management | e-GP | Tendering | Inventory | ERP,9.2,67.7,Woman,Outside Addis Ababa,0,,,0
+CV-15-021,JD-15,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,ERP | Tendering | Contract management | e-GP | Inventory | Supplier evaluation,8.0,66.8,Man,Outside Addis Ababa,0,,,0
+CV-15-022,JD-15,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,ERP | Excel | e-GP | Inventory | Tendering,7.1,61.2,Man,Outside Addis Ababa,0,,,0
+CV-15-023,JD-15,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,e-GP | ERP | Excel | Supplier evaluation | Inventory,7.0,61.7,Woman,Addis Ababa,0,,,0
+CV-15-024,JD-15,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Supplier evaluation | Contract management | Tendering | ERP,4.4,57.6,Man,Outside Addis Ababa,0,,,0
+CV-15-025,JD-15,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Excel | Tendering | Supplier evaluation | Contract management | e-GP | ERP,8.4,69.0,Man,Outside Addis Ababa,0,,,0
+CV-15-026,JD-15,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Excel | Inventory | ERP | Tendering | Supplier evaluation | Contract management,8.4,67.1,Man,Outside Addis Ababa,1,True,3.1,1
+CV-15-027,JD-15,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Supplier evaluation | Tendering | ERP | e-GP | Inventory,5.3,63.4,Man,Outside Addis Ababa,0,,,0
+CV-15-028,JD-15,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Contract management | Excel | Tendering | e-GP | ERP,7.5,62.7,Man,Addis Ababa,1,False,,0
+CV-15-029,JD-15,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,ERP | Supplier evaluation | Tendering | Contract management | Excel,7.1,65.3,Man,Addis Ababa,1,False,,0
+CV-15-030,JD-15,Bachelor of Science / Arts in Supply Chain Management — Bahir Dar University,Excel | ERP | e-GP | Supplier evaluation,3.5,54.7,Woman,Addis Ababa,0,,,0
+CV-15-031,JD-15,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Supplier evaluation | Contract management | Tendering | ERP | e-GP | Excel,9.8,70.0,Woman,Outside Addis Ababa,0,,,0
+CV-15-032,JD-15,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Excel | Supplier evaluation | Contract management | e-GP | ERP | Tendering,7.2,64.6,Woman,Addis Ababa,0,,,0
+CV-15-033,JD-15,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Inventory | e-GP | Excel | ERP | Contract management,6.4,61.2,Man,Outside Addis Ababa,0,,,0
+CV-15-034,JD-15,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Contract management | Tendering | Supplier evaluation | ERP | e-GP,7.5,64.5,Woman,Outside Addis Ababa,0,,,0
+CV-15-036,JD-15,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Tendering | Supplier evaluation | ERP | Excel,4.6,55.8,Woman,Addis Ababa,0,,,0
+CV-15-037,JD-15,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,ERP | Excel | Contract management | Tendering | Inventory | e-GP,9.5,70.5,Man,Outside Addis Ababa,1,True,3.9,1
+CV-15-038,JD-15,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Contract management | Inventory | Supplier evaluation | e-GP | ERP | Excel,8.5,71.0,Woman,Addis Ababa,0,,,0
+CV-15-039,JD-15,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Supplier evaluation | Contract management | Tendering | ERP | e-GP,5.2,59.5,Man,Outside Addis Ababa,0,,,0
+CV-15-040,JD-15,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Tendering | Supplier evaluation | e-GP | Contract management | Inventory,7.3,62.9,Woman,Addis Ababa,0,,,0
+CV-15-041,JD-15,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,e-GP | Tendering | Contract management | Inventory,3.1,53.2,Woman,Outside Addis Ababa,0,,,0
+CV-15-042,JD-15,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Supplier evaluation | Inventory | Contract management | ERP | e-GP | Tendering,9.1,73.0,Man,Outside Addis Ababa,1,True,3.0,1
+CV-15-043,JD-15,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Inventory | Tendering | e-GP | Supplier evaluation | Excel | Contract management,8.1,65.0,Man,Outside Addis Ababa,0,,,0
+CV-15-044,JD-15,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,e-GP | Tendering | Supplier evaluation | Excel | ERP,5.5,64.1,Man,Addis Ababa,0,,,0
+CV-15-045,JD-15,Bachelor of Science / Arts in Supply Chain Management — University of Gondar,Supplier evaluation | ERP | e-GP | Excel | Inventory,5.4,62.2,Man,Addis Ababa,0,,,0
+CV-15-046,JD-15,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,e-GP | Contract management | Tendering | Inventory | Supplier evaluation,5.9,60.5,Man,Outside Addis Ababa,0,,,0
+CV-15-047,JD-15,Bachelor of Science / Arts in Supply Chain Management — Hawassa University,Contract management | e-GP | ERP | Tendering,2.8,52.6,Woman,Addis Ababa,0,,,0
+CV-15-048,JD-15,Bachelor of Science / Arts in Supply Chain Management — Adama Science and Technology University,Inventory | Tendering | Contract management | Excel | ERP | Supplier evaluation,9.0,70.6,Man,Outside Addis Ababa,1,True,3.7,1
+CV-15-049,JD-15,Bachelor of Science / Arts in Supply Chain Management — Jimma University,Tendering | ERP | Supplier evaluation | Excel | Contract management | Inventory,7.9,66.1,Woman,Outside Addis Ababa,0,,,0
+CV-15-050,JD-15,Bachelor of Science / Arts in Supply Chain Management — Addis Ababa University,Inventory | Tendering | Excel | Supplier evaluation | e-GP,7.3,65.8,Man,Addis Ababa,1,True,2.7,1

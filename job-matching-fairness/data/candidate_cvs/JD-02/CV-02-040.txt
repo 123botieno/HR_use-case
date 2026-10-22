@@ -1,0 +1,79 @@
+Professional Summary
+
+Bayesian professional with 6.7 years of experience across relevant assignments in Ethiopia. Background in inla, r, technical documentation and team collaboration. Seeking the Senior Bayesian Spatial Modeller and Small Area Estimation Expert position.
+
+Technical and Professional Skills
+
+INLA | R | Stan | GIS | Survey sampling
+
+Professional Experience
+
+Senior Bayesian Spatial Modeller and Small Area Estimation Expert — Fictional Ethiopian Bayesian Services 1
+
+Ethiopia | Approx. 2.2 years
+
+Combine survey, census, routine health, surveillance and geospatial covariates with traceable metadata.
+
+Handle boundary changes, spatial misalignment, displaced survey clusters, missingness and measurement error.
+
+Produce design-based direct estimates and standard errors before model-based estimation.
+
+Use INLA, MCMC, HMC or NUTS and compare model diagnostics, assumptions and sensitivity.
+
+Improved timeliness or data completeness by 20% through team-led process refinement.
+
+Bayesian Specialist — Fictional Ethiopian Bayesian Services 2
+
+Ethiopia | Approx. 2.2 years
+
+Frame policy questions by indicator, geography, time period, estimand and decision threshold.
+
+Combine survey, census, routine health, surveillance and geospatial covariates with traceable metadata.
+
+Quantify uncertainty and communicate subnational estimates through maps, reports and policy products.
+
+Produce design-based direct estimates and standard errors before model-based estimation.
+
+Improved timeliness or data completeness by 20% through team-led process refinement.
+
+Bayesian Specialist — Fictional Ethiopian Bayesian Services 3
+
+Ethiopia | Approx. 2.2 years
+
+Train and mentor analysts and support reproducible statistical workflows.
+
+Combine survey, census, routine health, surveillance and geospatial covariates with traceable metadata.
+
+Quantify uncertainty and communicate subnational estimates through maps, reports and policy products.
+
+Use INLA, MCMC, HMC or NUTS and compare model diagnostics, assumptions and sensitivity.
+
+Improved timeliness or data completeness by 11% through team-led process refinement.
+
+Education
+
+Bachelor of Science / Arts in Biostatistics / Statistics — Jimma University
+
+Research and Publications
+
+8 fictional peer-reviewed public-health research outputs; first-author papers: 5. Publication records are synthetic and not externally verifiable.
+
+Selected Achievements
+
+Contributed to a bayesian workstream using Stan, reporting and stakeholder follow-up.
+
+Contributed to a bayesian workstream using R, reporting and stakeholder follow-up.
+
+Contributed to a bayesian workstream using Stan, reporting and stakeholder follow-up.
+
+Contributed to a bayesian workstream using Survey sampling, reporting and stakeholder follow-up.
+
+Contributed to a bayesian workstream using GIS, reporting and stakeholder follow-up.
+
+Contributed to a bayesian workstream using Stan, reporting and stakeholder follow-up.
+
+Training and Languages
+
+Professional development: Stan. Languages: Amharic and English.
+
+All employers, accomplishments and professional histories in this CV are fictional.
