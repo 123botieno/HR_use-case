@@ -15,6 +15,16 @@ By the end, participants will be able to:
 - Explain why agreement with historical decisions is not evidence of correctness, and why missing performance outcomes must remain unknown.
 - Make a recommendation that states both evidence and uncertainty.
 
+## The three matching methods
+
+| Method | How it scores a CV | How it ranks candidates |
+|---|---|---|
+| TF-IDF | Weights words and phrases by how often they occur in a CV and how distinctive they are across the JD and applicant pool; compares the job and CV vectors with cosine similarity. | Higher cosine similarity ranks first. Exact word overlap matters. |
+| BM25 | Adds points for job-description terms in a CV, giving more weight to rare terms, diminishing returns for repetition, and adjusting for document length. | Higher BM25 total ranks first. It remains a word-matching method. |
+| LLM rubric | Asks a language model to find evidence for each job-related requirement, then checks its quoted evidence and calculates weighted evidence coverage. | Higher evidence coverage ranks first. A model can still overlook or misread evidence. Offline mode uses a saved Top-5 ranking. |
+
+These scores come from different calculations and are not on a shared quality scale. The notebook explains each method step by step and compares candidate order and shortlist overlap instead.
+
 ## Audience and duration
 
 For data practitioners, HR analysts, recruiters, and responsible-AI learners. Five problem-based episodes take about 2 hours. Work in pairs; no GPU is required.
