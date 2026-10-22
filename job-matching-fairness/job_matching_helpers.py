@@ -25,29 +25,24 @@ TOKEN_PATTERN = re.compile(r"(?u)\b\w\w+\b")
 
 
 def load_jobs(data_dir: str | Path = DATA_DIR) -> pd.DataFrame:
-    """Load job metadata and text, one row per job."""
+    """Load job metadata and description text, one row per job."""
     root = Path(data_dir) / "job_descriptions"
-    index = pd.read_csv(root / "jobs.csv", dtype={"job_id": str})
-    texts = {p.stem: p.read_text(encoding="utf-8") for p in root.glob("JD-*.txt")}
-    index["text"] = index["job_id"].map(texts)
-    if index["text"].isna().any():
-        raise ValueError("A job description text file is missing")
-    return index
+    jobs = pd.read_csv(root / "jobs.csv", dtype={"job_id": str})
+    if jobs["text"].isna().any():
+        raise ValueError("A job description is missing text")
+    return jobs
 
 
 def load_candidates(job_id: str, data_dir: str | Path = DATA_DIR) -> pd.DataFrame:
-    """Load candidate CV text for one vacancy; IDs are stable across files."""
-    root = Path(data_dir) / "candidate_cvs" / job_id
-    rows = []
-    for path in sorted(root.glob("CV-*.txt")):
-        candidate_id = path.stem
-        rows.append(
-            {"candidate_id": candidate_id, "job_id": job_id,
-             "text": path.read_text(encoding="utf-8")}
-        )
-    if not rows:
+    """Load the indexed fictional CV text for one vacancy."""
+    path = Path(data_dir) / "candidate_cvs" / "candidates.csv"
+    candidates = pd.read_csv(path, dtype={"candidate_id": str, "job_id": str})
+    rows = candidates.loc[candidates.job_id == job_id].copy()
+    if rows.empty:
         raise ValueError(f"No CVs found for {job_id}")
-    return pd.DataFrame(rows)
+    if rows["text"].isna().any():
+        raise ValueError(f"One or more CVs are missing text for {job_id}")
+    return rows.reset_index(drop=True)
 
 
 def load_history(data_dir: str | Path = DATA_DIR) -> pd.DataFrame:

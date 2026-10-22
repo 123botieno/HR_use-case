@@ -25,9 +25,11 @@ For data practitioners, HR analysts, recruiters, and responsible-AI learners. Fi
 job-matching-fairness/
 ├── data/
 │   ├── SOURCES.md
-│   ├── job_descriptions/
-│   ├── candidate_cvs/
+│   ├── job_descriptions/jobs.csv
+│   ├── candidate_cvs/candidates.csv
 │   ├── historical_hiring_synthetic.csv
+│   ├── llm_precomputed_top5.csv
+│   └── generate_history.py
 │   └── llm_precomputed_top5.csv
 ├── facilitator/
 │   ├── FACILITATOR_NOTES.md
@@ -39,7 +41,7 @@ job-matching-fairness/
 
 ## Data
 
-`data/job_descriptions/jobs.csv` indexes 14 source-faithful paraphrases of existing job descriptions, with job ID, title, employer, sector, level, and source URL. `data/candidate_cvs/candidates.csv` indexes 699 fictional CVs across the same 14 jobs. JD-13 has no source folder, and one CV in JD-15 was unreadable; both gaps are documented in inventory files. Each CV is stored as plain text with the generated name, application header, and direct synthetic ID removed. IDs such as `JD-01` and `CV-01-001` link job text, CVs, rankings, and history.
+`data/job_descriptions/jobs.csv` contains the text and metadata for 14 source-faithful paraphrases of existing job descriptions. `data/candidate_cvs/candidates.csv` contains 699 fictional CV texts and profile fields for those vacancies. The 2nd Cook JD (JD-13) was unavailable in the source bundle and one JD-15 CV was unreadable. Those source gaps are recorded in `data/SOURCES.md`. The CV text has generated names, application headers, and direct synthetic IDs removed. IDs such as `JD-01` and `CV-01-001` link job text, CVs, rankings, and history. Each dataset is a single indexed CSV; there are no per-job or per-candidate subfolders.
 
 `historical_hiring_synthetic.csv` contains one simulated applicant-job row per CV. It includes qualification/experience fields, synthetic sex and location audit fields, historical shortlist/hire decisions, post-hire performance where observed, and an explicit observation flag. It is wholly synthetic and must never be interpreted as actual recruitment data. See [data/SOURCES.md](data/SOURCES.md) for sources, assumptions, the intentional bias mechanism, and limits.
 

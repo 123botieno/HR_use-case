@@ -137,7 +137,7 @@ Give pairs five minutes to complete the decision table and five minutes for two 
 
 ## Answers and evidence inventory
 
-- Source data: 14 available JDs, 699 readable fictional CVs; one JD and one unreadable CV are absent and listed in `data/candidate_cvs/source_inventory_issues.csv` / source notes.
+- Source data: 14 available JDs and 699 readable fictional CVs. JD-13 and one unreadable JD-15 CV were unavailable in the source bundle; these omissions and their effect are documented in `data/SOURCES.md`.
 - Synthetic history: 699 applicant-job rows. Per complete 50-CV job: 10 shortlisted, 5 hired; post-hire performance observed for the 5 hires only.
 - Cached LLM: existing repository `comparison_shortlists.csv` top-five records for 14 JDs; K=5 only, explicitly offline and not live inference.
 - For exact current outputs, use the executed notebook. If helper/data changes, rerun the notebook before teaching and replace these figures from its outputs.

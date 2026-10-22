@@ -3,13 +3,13 @@
 ## Job descriptions
 
 - **Source:** the repository's `Ethiopia_15_Government_JDs_750_CVs/Ethiopia_15_Public_Sector_JDs_750_CVs/` source bundle, created for the existing job-matching use case. It describes public job advertisements and records source URLs in `job_descriptions/jobs.csv`.
-- **What was copied:** extracted text for the 14 available JD documents, preserving the supplied content and metadata. The upstream bundle itself describes these as source-faithful paraphrases, not verbatim advertisements. The 2nd Cook record (JD-13) had no source directory and is omitted; this gap is recorded in `job_descriptions/source_inventory_issues.csv`.
+- **What was copied:** extracted text for the 14 available JD documents, preserving the supplied content and metadata. The upstream bundle itself describes these as source-faithful paraphrases, not verbatim advertisements. The 2nd Cook record (JD-13) had no source directory and is omitted. Each JD's text and metadata are stored together in `job_descriptions/jobs.csv`.
 - **License:** the source bundle gives URLs but no redistribution license. The workshop includes the text already maintained in the project repository. Confirm permissions before external redistribution.
 
 ## Candidate CVs
 
 - **Source:** the same project bundle's candidate manifest and CV files. Its README describes every CV as fictional and its fit tiers as synthetic, unvalidated screening labels.
-- **What was included:** 699 readable CVs for the 14 available JDs (50 per job except JD-15, where one unreadable DOCX was omitted). Text was extracted from DOCX; generated names, application header, and direct synthetic ID were removed. Candidate IDs were generated consistently as `CV-<job number>-<candidate number>`. The unreadable CV is listed in `candidate_cvs/source_inventory_issues.csv`.
+- **What was included:** 699 readable CVs for the 14 available JDs (50 per job except JD-15, where one unreadable DOCX was omitted). Text was extracted from DOCX; generated names, application header, and direct synthetic ID were removed. Candidate IDs were generated consistently as `CV-<job number>-<candidate number>`. All text and profile metadata are stored in one indexed file, `candidate_cvs/candidates.csv`; there are no per-candidate or per-job subfolders.
 - **License:** the source bundle has no separate redistribution license. These fictional profiles contain no real applicant records or contact details, but retain source-derived text. Confirm permissions before external redistribution.
 
 ## Synthetic historical hiring file
