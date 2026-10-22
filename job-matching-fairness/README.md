@@ -65,6 +65,22 @@ Run notebook cells top to bottom. Each of five problems follows **Problem → Pa
 
 TF-IDF and BM25 return complete rankings. The packaged LLM cache contains the prior project's saved **Top 5 only** for each vacancy. Cached LLM rows are clearly marked and are not live inference; they cannot support a larger K or a parameter change. To run live LLM matching, set `OPENROUTER_API_KEY` in your shell and set `RUN_LIVE_LLM = True` in the notebook. The notebook never prints or stores the key. Live mode uses the configured model, job-related rubric, scoring instruction, temperature setting, and evidence-citation validation in the helper. LLM calls transmit CV text to the configured provider; only use the fictional workshop CVs.
 
+Enter the key in the terminal **before launching VS Code or Jupyter**, so the notebook kernel inherits it. In PowerShell:
+
+```powershell
+$env:OPENROUTER_API_KEY = "paste-your-key-here"
+code .
+```
+
+In Git Bash:
+
+```bash
+export OPENROUTER_API_KEY='paste-your-key-here'
+code .
+```
+
+Then set `RUN_LIVE_LLM = True` in the optional live LLM cell. The default is `False`, which uses the saved Top-5 cache and needs no key. Do not paste the key into a notebook cell or commit it.
+
 If a selected model rejects a temperature parameter, leave it as `None`. In live mode, edit one rubric requirement or weight at a time. The offline cache remains unchanged when prompts or parameters change.
 
 ## Facilitation
@@ -76,7 +92,7 @@ Use [facilitator/FACILITATOR_NOTES.md](facilitator/FACILITATOR_NOTES.md) for tim
 - **Import error:** confirm the selected kernel is the workshop's Python 3.12 `.venv` and sync its included `requirements.lock`.
 - **CV or job not found:** keep the workshop folder intact; use IDs listed in the two `jobs.csv` and `candidates.csv` indexes.
 - **TF-IDF empty vocabulary:** use the default `min_df=1`, `max_df=1.0`, then inspect whether text extraction produced content.
-- **No `OPENROUTER_API_KEY`:** keep `LLM_MODE = "cached"`. The saved Top 5 results support comparison without network access.
+- **No `OPENROUTER_API_KEY`:** leave `RUN_LIVE_LLM = False`. The saved Top 5 results support comparison without network access.
 - **Live API validation failure:** return to cached mode and discuss the saved ranking. The helper validates cited evidence and does not silently replace failed LLM output with a lexical score.
 - **Fairness rates look extreme:** read the group count beside each rate, keep calculations within one job, and avoid conclusions from very small cells.
 - **Missing performance values:** leave them blank/NaN. They are not zero and are not negative outcomes.
