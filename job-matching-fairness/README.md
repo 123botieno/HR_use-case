@@ -30,12 +30,12 @@ job-matching-fairness/
 │   ├── historical_hiring_synthetic.csv
 │   ├── llm_precomputed_top5.csv
 │   └── generate_history.py
-│   └── llm_precomputed_top5.csv
 ├── facilitator/
 │   ├── FACILITATOR_NOTES.md
 │   └── slides/job_matching_fairness_workshop.pptx
 ├── README.md
 ├── job_matching_helpers.py
+├── requirements.lock
 └── job_matching_fairness.ipynb
 ```
 
@@ -49,22 +49,23 @@ The notebook delays loading the synthetic history until Problem 3. No sex or loc
 
 ## Setup
 
-Python 3.12 and `uv` are recommended. Run from the repository root so the workshop can use the shared project lock file:
+Python 3.12 and `uv` are recommended. The lock file is included in this workshop folder so this branch can be installed on its own. From the repository root:
 
 ```powershell
+cd job-matching-fairness
 uv venv --python 3.12 .venv
 uv pip sync requirements.lock
 ```
 
-Then open `job-matching-fairness/job_matching_fairness.ipynb` in Jupyter or VS Code and select the repository `.venv` kernel. Alternatively, from this folder install the same locked Fairlearn, pandas, scikit-learn, and matplotlib versions via `uv pip install -r ../requirements.lock`.
+Open `job_matching_fairness.ipynb` in VS Code with its Jupyter extension and select the `.venv` kernel. The notebook runs on CPU and uses the saved LLM ranking by default. To launch JupyterLab instead, install it into the same environment with `uv pip install jupyterlab`, then run `uv run jupyter lab job_matching_fairness.ipynb`.
 
 ## Run the exercises
 
 Run notebook cells top to bottom. Each of five problems follows **Problem → Pause & Predict → Hands-on Exercise → Observe Results → Discussion → Key Takeaway**. Change one parameter at a time, keep the job and candidate pool fixed, and write down a prediction before running each comparison. The opening exercise uses `JD-01` (Senior Data Scientist); change `JOB_ID` to inspect another vacancy.
 
-TF-IDF and BM25 return complete rankings. The packaged LLM cache contains the prior project's saved **Top 5 only** for each vacancy. Cached LLM rows are clearly marked and are not live inference; they cannot support a larger K or a parameter change. To run live LLM matching, use the shared OpenRouter key as `OPENROUTER_API_KEY` in the environment and set `LLM_MODE = "live"` in the notebook. The notebook never prints or stores the key. Live mode uses the project's existing evidence-validation scorer. Its model, rubric weights, scoring instruction, and supported temperature are visible in the helper call. LLM calls transmit CV text to the configured provider; only use the fictional workshop CVs.
+TF-IDF and BM25 return complete rankings. The packaged LLM cache contains the prior project's saved **Top 5 only** for each vacancy. Cached LLM rows are clearly marked and are not live inference; they cannot support a larger K or a parameter change. To run live LLM matching, set `OPENROUTER_API_KEY` in your shell and set `RUN_LIVE_LLM = True` in the notebook. The notebook never prints or stores the key. Live mode uses the configured model, job-related rubric, scoring instruction, temperature setting, and evidence-citation validation in the helper. LLM calls transmit CV text to the configured provider; only use the fictional workshop CVs.
 
-The existing project scorer supports temperature only in the workshop wrapper's custom-prompt path. If a selected model rejects a temperature parameter, leave it as `None`. In live mode, edit one rubric requirement or weight at a time. The offline cache remains unchanged when prompts or parameters change.
+If a selected model rejects a temperature parameter, leave it as `None`. In live mode, edit one rubric requirement or weight at a time. The offline cache remains unchanged when prompts or parameters change.
 
 ## Facilitation
 
@@ -72,11 +73,11 @@ Use [facilitator/FACILITATOR_NOTES.md](facilitator/FACILITATOR_NOTES.md) for tim
 
 ## Troubleshooting
 
-- **Import error:** confirm the selected kernel is the repository Python 3.12 environment and install from the shared lock file.
+- **Import error:** confirm the selected kernel is the workshop's Python 3.12 `.venv` and sync its included `requirements.lock`.
 - **CV or job not found:** keep the workshop folder intact; use IDs listed in the two `jobs.csv` and `candidates.csv` indexes.
 - **TF-IDF empty vocabulary:** use the default `min_df=1`, `max_df=1.0`, then inspect whether text extraction produced content.
 - **No `OPENROUTER_API_KEY`:** keep `LLM_MODE = "cached"`. The saved Top 5 results support comparison without network access.
-- **Live API validation failure:** return to cached mode and discuss the saved ranking. The project scorer validates cited evidence and does not silently replace failed LLM output with a lexical score.
+- **Live API validation failure:** return to cached mode and discuss the saved ranking. The helper validates cited evidence and does not silently replace failed LLM output with a lexical score.
 - **Fairness rates look extreme:** read the group count beside each rate, keep calculations within one job, and avoid conclusions from very small cells.
 - **Missing performance values:** leave them blank/NaN. They are not zero and are not negative outcomes.
 

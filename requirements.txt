@@ -1,6 +1,0 @@
-# HR case essentials; the shared hub lock pins its universal dependency graph.
-pandas
-scikit-learn
-fairlearn>=0.15
-python-dotenv
-pytest>=8,<9
