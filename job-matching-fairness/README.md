@@ -57,7 +57,7 @@ job-matching-fairness/
 
 The notebook delays loading the synthetic history until Problem 3. No sex or location field is passed to TF-IDF, BM25, or LLM text matching. Problem 3 asks participants to reason about how historical shortlist and hire labels might shape future criteria or evaluation, and distinguishes observed decisions from unknown hiring and performance outcomes.
 
-The synthetic group effects are introduced into the **historical shortlist decisions**. Problem 3 investigates those historical differences and uses the 100 applications / 10 shortlisted / 1 hired example to reason about mislabeled and missing outcomes. It does not train a new model on history. Problem 4 evaluates current TF-IDF, BM25, and cached LLM selections with Fairlearn; historical agreement is discussed as imitation, not correctness.
+The synthetic group effects are introduced into the **historical shortlist decisions**. Problem 3 investigates those historical differences and uses the same JD-01 records (50 applied, 10 shortlisted, 5 hired) to reason about observed and missing outcomes. It does not train a new model on history. Problem 4 evaluates current TF-IDF, BM25, and cached LLM selections with Fairlearn; historical agreement is discussed as imitation, not correctness.
 
 ## Setup
 

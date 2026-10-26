@@ -77,27 +77,19 @@ Ask each pair to choose one change and predict its effect. Keep all other inputs
 
 ### Facilitation
 
-Use the notebook's 100 / 10 / 1 label table. Ask participants to name the target before assigning labels:
+Use the same JD-01 history as the notebook. Ask participants to distinguish the target before counting labels:
 
-- Shortlist target: 10 selected, 90 not selected. The 90 are negative only for the shortlist decision.
-- Hire target: 1 hired, 9 shortlisted but not hired, 90 with no hire decision.
-- Performance target: not implied by hire status; if only the hire is assessed, 99 outcomes are missing.
+- Shortlist: 10 selected, 40 not selected; all 50 decisions are observed.
+- Hire: 5 hired, 5 shortlisted but not hired; 40 not shortlisted have no hire decision.
+- Performance: 5 scores observed for hires; 45 scores missing. Performance is not automatically a binary label.
 
-**Expected JD-01 output:** 50 applications, 10 shortlisted, 5 hired, performance observed for 5. Forty hire decisions and 45 performance values are missing. Historical shortlist rates are 7/19 males (36.8%) and 3/31 females (9.7%); the planted mechanism adds a Male and Addis Ababa boost before taking the top 10. These data are synthetic.
+The synthetic group shortlist rates are 7/19 males (36.8%) and 3/31 females (9.7%). The pattern is deliberately simulated; the generator gives Male and Addis Ababa applicants a score boost. These values are teaching data, not real hiring evidence.
 
-The notebook's 99%-accuracy warning assumes the 90 unknown hire labels are wrongly filled as not hired and an always-not-hire rule is scored against them. It finds 0/1 hires. Use this to ask whether a headline accuracy number is useful when the labels are incomplete and highly imbalanced.
+**Evaluation discussion:** if the 40 unknown hire labels are wrongly filled as not hired, an always-not-hire baseline appears 90% accurate (45/50) but finds 0/5 hires. Ask what the accuracy means and why unknowns must stay missing. Historical agreement measures imitation, not job-related quality. Problem 4 uses Fairlearn to compare current selection rates; those rates show access differences, not decision correctness. For job-related validity, an independent structured assessment should also cover applicants the past process excluded. Report label coverage by group and stage.
 
-### Questions to ask
+**Questions:** What outcome is the model meant to predict? For whom is that outcome observed? How many outcomes are missing in each group? What independent evidence could check whether current decisions identify suitable applicants?
 
-- What exactly is the target: shortlisting, hiring, or job performance?
-- Who has an observed outcome, and how many are missing in each group?
-- Is the evaluation measuring agreement with old decisions or job-related validity?
-- What independent assessment could cover applicants the old process excluded?
-- What can Fairlearn selection rates show in Problem 4, and what can they not establish?
-
-Historical labels could shape future criteria if treated as truth. This workshop does not train a model on them. Agreement with past decisions is imitation; the missing outcomes prevent us from judging excluded applicants' performance.
-
-**Key takeaway:** define the outcome first, report missingness, and do not turn unknown results into negatives.
+**Key takeaway:** evaluate only against observed, meaningful outcomes; do not turn unknowns into negatives.
 
 ## Problem 4 — Are the algorithms fair? (35 minutes)
 
