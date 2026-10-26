@@ -73,42 +73,40 @@ Ask each pair to choose one change and predict its effect. Keep all other inputs
 
 **Key takeaway:** parameter choices change who is surfaced; their value requires job-related evaluation.
 
-## Problem 3 - Can historical decisions change who gets shortlisted now? (25 minutes)
+## Problem 3 - What do historical hiring records tell us? (25 minutes)
 
 ### Learning objectives
 
-- Separate application, shortlisting, hiring, and observed performance.
-- See a model learn a deliberately biased pattern from past shortlist labels and apply it to a held-out job.
-- Compare model recommendations with a qualification-score-only proxy and the historical shortlist.
-- Distinguish agreement with history from evidence of candidate suitability.
+- Separate the shortlisting decision, the hiring decision, and post-hire performance.
+- Identify which historical labels are observed and which outcomes are unknown.
+- Discuss how past decisions could shape current criteria, models, or evaluations without claiming that the current text matchers learned from this dataset.
+- Propose a sensible evaluation that does not treat missing outcomes as negatives.
 
 ### Facilitation
 
-Start with the funnel question: if 100 apply, 10 are shortlisted, and one is hired, are the other 90 negatives? Establish that they were not shortlisted and have no observed hiring or performance outcome. The 9 shortlisted but not hired have an observed hire decision; they still have no post-hire performance outcome.
+Open with the participant's 100 / 10 / 1 scenario: 100 apply, 10 are shortlisted, and one is hired. Ask participants to write labels separately for shortlisting, hiring, and performance before showing the explanation.
 
-At the PAUSE, ask pairs to predict what the history-trained model will do on JD-01. Explain the design only after predictions: the logistic model is trained on the other 13 synthetic jobs and then used to rank the 50 JD-01 applicants. For this risk exercise only, its inputs include the simulated qualification score, sex group, and geography group. Thus it can learn the generator's explicit group preference. The protected attributes are intentionally included here to make the risk visible; TF-IDF, BM25, and LLM text ranking do not receive them.
+**Expected interpretation:** for the shortlisting decision, 10 are positive and 90 are not shortlisted. Those 90 are negatives only for that recorded shortlisting decision; they are not proven unqualified. For hiring across all applicants, one is hired, nine shortlisted applicants are not hired, and 90 who were never shortlisted have no observed hire decision. Therefore this is not 99 negatives and one positive. The number hired does not itself tell us the person's job performance; if performance is recorded only for hires, at most one result is observed and the other 99 are missing.
 
-**Expected output for JD-01, fixed seed:**
+Then inspect the committed synthetic data. For JD-01, 50 applications lead to 10 historical shortlists and 5 hires; post-hire performance is recorded for those 5 hires. Forty applicants have no hiring decision, five shortlisted applicants were not hired, and 45 performance values are blank. Historical shortlisting is 7/19 males (36.8%) and 3/31 females (9.7%), and 7/28 Addis Ababa applicants (25.0%) versus 3/22 outside Addis Ababa (13.6%). These are intentionally simulated results.
 
-| Current shortlist rule | Male selected | Female selected | Top-10 overlap |
-|---|---:|---:|---:|
-| Qualification-score-only proxy | 5/19 (26.3%) | 5/31 (16.1%) | 7 with historical |
-| Historical shortlist replay | 7/19 (36.8%) | 3/31 (9.7%) | 10 with history by design |
-| Logistic model trained on history | 10/19 (52.6%) | 0/31 (0%) | 4 with historical; 1 with proxy |
+**Discuss how history might affect current hiring:** if prior shortlist or hire labels are treated as evidence of who is qualified, a future rule or model may reward applicants who received past access and treat those excluded as poor examples. If the same labels are used to evaluate a new system, high agreement can mean it imitates the old process, including its bias. The three text rankers in this workshop do not train on these history labels; this discussion is about a possible pathway, not a demonstrated causal effect in those rankers.
 
-The model was fit on 13 jobs; JD-01 is held out from fitting. The learned weights are +0.075 for the qualification proxy, +2.926 for the Male indicator, and +1.948 for the Addis Ababa indicator. Positive group weights show association with historical shortlist labels in this generated dataset, not a causal effect. Its held-out shortlist-label metrics are 76% accuracy, 40% precision, and 40% recall. An always-not-shortlisted baseline gets 80% accuracy because 40/50 records have a negative historical shortlist label. The score-only Top 10 gets 88% accuracy, 70% precision, and 70% recall against the same history. Emphasize that all of these scores measure agreement with synthetic, biased shortlist labels, not correct suitability. The 80% baseline also illustrates why accuracy alone can mislead with imbalanced labels.
+**How to evaluate a current process:**
 
-**How to evaluate whether the demonstration code is working:** check that JD-01 is excluded from model fitting; each Top-10 rule produces exactly 10 candidates; the replay matches 10/10 historical labels by construction; and the model's held-out confusion counts are TP=4, FP=6, FN=6, TN=34. Check candidate overlaps and selected/applicant counts by group. These checks validate the split and calculations, not the fairness or quality of hiring decisions.
+1. Measure stage-by-stage selection rates for each group using the applicants eligible at that stage as the denominator. Problem 4 uses Fairlearn for current algorithm selection rates.
+2. Report label coverage: the shortlist decision is known for everyone, hiring is known only for shortlisted candidates, and performance is observed only for hires.
+3. Treat comparison with historical decisions as agreement, not correctness. Do not score the 90 unknown hiring outcomes as negative.
+4. For job-related validity, collect an independent structured assessment, such as a consistent work sample, for applicants across groups. Employee performance can only be observed after hiring, so it cannot tell us how rejected applicants would have performed.
+5. Follow a prospective process and review both decisions and missingness before making claims about impact.
 
-**Hiring funnel output:** 50 applications -> 10 historically shortlisted -> 5 hired -> post-hire performance observed for 5. Forty applicants have no hiring decision; five shortlisted applicants were not hired; 45 performance values are missing. Historical hires are 3/19 males and 2/31 females overall; among shortlisted candidates, 3/7 males and 2/3 females were hired. These conditional groups are very small. The 40 missing hire decisions and missing performance values are unknown outcomes, not negatives.
+**How to tell the analysis is wired correctly:** verify the 100 / 10 / 1 counts in the example; for the synthetic JD-01 data, verify 50 / 10 / 5 and the 40 missing hire decisions / 45 missing performance values. Check group-rate numerators and denominators. These checks confirm the counts and definitions, not that the historical decisions were good decisions.
 
-**What this does and does not demonstrate:** it directly demonstrates a model learning a designed group preference from past shortlist labels when the group attributes are available as inputs. It does not establish that real data would produce the same effect, and it does not train or change the three text matchers. In a real evaluation, historical hire labels are selective and shortlist labels can be biased. Seek independent job-related assessments that cover people not advanced, evaluate on a genuinely separate cohort, and track outcomes prospectively. Historical agreement alone measures imitation.
+**Common misconceptions:** "the 90 not shortlisted are hiring negatives"; "not hired means poor performance"; "historical agreement proves the new system works"; "the synthetic group rates describe real hiring." Correct each by naming the decision target, keeping unobserved outcomes missing, and distinguishing agreement from independent validation.
 
-**Common misconceptions:** "The 90 not shortlisted are hiring negatives"; "the highest simulated score is objectively best"; "held-out accuracy proves the model works"; "the synthetic disparity estimates real hiring." Correct each: no downstream label for the 90; the proxy score is not ground truth; the model is evaluated against biased history; all values are synthetic and small.
+**Discuss:** Which old decisions could influence a new process? What independent job-related evidence could assess applicants the old process excluded? How would you report a current system's group rates and its unknown outcomes?
 
-**Discuss:** What independent assessment could cover candidates excluded earlier? What would make an outcome label defensible? How would a prospective audit catch a harmful shift before relying on the model?
-
-**Key takeaway:** a model trained on historical shortlist labels can carry a designed group preference into a new shortlist; agreement with those labels does not establish that it selects suitable people.
+**Key takeaway:** historical records show what the process decided, not what excluded applicants would have done; missing labels need to stay unknown.
 
 ## Problem 4 — Are the algorithms fair? (35 minutes)
 
