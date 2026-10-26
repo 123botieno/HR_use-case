@@ -55,9 +55,9 @@ job-matching-fairness/
 
 `historical_hiring_synthetic.csv` contains one simulated applicant-job row per CV. It includes qualification/experience fields, synthetic sex and location audit fields, historical shortlist/hire decisions, post-hire performance where observed, and an explicit observation flag. It is wholly synthetic and must never be interpreted as actual recruitment data. See [data/SOURCES.md](data/SOURCES.md) for sources, assumptions, the intentional bias mechanism, and limits.
 
-The notebook delays loading the synthetic history until Problem 3. No sex or location field is passed to a matching algorithm; those fields are only used for auditing.
+The notebook delays loading the synthetic history until Problem 3. No sex or location field is passed to TF-IDF, BM25, or LLM text matching. Problem 3 separately uses the historically recorded shortlist labels in a deliberate replay exercise to show how copying past decisions can change a new shortlist; the audit attributes are also used to compare group outcomes.
 
-The synthetic group effects are introduced into the **historical shortlist decisions**. TF-IDF, BM25, and LLM matching are not trained on those decisions here; the workshop uses history to investigate selection patterns and to show why evaluating against past decisions can be misleading. It does not demonstrate training a model to reproduce biased hiring decisions.
+The synthetic group effects are introduced into the **historical shortlist decisions**. In Problem 3, participants compare a qualification-score-only Top 10, a direct replay of historical shortlist labels, and a logistic model trained on 13 jobs of synthetic historical labels and evaluated on held-out JD-01. For this explicit risk exercise, the trained model receives the synthetic sex and location attributes as inputs. Its results show how it can carry a designed group preference into a new shortlist. The exercise does not train TF-IDF, BM25, or the LLM on history; the score-only comparator is not validated ground truth, and metrics against historical labels measure imitation rather than suitability.
 
 ## Setup
 

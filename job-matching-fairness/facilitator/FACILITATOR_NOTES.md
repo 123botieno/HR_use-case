@@ -73,27 +73,42 @@ Ask each pair to choose one change and predict its effect. Keep all other inputs
 
 **Key takeaway:** parameter choices change who is surfaced; their value requires job-related evaluation.
 
-## Problem 3 — Can historical decisions introduce bias? (25 minutes)
+## Problem 3 - Can historical decisions change who gets shortlisted now? (25 minutes)
 
 ### Learning objectives
 
-Find group differences in synthetic historical shortlisting, compare within qualification bands, and distinguish shortlist, hire, and observed performance.
+- Separate application, shortlisting, hiring, and observed performance.
+- See a model learn a deliberately biased pattern from past shortlist labels and apply it to a held-out job.
+- Compare model recommendations with a qualification-score-only proxy and the historical shortlist.
+- Distinguish agreement with history from evidence of candidate suitability.
 
 ### Facilitation
 
-Before the notebook reveals history, ask: “Is a prior rejection a reliable label for lack of qualification?” Then have participants calculate group rates and examine qualification bands. Ask them to identify the denominator before interpreting a rate.
+Start with the funnel question: if 100 apply, 10 are shortlisted, and one is hired, are the other 90 negatives? Establish that they were not shortlisted and have no observed hiring or performance outcome. The 9 shortlisted but not hired have an observed hire decision; they still have no post-hire performance outcome.
 
-**Expected output for JD-01, from the fixed seed:** 50 applications; 19 males and 31 females. Historical shortlisting is 7/19 (36.8%) for males and 3/31 (9.7%) for females. The qualification bands show differences also within the middle and upper score bands. Geography is 7/28 (25.0%) for Addis Ababa and 3/22 (13.6%) outside Addis Ababa. These small synthetic comparisons reveal the planted mechanism; they are not external evidence.
+At the PAUSE, ask pairs to predict what the history-trained model will do on JD-01. Explain the design only after predictions: the logistic model is trained on the other 13 synthetic jobs and then used to rank the 50 JD-01 applicants. For this risk exercise only, its inputs include the simulated qualification score, sex group, and geography group. Thus it can learn the generator's explicit group preference. The protected attributes are intentionally included here to make the risk visible; TF-IDF, BM25, and LLM text ranking do not receive them.
 
-There are 10 historically shortlisted applicants: 5 hired and 5 not hired. The other 40 have no hiring decision because they were not shortlisted. Post-hire performance is observed for 5 hires; 45 values are missing. The notebook keeps missing values blank.
+**Expected output for JD-01, fixed seed:**
 
-**Explain after discovery:** the fixed-seed generator assigns sex and geography independently of the constructed qualification signal, then adds group boosts to the simulated historical decision score. Facilitator-only design disclosure: +9 points for the Male group, +7 for Addis Ababa, with random noise; top 10 shortlisted, top 5 of those hired. See `data/generate_history.py`.
+| Current shortlist rule | Male selected | Female selected | Top-10 overlap |
+|---|---:|---:|---:|
+| Qualification-score-only proxy | 5/19 (26.3%) | 5/31 (16.1%) | 7 with historical |
+| Historical shortlist replay | 7/19 (36.8%) | 3/31 (9.7%) | 10 with history by design |
+| Logistic model trained on history | 10/19 (52.6%) | 0/31 (0%) | 4 with historical; 1 with proxy |
 
-**Common misconceptions:** “No hire means poor performance”; “similar qualification scores prove discrimination”; “the difference is an effect estimate.” Clarify that hiring outcomes are not observed for non-shortlisted people, group differences flag a question, and this controlled synthetic mechanism is known by design.
+The model was fit on 13 jobs; JD-01 is held out from fitting. The learned weights are +0.075 for the qualification proxy, +2.926 for the Male indicator, and +1.948 for the Addis Ababa indicator. Positive group weights show association with historical shortlist labels in this generated dataset, not a causal effect. Its held-out shortlist-label metrics are 76% accuracy, 40% precision, and 40% recall. An always-not-shortlisted baseline gets 80% accuracy because 40/50 records have a negative historical shortlist label. The score-only Top 10 gets 88% accuracy, 70% precision, and 70% recall against the same history. Emphasize that all of these scores measure agreement with synthetic, biased shortlist labels, not correct suitability. The 80% baseline also illustrates why accuracy alone can mislead with imbalanced labels.
 
-**Discuss:** What independent assessment could cover candidates excluded earlier? What would a prospective audit need to record?
+**How to evaluate whether the demonstration code is working:** check that JD-01 is excluded from model fitting; each Top-10 rule produces exactly 10 candidates; the replay matches 10/10 historical labels by construction; and the model's held-out confusion counts are TP=4, FP=6, FN=6, TN=34. Check candidate overlaps and selected/applicant counts by group. These checks validate the split and calculations, not the fairness or quality of hiring decisions.
 
-**Key takeaway:** historical labels encode past decisions and selective observation; they are not neutral ground truth.
+**Hiring funnel output:** 50 applications -> 10 historically shortlisted -> 5 hired -> post-hire performance observed for 5. Forty applicants have no hiring decision; five shortlisted applicants were not hired; 45 performance values are missing. Historical hires are 3/19 males and 2/31 females overall; among shortlisted candidates, 3/7 males and 2/3 females were hired. These conditional groups are very small. The 40 missing hire decisions and missing performance values are unknown outcomes, not negatives.
+
+**What this does and does not demonstrate:** it directly demonstrates a model learning a designed group preference from past shortlist labels when the group attributes are available as inputs. It does not establish that real data would produce the same effect, and it does not train or change the three text matchers. In a real evaluation, historical hire labels are selective and shortlist labels can be biased. Seek independent job-related assessments that cover people not advanced, evaluate on a genuinely separate cohort, and track outcomes prospectively. Historical agreement alone measures imitation.
+
+**Common misconceptions:** "The 90 not shortlisted are hiring negatives"; "the highest simulated score is objectively best"; "held-out accuracy proves the model works"; "the synthetic disparity estimates real hiring." Correct each: no downstream label for the 90; the proxy score is not ground truth; the model is evaluated against biased history; all values are synthetic and small.
+
+**Discuss:** What independent assessment could cover candidates excluded earlier? What would make an outcome label defensible? How would a prospective audit catch a harmful shift before relying on the model?
+
+**Key takeaway:** a model trained on historical shortlist labels can carry a designed group preference into a new shortlist; agreement with those labels does not establish that it selects suitable people.
 
 ## Problem 4 — Are the algorithms fair? (35 minutes)
 
