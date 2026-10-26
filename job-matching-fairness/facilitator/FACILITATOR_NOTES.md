@@ -83,11 +83,11 @@ Find group differences in synthetic historical shortlisting, compare within qual
 
 Before the notebook reveals history, ask: “Is a prior rejection a reliable label for lack of qualification?” Then have participants calculate group rates and examine qualification bands. Ask them to identify the denominator before interpreting a rate.
 
-**Expected output for JD-01, from the fixed seed:** 50 applications; 19 men and 31 women. Historical shortlisting is 7/19 (36.8%) for men and 3/31 (9.7%) for women. The qualification bands show differences also within the middle and upper score bands. Geography is 7/28 (25.0%) for Addis Ababa and 3/22 (13.6%) outside Addis Ababa. These small synthetic comparisons reveal the planted mechanism; they are not external evidence.
+**Expected output for JD-01, from the fixed seed:** 50 applications; 19 males and 31 females. Historical shortlisting is 7/19 (36.8%) for males and 3/31 (9.7%) for females. The qualification bands show differences also within the middle and upper score bands. Geography is 7/28 (25.0%) for Addis Ababa and 3/22 (13.6%) outside Addis Ababa. These small synthetic comparisons reveal the planted mechanism; they are not external evidence.
 
 There are 10 historically shortlisted applicants: 5 hired and 5 not hired. The other 40 have no hiring decision because they were not shortlisted. Post-hire performance is observed for 5 hires; 45 values are missing. The notebook keeps missing values blank.
 
-**Explain after discovery:** the fixed-seed generator assigns sex and geography independently of the constructed qualification signal, then adds group boosts to the simulated historical decision score. Facilitator-only design disclosure: +9 points for Man, +7 for Addis Ababa, with random noise; top 10 shortlisted, top 5 of those hired. See `data/generate_history.py`.
+**Explain after discovery:** the fixed-seed generator assigns sex and geography independently of the constructed qualification signal, then adds group boosts to the simulated historical decision score. Facilitator-only design disclosure: +9 points for the Male group, +7 for Addis Ababa, with random noise; top 10 shortlisted, top 5 of those hired. See `data/generate_history.py`.
 
 **Common misconceptions:** “No hire means poor performance”; “similar qualification scores prove discrimination”; “the difference is an effect estimate.” Clarify that hiring outcomes are not observed for non-shortlisted people, group differences flag a question, and this controlled synthetic mechanism is known by design.
 
