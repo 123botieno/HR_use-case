@@ -73,40 +73,31 @@ Ask each pair to choose one change and predict its effect. Keep all other inputs
 
 **Key takeaway:** parameter choices change who is surfaced; their value requires job-related evaluation.
 
-## Problem 3 - What do historical hiring records tell us? (25 minutes)
-
-### Learning objectives
-
-- Separate the shortlisting decision, the hiring decision, and post-hire performance.
-- Identify which historical labels are observed and which outcomes are unknown.
-- Discuss how past decisions could shape current criteria, models, or evaluations without claiming that the current text matchers learned from this dataset.
-- Propose a sensible evaluation that does not treat missing outcomes as negatives.
+## Problem 3 - What do the historical outcomes tell us? (25 minutes)
 
 ### Facilitation
 
-Open with the participant's 100 / 10 / 1 scenario: 100 apply, 10 are shortlisted, and one is hired. Ask participants to write labels separately for shortlisting, hiring, and performance before showing the explanation.
+Use the notebook's 100 / 10 / 1 label table. Ask participants to name the target before assigning labels:
 
-**Expected interpretation:** for the shortlisting decision, 10 are positive and 90 are not shortlisted. Those 90 are negatives only for that recorded shortlisting decision; they are not proven unqualified. For hiring across all applicants, one is hired, nine shortlisted applicants are not hired, and 90 who were never shortlisted have no observed hire decision. Therefore this is not 99 negatives and one positive. The number hired does not itself tell us the person's job performance; if performance is recorded only for hires, at most one result is observed and the other 99 are missing.
+- Shortlist target: 10 selected, 90 not selected. The 90 are negative only for the shortlist decision.
+- Hire target: 1 hired, 9 shortlisted but not hired, 90 with no hire decision.
+- Performance target: not implied by hire status; if only the hire is assessed, 99 outcomes are missing.
 
-Then inspect the committed synthetic data. For JD-01, 50 applications lead to 10 historical shortlists and 5 hires; post-hire performance is recorded for those 5 hires. Forty applicants have no hiring decision, five shortlisted applicants were not hired, and 45 performance values are blank. Historical shortlisting is 7/19 males (36.8%) and 3/31 females (9.7%), and 7/28 Addis Ababa applicants (25.0%) versus 3/22 outside Addis Ababa (13.6%). These are intentionally simulated results.
+**Expected JD-01 output:** 50 applications, 10 shortlisted, 5 hired, performance observed for 5. Forty hire decisions and 45 performance values are missing. Historical shortlist rates are 7/19 males (36.8%) and 3/31 females (9.7%); the planted mechanism adds a Male and Addis Ababa boost before taking the top 10. These data are synthetic.
 
-**Discuss how history might affect current hiring:** if prior shortlist or hire labels are treated as evidence of who is qualified, a future rule or model may reward applicants who received past access and treat those excluded as poor examples. If the same labels are used to evaluate a new system, high agreement can mean it imitates the old process, including its bias. The three text rankers in this workshop do not train on these history labels; this discussion is about a possible pathway, not a demonstrated causal effect in those rankers.
+The notebook's 99%-accuracy warning assumes the 90 unknown hire labels are wrongly filled as not hired and an always-not-hire rule is scored against them. It finds 0/1 hires. Use this to ask whether a headline accuracy number is useful when the labels are incomplete and highly imbalanced.
 
-**How to evaluate a current process:**
+### Questions to ask
 
-1. Measure stage-by-stage selection rates for each group using the applicants eligible at that stage as the denominator. Problem 4 uses Fairlearn for current algorithm selection rates.
-2. Report label coverage: the shortlist decision is known for everyone, hiring is known only for shortlisted candidates, and performance is observed only for hires.
-3. Treat comparison with historical decisions as agreement, not correctness. Do not score the 90 unknown hiring outcomes as negative.
-4. For job-related validity, collect an independent structured assessment, such as a consistent work sample, for applicants across groups. Employee performance can only be observed after hiring, so it cannot tell us how rejected applicants would have performed.
-5. Follow a prospective process and review both decisions and missingness before making claims about impact.
+- What exactly is the target: shortlisting, hiring, or job performance?
+- Who has an observed outcome, and how many are missing in each group?
+- Is the evaluation measuring agreement with old decisions or job-related validity?
+- What independent assessment could cover applicants the old process excluded?
+- What can Fairlearn selection rates show in Problem 4, and what can they not establish?
 
-**How to tell the analysis is wired correctly:** verify the 100 / 10 / 1 counts in the example; for the synthetic JD-01 data, verify 50 / 10 / 5 and the 40 missing hire decisions / 45 missing performance values. Check group-rate numerators and denominators. These checks confirm the counts and definitions, not that the historical decisions were good decisions.
+Historical labels could shape future criteria if treated as truth. This workshop does not train a model on them. Agreement with past decisions is imitation; the missing outcomes prevent us from judging excluded applicants' performance.
 
-**Common misconceptions:** "the 90 not shortlisted are hiring negatives"; "not hired means poor performance"; "historical agreement proves the new system works"; "the synthetic group rates describe real hiring." Correct each by naming the decision target, keeping unobserved outcomes missing, and distinguishing agreement from independent validation.
-
-**Discuss:** Which old decisions could influence a new process? What independent job-related evidence could assess applicants the old process excluded? How would you report a current system's group rates and its unknown outcomes?
-
-**Key takeaway:** historical records show what the process decided, not what excluded applicants would have done; missing labels need to stay unknown.
+**Key takeaway:** define the outcome first, report missingness, and do not turn unknown results into negatives.
 
 ## Problem 4 — Are the algorithms fair? (35 minutes)
 
