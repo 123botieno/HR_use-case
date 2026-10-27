@@ -50,7 +50,9 @@ def load_candidates(job_id: str, data_dir: str | Path = DATA_DIR) -> pd.DataFram
 
 def load_history(data_dir: str | Path = DATA_DIR) -> pd.DataFrame:
     """Load the fictional decision history while preserving unknown outcomes."""
-    return pd.read_csv(Path(data_dir) / "historical_hiring_synthetic.csv")
+    history = pd.read_csv(Path(data_dir) / "historical_hiring_synthetic.csv")
+    history["sex"] = history["sex"].replace({"Woman": "Female", "Man": "Male"})
+    return history
 
 
 def preprocess_text(text: str) -> str:
