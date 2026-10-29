@@ -162,6 +162,9 @@ def match_llm(
     rubric: list[dict] | None = None,
     scoring_prompt: str | None = None,
     temperature: float | None = None,
+    show_progress: bool = False,
+    progress_start: int = 1,
+    max_workers: int = 1,
     cache_path: str | Path = DEFAULT_LLM_CACHE,
     endpoint: str = "https://openrouter.ai/api/v1/chat/completions",
 ) -> pd.DataFrame:
@@ -169,7 +172,10 @@ def match_llm(
 
     The packaged cache contains only K=5 lists from an earlier project run.
     It is not live inference and cannot support different K values. Live mode
-    reuses the project's LLMScorer and its evidence validation/caching.
+    sends the JD, rubric and CV sections to the configured provider, validates
+    exact citations, and calculates weighted evidence coverage in Python.
+    Optional max_level=2 rubric entries distinguish named from applied evidence;
+    essential requirements are flagged separately rather than silently filtered.
     """
     if mode == "cached":
         cache = pd.read_csv(cache_path, dtype={"job_id": str, "candidate_id": str})
@@ -185,12 +191,42 @@ def match_llm(
         raise ValueError("mode must be 'cached' or 'live'")
     if not rubric:
         raise ValueError("Live LLM mode requires an explicit job-related rubric")
+    if type(max_workers) is not int or not 1 <= max_workers <= 4:
+        raise ValueError("max_workers must be an integer from 1 to 4")
+    if max_workers > 1 and len(candidate_cvs) > 1:
+        from concurrent.futures import ThreadPoolExecutor
+
+        def score_one(index):
+            return match_llm(
+                job_id, job_description, candidate_cvs.iloc[[index]], mode="live",
+                model=model, rubric=rubric, scoring_prompt=scoring_prompt,
+                temperature=temperature, cache_path=cache_path, endpoint=endpoint,
+            )
+
+        frames = []
+        with ThreadPoolExecutor(max_workers=max_workers) as pool:
+            # map preserves input order regardless of request completion order.
+            for count, frame in enumerate(pool.map(score_one, range(len(candidate_cvs))), 1):
+                frames.append(frame)
+                if show_progress and count >= progress_start:
+                    print(f"Validated {count}/{len(candidate_cvs)} CVs", flush=True)
+        result = pd.concat(frames, ignore_index=True).sort_values(
+            ["score", "candidate_id"], ascending=[False, True]
+        ).reset_index(drop=True)
+        result["rank"] = np.arange(1, len(result) + 1)
+        return result
     requirements = [
         {"id": f"R{i+1}", "text": str(item["text"]),
          "weight": float(item.get("weight", 1)),
-         "applicable": True}
+         "applicable": True,
+         **{key: item[key] for key in ("max_level", "levels", "essential") if key in item}}
         for i, item in enumerate(rubric)
     ]
+    graded = any("max_level" in item for item in requirements)
+    if any(not np.isfinite(item["weight"]) or item["weight"] <= 0 for item in requirements):
+        raise ValueError("Rubric weights must be finite and positive")
+    if any(item.get("max_level", 1) not in {1, 2} for item in requirements):
+        raise ValueError("Rubric max_level must be 1 or 2")
     if not os.getenv("OPENROUTER_API_KEY") and endpoint.startswith("https://openrouter.ai/"):
         raise ValueError("Set OPENROUTER_API_KEY to use live LLM matching")
     if temperature is not None and not 0 <= temperature <= 2:
@@ -205,6 +241,16 @@ def match_llm(
         "or explicitly_not_met, cite an exact continuous quote and its section. "
         "Do not assign an aggregate score."
     )
+    if graded:
+        system += (
+            " Return evidence_level as an integer from zero to the requirement's max_level. "
+            "Use the supplied level definitions, not writing style or repeated keywords. "
+            "For supported, choose a positive level and cite exact CV evidence justifying it. "
+            "For unknown or explicitly_not_met, evidence_level must be zero. "
+            "For essential binary requirements use only zero or one; do not give partial credit. "
+            "Evaluate experience using the stated education route; do not count all years as relevant automatically. "
+            "Do not infer an absent degree, publication count, authorship or project detail."
+        )
     if scoring_prompt:
         system += "\nWorkshop instruction: " + scoring_prompt
     schema = {
@@ -219,13 +265,21 @@ def match_llm(
             },
         }}}
     }
+    if graded:
+        record_schema = schema["properties"]["evidence"]["items"]
+        record_schema["required"].append("evidence_level")
+        record_schema["properties"]["evidence_level"] = {"type": "integer", "enum": [0, 1, 2]}
     scores, evidence = [], []
-    for row in candidate_cvs.itertuples(index=False):
+    for candidate_number, row in enumerate(candidate_cvs.itertuples(index=False), start=1):
         sections = [
             {"location": f"section:{i+1}", "text": paragraph}
             for i, paragraph in enumerate(row.text.split("\n\n")) if paragraph.strip()
         ]
-        content = {"requirements": requirements, "sections": sections}
+        content = {
+            "job_description": job_description,
+            "requirements": requirements,
+            "sections": sections,
+        }
         body = {
             "model": model,
             "messages": [
@@ -243,41 +297,66 @@ def match_llm(
             ensure_ascii=False,
         ).encode("utf-8")).hexdigest()
         cache_file = cache_dir / f"workshop-{key}.json"
-        if cache_file.exists():
-            response = json.loads(cache_file.read_text(encoding="utf-8"))
-        else:
-            headers = {"Content-Type": "application/json"}
-            if os.getenv("OPENROUTER_API_KEY"):
-                headers["Authorization"] = "Bearer " + os.environ["OPENROUTER_API_KEY"]
-            if endpoint.startswith("https://openrouter.ai/"):
-                headers["HTTP-Referer"] = os.getenv("OPENROUTER_SITE_URL", "https://localhost")
-                headers["X-OpenRouter-Title"] = "HR Job Matching Workshop"
-            for attempt in range(3):
-                try:
-                    req = request.Request(endpoint, data=json.dumps(body).encode("utf-8"), headers=headers)
-                    with request.urlopen(req, timeout=120) as response_stream:
-                        response = json.load(response_stream)
-                    break
-                except error.HTTPError as exc:
-                    if exc.code not in {429, 500, 502, 503, 504} or attempt == 2:
-                        raise RuntimeError(f"LLM HTTP status {exc.code}; response body omitted") from None
-                except (error.URLError, TimeoutError):
-                    if attempt == 2:
-                        raise RuntimeError("LLM connection failed") from None
-                time.sleep(2 ** attempt)
+        for evidence_attempt in range(3):
+            if evidence_attempt == 0 and cache_file.exists():
+                response = json.loads(cache_file.read_text(encoding="utf-8"))
+            else:
+                headers = {"Content-Type": "application/json"}
+                if os.getenv("OPENROUTER_API_KEY"):
+                    headers["Authorization"] = "Bearer " + os.environ["OPENROUTER_API_KEY"]
+                if endpoint.startswith("https://openrouter.ai/"):
+                    headers["HTTP-Referer"] = os.getenv("OPENROUTER_SITE_URL", "https://localhost")
+                    headers["X-OpenRouter-Title"] = "HR Job Matching Workshop"
+                for attempt in range(3):
+                    try:
+                        req = request.Request(endpoint, data=json.dumps(body).encode("utf-8"), headers=headers)
+                        with request.urlopen(req, timeout=120) as response_stream:
+                            response = json.load(response_stream)
+                        break
+                    except error.HTTPError as exc:
+                        if exc.code not in {429, 500, 502, 503, 504} or attempt == 2:
+                            raise RuntimeError(f"LLM HTTP status {exc.code}; response body omitted") from None
+                    except (error.URLError, TimeoutError):
+                        if attempt == 2:
+                            raise RuntimeError("LLM connection failed") from None
+                    time.sleep(2 ** attempt)
+            choices = response.get("choices", [])
+            if not choices or not isinstance(choices[0].get("message", {}).get("content"), str):
+                raise ValueError("LLM chat-completions response has no text content")
+            message = choices[0]["message"]
+            if message.get("refusal"):
+                raise ValueError("LLM declined evidence extraction")
+            try:
+                payload = json.loads(message["content"])
+                score, detail = _validate_llm_evidence(payload, requirements, sections)
+            except (ValueError, TypeError, KeyError) as exc:
+                if evidence_attempt == 2:
+                    raise ValueError(f"Evidence validation failed after 3 attempts for {row.candidate_id}: {exc}") from None
+                body["messages"].extend([
+                    {"role": "assistant", "content": message["content"]},
+                    {"role": "user", "content": (
+                        "The evidence response failed validation: " + str(exc) + ". "
+                        "Return a corrected complete response. Quotes must be exact continuous "
+                        "substrings copied from the supplied CV section, with its exact section location. "
+                        "Do not paraphrase or join fragments. Never quote the job description as CV evidence. "
+                        "Use unknown when no supporting CV evidence is available. Do not change a status "
+                        "merely to bypass validation; recheck the supplied evidence."
+                    )},
+                ])
+                if show_progress:
+                    print(f"Rechecking evidence for {row.candidate_id} (attempt {evidence_attempt + 2}/3)", flush=True)
+                continue
+            # Persist only evidence responses that passed validation.
             cache_file.write_text(json.dumps(response, ensure_ascii=False), encoding="utf-8")
-        choices = response.get("choices", [])
-        if not choices or not isinstance(choices[0].get("message", {}).get("content"), str):
-            raise ValueError("LLM chat-completions response has no text content")
-        message = choices[0]["message"]
-        if message.get("refusal"):
-            raise ValueError("LLM declined evidence extraction")
-        payload = json.loads(message["content"])
-        score, detail = _validate_llm_evidence(payload, requirements, sections)
+            break
         scores.append(score)
         evidence.append(detail)
+        if show_progress and candidate_number >= progress_start:
+            print(f"Validated {candidate_number}/{len(candidate_cvs)} CVs", flush=True)
     result = _rank(candidate_cvs.candidate_id.tolist(), scores, "LLM (live)", evidence)
     result["cache_status"] = "project response cache may be used"
+    if any(item.get("essential", False) for item in requirements):
+        result["essential_requirements"] = [item["essential_requirements"] for item in result.evidence]
     return result
 
 
@@ -289,6 +368,7 @@ def _validate_llm_evidence(payload, requirements, sections):
         raise ValueError("LLM must return one evidence record per rubric requirement")
     locations = {section["location"]: section["text"] for section in sections}
     seen, total, supported, unknown = set(), 0.0, 0.0, 0.0
+    essential_statuses = []
     for record in records:
         identifier = record.get("requirement_id")
         status = record.get("status")
@@ -305,15 +385,36 @@ def _validate_llm_evidence(payload, requirements, sections):
         if status in {"supported", "explicitly_not_met"} and (
             not quote or location not in locations or quote not in locations[location]
         ):
-            raise ValueError(f"Unverifiable LLM evidence citation for {identifier}")
+            raise ValueError(
+                f"Unverifiable LLM evidence citation for {identifier}: "
+                f"quote={quote!r}, location={location!r}. "
+                "Copy one CV passage exactly, preserving its spelling and punctuation; "
+                "do not combine passages or add ellipses."
+            )
+        max_level = item.get("max_level", 1)
+        level = record.get("evidence_level")
+        if "max_level" in item:
+            if type(level) is not int or not 0 <= level <= max_level:
+                raise ValueError(f"Invalid evidence level for {identifier}")
+            if (status == "supported") != (level > 0):
+                raise ValueError(f"Evidence level disagrees with status for {identifier}")
+        else:
+            level = int(status == "supported")
+        if item.get("essential", False) and applicable:
+            essential_statuses.append(status)
         if applicable:
             total += item["weight"]
             if status == "supported":
-                supported += item["weight"]
+                supported += item["weight"] * level / max_level
             elif status == "unknown":
                 unknown += item["weight"]
     return 100 * supported / total, {
         "evidence": records, "unknown_weight_share": unknown / total,
+        "essential_requirements": (
+            "explicitly_unmet" if "explicitly_not_met" in essential_statuses
+            else "needs_review" if "unknown" in essential_statuses
+            else "supported" if essential_statuses else "not_assessed"
+        ),
     }
 
 
